@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="Ing. Santiago Abasto — Portfolio técnico: 61 proyectos, 251 diagramas">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a1020"/><stop offset=".55" stop-color="#0f172a"/><stop offset="1" stop-color="#0b1220"/></linearGradient>
+<radialGradient id="g1" cx=".16" cy=".1" r=".62"><stop offset="0" stop-color="#0ea5e9" stop-opacity=".30"/><stop offset="1" stop-color="#0ea5e9" stop-opacity="0"/></radialGradient>
+<radialGradient id="g2" cx=".88" cy=".96" r=".62"><stop offset="0" stop-color="#6366f1" stop-opacity=".34"/><stop offset="1" stop-color="#6366f1" stop-opacity="0"/></radialGradient>
+<pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#cbd5e1" fill-opacity=".07"/></pattern>
+<linearGradient id="acc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0ea5e9"/><stop offset="1" stop-color="#6366f1"/></linearGradient>
+<linearGradient id="num" x1="440.0" y1="0" x2="840.0" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#818cf8"/></linearGradient>
+<linearGradient id="edge" x1="0" y1="0" x2="0" y2="640" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#818cf8"/></linearGradient>
+</defs>
+<rect width="1280" height="640" fill="url(#bg)"/>
+<rect width="1280" height="640" fill="url(#dots)"/>
+<rect width="1280" height="640" fill="url(#g1)"/>
+<rect width="1280" height="640" fill="url(#g2)"/>
+<g transform="translate(40.0 6.5)">
+  <g fill="none" stroke="url(#edge)" stroke-opacity=".38" stroke-width="1.4" stroke-linejoin="round"><path d="M72 118V157.0H116V196"/><path d="M116 222V268.0H72V314"/><path d="M72 340V383.0H116V426"/><path d="M116 452V489.0H72V526"/><path d="M1128 152V191.0H1084V230"/><path d="M1084 256V302.0H1128V348"/><path d="M1128 374V417.0H1084V460"/><path d="M1084 486V523.0H1128V560"/></g>
+  <g fill="#0f1a30" stroke="#38bdf8" stroke-opacity=".5" stroke-width="1.2" stroke-linecap="round"><rect x="48" y="92" width="48" height="26" rx="6"/><path d="M58 102H82M58 108H74" stroke="#7dd3fc" stroke-opacity=".45"/><rect x="92" y="196" width="48" height="26" rx="6"/><path d="M102 206H126M102 212H118" stroke="#7dd3fc" stroke-opacity=".45"/><rect x="48" y="314" width="48" height="26" rx="6"/><path d="M58 324H82M58 330H74" stroke="#7dd3fc" stroke-opacity=".45"/><rect x="92" y="426" width="48" height="26" rx="6"/><path d="M102 436H126M102 442H118" stroke="#7dd3fc" stroke-opacity=".45"/><rect x="48" y="526" width="48" height="26" rx="6"/><path d="M58 536H82M58 542H74" stroke="#7dd3fc" stroke-opacity=".45"/><rect x="1104" y="126" width="48" height="26" rx="6"/><path d="M1114 136H1138M1114 142H1130" stroke="#7dd3fc" stroke-opacity=".45"/><rect x="1060" y="230" width="48" height="26" rx="6"/><path d="M1070 240H1094M1070 246H1086" stroke="#7dd3fc" stroke-opacity=".45"/><rect x="1104" y="348" width="48" height="26" rx="6"/><path d="M1114 358H1138M1114 364H1130" stroke="#7dd3fc" stroke-opacity=".45"/><rect x="1060" y="460" width="48" height="26" rx="6"/><path d="M1070 470H1094M1070 476H1086" stroke="#7dd3fc" stroke-opacity=".45"/><rect x="1104" y="560" width="48" height="26" rx="6"/><path d="M1114 570H1138M1114 576H1130" stroke="#7dd3fc" stroke-opacity=".45"/></g>
+  <text x="603.5" y="128" text-anchor="middle" font-family="'SF Mono',ui-monospace,Menlo,Consolas,monospace" font-size="18" font-weight="500" letter-spacing="7" fill="#7dd3fc">PORTFOLIO TÉCNICO</text>
+  <text x="600" y="220" text-anchor="middle" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="80" font-weight="700" letter-spacing="-1.2" fill="#f8fafc">Ing. Santiago Abasto</text>
+  <rect x="545" y="244" width="110" height="5" rx="2.5" fill="url(#acc)"/>
+  <text x="600" y="304" text-anchor="middle" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="28" fill="#cbd5e1">Sistemas empresariales · Automatización · IA aplicada</text>
+  <line x1="600" y1="362" x2="600" y2="452" stroke="#ffffff" stroke-opacity=".14" stroke-width="1.5"/>
+  <text x="480" y="412" text-anchor="middle" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="76" font-weight="700" letter-spacing="-1.5" fill="url(#num)">61</text>
+  <text x="720" y="412" text-anchor="middle" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="76" font-weight="700" letter-spacing="-1.5" fill="url(#num)">251</text>
+  <text x="482.5" y="448" text-anchor="middle" font-family="'SF Mono',ui-monospace,Menlo,Consolas,monospace" font-size="15" letter-spacing="5" fill="#94a3b8">PROYECTOS</text>
+  <text x="722.5" y="448" text-anchor="middle" font-family="'SF Mono',ui-monospace,Menlo,Consolas,monospace" font-size="15" letter-spacing="5" fill="#94a3b8">DIAGRAMAS</text>
+  <text x="602" y="522" text-anchor="middle" font-family="'SF Mono',ui-monospace,Menlo,Consolas,monospace" font-size="15" letter-spacing="4" fill="#64748b">LARAVEL · REACT · FLUTTER · NEXT.JS · IA</text>
+</g>
+</svg>

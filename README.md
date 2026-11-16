@@ -4,7 +4,7 @@
 
 <br/>
 
-**Ingeniero de software · 61 proyectos · Bolivia 🇧🇴**
+**Ingeniero de software · 61 proyectos · Bolivia**
 Sistemas de gestión y POS, e-commerce, IA y datos, apps móviles y sitios web — de principio a fin.
 
 ![Proyectos](https://img.shields.io/badge/proyectos-61-0ea5e9?style=for-the-badge)
@@ -22,14 +22,17 @@ Casos reales de sistemas empresariales, POS, CRM, industria, e-commerce, automat
 
 **61 proyectos · 251 diagramas · Laravel · React · Flutter · APIs · IA**
 
-[🏢 Sistemas empresariales](#sistemas) · [🤖 IA y automatización](#ia) · [🏭 Industria y B2B](#industria) · [✉️ Contactarme](#contacto)
+<a href="#sistemas"><img src="docs/readme/btn-sistemas.svg" height="46" alt="Sistemas empresariales"></a>
+<a href="#ia"><img src="docs/readme/btn-ia.svg" height="46" alt="IA y automatización"></a>
+<a href="#industria"><img src="docs/readme/btn-industria.svg" height="46" alt="Industria y B2B"></a>
+<a href="#contacto"><img src="docs/readme/btn-contacto.svg" height="46" alt="Contactarme"></a>
 
 </div>
 
 Este documento reúne mi trabajo en un solo lugar. Cada proyecto dice **qué problema resolvía**, **con qué stack** y **qué solución le dimos**, con sus **diagramas de arquitectura y flujos** (se despliegan al hacer clic). Desarrollo de **Ing. Santiago Abasto**; las colaboraciones están marcadas al final.
 
 <a name="indice"></a>
-## 🗂️ Índice
+## <img src="docs/readme/ic-indice.svg" width="26" height="26" alt=""> Índice
 
 **Sistemas de gestión, POS y ERP**  
 [Mahiki — Restaurante y bar](#mahiki-restaurante-y-bar) · [Qué Tacos — Katt](#que-tacos-katt) · [Lima Sushi — Nikkei](#lima-sushi-nikkei) · [Macondo POS](#macondo-pos) · [Solo Pastas](#solo-pastas) · [Apple Boss](#apple-boss) · [Blackphone (Axel)](#blackphone-axel) · [Sistema Boss](#sistema-boss) · [Odessa Oil](#odessa-oil) · [Moldpack](#moldpack) · [Tickets Osole](#tickets-osole) · [Pórpora — Producción](#porpora-produccion) · [Tigo — Tickets de soporte](#tigo-tickets-de-soporte)
@@ -51,13 +54,15 @@ Este documento reúne mi trabajo en un solo lugar. Cada proyecto dice **qué pro
 
 <a name="sistemas"></a>
 
-## Sistemas de gestión, POS y ERP
+## <img src="docs/readme/ic-sistemas.svg" width="26" height="26" alt=""> Sistemas de gestión, POS y ERP
 
 <a name="mahiki-restaurante-y-bar"></a>
 ### 1. Mahiki — Restaurante y bar
 > El sistema de gestión de un restaurante y bar boliviano, de la receta al cobro: todo lo que se vende descuenta sus insumos, todo el dinero pasa por una caja y cada módulo se enciende o se apaga sin tocar código.
 
-🧩 **Problema.** El local trabaja hoy con **Siesam**, un sistema genérico multi-rubro (sirve igual a un hotel, una distribuidora o un taller). Para un restaurante y bar eso se traduce en:
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
+
+El local trabaja hoy con **Siesam**, un sistema genérico multi-rubro (sirve igual a un hotel, una distribuidora o un taller). Para un restaurante y bar eso se traduce en:
 
 - **Un menú de ~95 entradas y 229 rutas**, muchas de otros rubros, y acciones que dependen de seleccionar una fila y buscar el botón o de atajos F4, F8 y F9.
 - **Recetas que no se usan bien:** el costo de materia prima figura en 0,00 en todas las recetas, así que no se sabe cuánto cuesta de verdad una hamburguesa o un trago.
@@ -67,7 +72,7 @@ Este documento reúne mi trabajo en un solo lugar. Cada proyecto dice **qué pro
 
 El relevamiento completo (pantallas, campos y los 8 roles con sus permisos reales) se hizo en solo lectura y está documentado fuera de este repo, en la carpeta del proyecto.
 
-🛠️ **Stack**
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -86,7 +91,9 @@ El relevamiento completo (pantallas, campos y los 8 roles con sus permisos reale
 
 Punto de partida: `laravel/vue-starter-kit` (rama `dev-main`, la que trae Laravel 13 y Tailwind 4).
 
-💡 **Solución.** **MAHIKI** reproduce la lógica de negocio que el local ya conoce (los mismos nombres de módulos, roles y permisos que Siesam) y la ordena en un sistema hecho solo para restaurante y bar, rápido en celular, tablet y computadora.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+**MAHIKI** reproduce la lógica de negocio que el local ya conoce (los mismos nombres de módulos, roles y permisos que Siesam) y la ordena en un sistema hecho solo para restaurante y bar, rápido en celular, tablet y computadora.
 
 Tres principios guían todo:
 
@@ -109,7 +116,7 @@ Tres principios guían todo:
 Y fuera del personal: el **cliente en la mesa** (autopedido por QR) y el **cliente a domicilio** (tienda en línea), ambos sin crear cuenta.
 
 <details>
-<summary><b>📐 Ver 5 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 5 diagramas y flujos</b></summary>
 <br>
 
 **Canales y opcionales**
@@ -279,7 +286,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -287,7 +294,9 @@ erDiagram
 ### 2. Qué Tacos — Katt
 > El sistema que opera la taquería QUÉ TACOS!!! de punta a punta: lo que se vende en el mostrador y en la web sale del mismo stock, con el mismo costo y en los mismos reportes.
 
-🧩 **Problema.** Una taquería con varias sucursales vive de márgenes chicos y de mucha operación a la vez: mostrador, cocina, delivery, compras a proveedores, producción de bases (la birria, las salsas) y caja. Cuando cada cosa se lleva por separado aparecen los problemas de siempre:
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
+
+Una taquería con varias sucursales vive de márgenes chicos y de mucha operación a la vez: mostrador, cocina, delivery, compras a proveedores, producción de bases (la birria, las salsas) y caja. Cuando cada cosa se lleva por separado aparecen los problemas de siempre:
 
 - **No se sabe cuánto cuesta de verdad un taco.** El precio del proveedor cambia, hay merma, hay subrecetas, y el costo que se usó para fijar el precio queda viejo sin que nadie lo note.
 - **El stock no cuadra.** Lo que se vende por la web, lo que se vende en caja y lo que se tira no descuentan del mismo lugar.
@@ -295,7 +304,7 @@ erDiagram
 - **Los pedidos web llegan a cocina sin que nadie los acepte**, aunque el local esté sin birria o desbordado.
 - **El dueño no puede comparar sucursales** porque cada número sale de una planilla distinta.
 
-🛠️ **Stack**
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -311,7 +320,9 @@ erDiagram
 | Estilo | Laravel Pint | 1.30 |
 | Tipografía | Instrument Sans y Archivo Black (Bunny Fonts) | — |
 
-💡 **Solución.** **TacoOS** es un único sistema Laravel con dos caras sobre la misma base de datos:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+**TacoOS** es un único sistema Laravel con dos caras sobre la misma base de datos:
 
 - **Web pública de QUÉ TACOS!!!**: menú por sucursal, ficha de producto, **«Armá tu taco» en 3D**, carrito, cupones, checkout como invitado o con cuenta, seguimiento del pedido y **Taco Puntos**.
 - **Sistema interno**: POS, caja, cocina (KDS), pedidos web, cobranzas, mermas, producción, compras, recepciones, conteos físicos, catálogo, promociones, fidelización, reportes, IA en el navegador y el copiloto del dueño.
@@ -321,7 +332,7 @@ Un pedido web no es «otro sistema»: termina en la misma tabla `orders`, congel
 **Quién lo usa.** Un usuario no tiene un rol fijo sino **un rol por sucursal** (puede ser cajero en una y encargado en otra). Hay 10 roles: `owner`, `admin`, `manager`, `cashier`, `kitchen`, `inventory`, `purchasing`, `finance`, `delivery` y `analyst`, más los **clientes** de la web, que entran por un guard propio, separado del personal.
 
 <details>
-<summary><b>📐 Ver 5 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 5 diagramas y flujos</b></summary>
 <br>
 
 **Reportes y dueño**
@@ -498,7 +509,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -506,13 +517,15 @@ erDiagram
 ### 3. Lima Sushi — Nikkei
 > La primera web propia de Lima Cocina Nikkei: carta, eventos y reservas en línea que ocupan una mesa real del plano, con el mismo motor que usa recepción.
 
-🧩 **Problema.** **Lima Cocina Nikkei** (también publicada como Lima Sushi Nikkei) es un restaurante de cocina japonesa-peruana en Cochabamba que no tenía web propia. Su carta, su horario, su ubicación y las reservas vivían en Facebook, en Google Maps y en el catálogo de WhatsApp:
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
+
+**Lima Cocina Nikkei** (también publicada como Lima Sushi Nikkei) es un restaurante de cocina japonesa-peruana en Cochabamba que no tenía web propia. Su carta, su horario, su ubicación y las reservas vivían en Facebook, en Google Maps y en el catálogo de WhatsApp:
 
 - **La información pública se contradecía.** Google Maps y Facebook mostraban horarios distintos, la carta no tenía precios publicados y no había una fuente oficial que el dueño pudiera actualizar sin depender de un desarrollador.
 - **Reservar exigía escribir o llamar.** El comensal, casi siempre desde el celular y llegando desde Facebook, Maps o WhatsApp, no podía ver si había mesa y reservar en menos de un minuto.
 - **Varios canales, ningún control de cupos.** Web, recepción, teléfono y WhatsApp podían prometer la misma mesa: el riesgo de doble reserva en pleno servicio era real.
 
-🛠️ **Stack**
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -525,7 +538,9 @@ erDiagram
 | Pruebas | Pest · Playwright | 5.3 · 1.65 |
 | Calidad | Laravel Pint · `tsc --noEmit` | 1.32 · — |
 
-💡 **Solución.** Un monolito Laravel con tres caras sobre una sola base de datos:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Un monolito Laravel con tres caras sobre una sola base de datos:
 
 | Quién | Qué usa | Para qué |
 |---|---|---|
@@ -537,7 +552,7 @@ erDiagram
 La pieza central es **un solo motor de disponibilidad**: la reserva web ocupa una mesa real del plano, y recepción, teléfono y WhatsApp pasan por el mismo servicio. La web se ve como una noche en Lima (pizarra, dorado apagado, Bodoni Moda) y usa fotos y reels del propio restaurante.
 
 <details>
-<summary><b>📐 Ver 5 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 5 diagramas y flujos</b></summary>
 <br>
 
 **CMS**
@@ -716,7 +731,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -724,9 +739,11 @@ erDiagram
 ### 4. Macondo POS
 > Punto de venta móvil para un restaurante: vender desde el celular, con historial e indicadores para el dueño.
 
-🧩 **Problema.** En un restaurante, el cobro de cada mesa, el control del catálogo y el cierre del día suelen llevarse en papel o en planillas separadas. Cuando cambian los precios, el historial deja de ser confiable, y el dueño no tiene a la mano cuánto se vendió, por qué medio de pago y qué productos salen más.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+En un restaurante, el cobro de cada mesa, el control del catálogo y el cierre del día suelen llevarse en papel o en planillas separadas. Cuando cambian los precios, el historial deja de ser confiable, y el dueño no tiene a la mano cuánto se vendió, por qué medio de pago y qué productos salen más.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión (manifiestos) |
 |---|---|---|
@@ -739,7 +756,9 @@ erDiagram
 | Base de datos y colas | PostgreSQL, Redis (predis) | — · ^2.3 |
 | Contenedores | Docker Compose (PHP-FPM, Nginx, PostgreSQL, Redis, worker, túnel opcional) | — |
 
-💡 **Solución.** MacondoPOS es una caja móvil conectada a una API:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+MacondoPOS es una caja móvil conectada a una API:
 
 - **Cajero:** arma el pedido con el catálogo, indica la mesa si corresponde, cobra en efectivo o QR y consulta sus propias ventas.
 - **Propietario:** administra productos y categorías, ve el historial de todas las ventas y revisa reportes diarios, mensuales y anuales.
@@ -749,7 +768,7 @@ La API guarda el nombre y el precio de cada producto en el momento de la venta, 
 Roles: `propietario` y `cajero`.
 
 <details>
-<summary><b>📐 Ver 3 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 3 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -809,7 +828,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -817,13 +836,15 @@ erDiagram
 ### 5. Solo Pastas
 > La web de la pizzería y el sistema del local en una sola app: el cliente pide y sigue su pedido, el equipo lo cocina, lo cobra y lo entrega.
 
-🧩 **Problema.** Una pizzería de barrio que vende en salón y por delivery suele trabajar con tres herramientas que no se hablan:
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
+
+Una pizzería de barrio que vende en salón y por delivery suele trabajar con tres herramientas que no se hablan:
 
 - **Los pedidos llegan por WhatsApp o por teléfono** y el cliente no tiene cómo saber si su pizza ya salió del horno, así que vuelve a escribir para preguntar.
 - **Las comandas del salón van en papel**: la cocina no ve en qué orden entraron y la caja suma a mano lo que se consumió en cada mesa.
 - **El stock de ingredientes y el contenido de la web** (fotos, historia, horarios, ubicación) se actualizan cuando alguien se acuerda, y para cambiar un texto de la página hay que pedírselo a un programador.
 
-🛠️ **Stack**
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 Versiones de `package.json`, con la instalada en `node_modules` cuando difiere.
 
@@ -845,7 +866,9 @@ Versiones de `package.json`, con la instalada en `node_modules` cuando difiere.
 | Calidad | ESLint (flat config) · typescript-eslint | 10.3 · 8.59 |
 | Paquetes | pnpm (`pnpm-lock.yaml`, `allowBuilds: better-sqlite3`) | — |
 
-💡 **Solución.** Una sola aplicación con dos caras sobre la misma base de datos:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Una sola aplicación con dos caras sobre la misma base de datos:
 
 - **Sitio público** (`/`): landing con el menú, carrito, checkout sin cuenta para delivery o retiro (`/checkout`) y una página de seguimiento (`/tracking/:numero`) que se actualiza sola cada 5 segundos.
 - **Panel del local** (`/admin`): pedidos web, comandas de salón, mesas, menú, caja, inventario, personal y el contenido de la web.
@@ -858,7 +881,7 @@ Versiones de `package.json`, con la instalada en `node_modules` cuando difiere.
 | **Super admin** | Igual que admin; el rol existe en la base para el dueño del sistema. |
 
 <details>
-<summary><b>📐 Ver 5 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 5 diagramas y flujos</b></summary>
 <br>
 
 **Panel /admin**
@@ -1044,7 +1067,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -1052,9 +1075,11 @@ erDiagram
 ### 6. Apple Boss
 > Sistema de gestión comercial e inventario, con tienda pública, para un negocio de productos y servicios tecnológicos.
 
-🧩 **Problema.** Un negocio de equipos Apple y tecnología vende unidades **únicas**: cada celular, computadora o accesorio tiene su código, su IMEI o su número de serie. Antes del sistema, el stock, las reservas, las permutas y las reparaciones vivían en planillas y en la memoria del equipo de ventas. Eso producía dobles ventas sobre el mismo equipo, costos y procedencias visibles para quien no debía verlos, y reportes que no coincidían con la caja.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+Un negocio de equipos Apple y tecnología vende unidades **únicas**: cada celular, computadora o accesorio tiene su código, su IMEI o su número de serie. Antes del sistema, el stock, las reservas, las permutas y las reparaciones vivían en planillas y en la memoria del equipo de ventas. Eso producía dobles ventas sobre el mismo equipo, costos y procedencias visibles para quien no debía verlos, y reportes que no coincidían con la caja.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -1069,7 +1094,9 @@ erDiagram
 | Pruebas | PHPUnit · SQLite en memoria | 12.5 |
 | Infraestructura | Docker Compose · Caddy · Cloudflare | Apache con PHP 8.5 en la imagen |
 
-💡 **Solución.** **Apple Boss** centraliza ventas, reservas, clientes, cotizaciones, inventario, egresos y servicio técnico en un solo panel, y publica una **tienda en línea** con el mismo inventario, sin exponer datos internos.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+**Apple Boss** centraliza ventas, reservas, clientes, cotizaciones, inventario, egresos y servicio técnico en un solo panel, y publica una **tienda en línea** con el mismo inventario, sin exponer datos internos.
 
 | Rol | Qué hace en el sistema |
 |---|---|
@@ -1078,7 +1105,7 @@ erDiagram
 | **Cliente de la tienda** | Navega el catálogo, compara modelos, arma su carrito, paga y sigue su pedido. |
 
 <details>
-<summary><b>📐 Ver 5 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 5 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -1193,7 +1220,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -1201,9 +1228,11 @@ erDiagram
 ### 7. Blackphone (Axel)
 > Sistema interno para una tienda de tecnología: inventario, ventas, reservas, servicio técnico y reportes, con varias sucursales.
 
-🧩 **Problema.** Una tienda de celulares y computadoras con más de una sucursal necesita saber, a la vez, qué equipo tiene cada una, quién lo vendió, cuánto cuesta y dónde está. Con planillas separadas por sucursal, un mismo equipo podía venderse dos veces, un traspaso quedaba sin registrar y la caja del día no cuadraba con las boletas. El servicio técnico y los accesorios sumaban otra planilla.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+Una tienda de celulares y computadoras con más de una sucursal necesita saber, a la vez, qué equipo tiene cada una, quién lo vendió, cuánto cuesta y dónde está. Con planillas separadas por sucursal, un mismo equipo podía venderse dos veces, un traspaso quedaba sin registrar y la caja del día no cuadraba con las boletas. El servicio técnico y los accesorios sumaban otra planilla.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -1216,7 +1245,9 @@ erDiagram
 | Integraciones | Google Drive (Flysystem) · n8n | n8n con token de automatización |
 | Contenedores | Docker Compose | `app`, `db`, `queue`, `scheduler`, `node`, `adminer` |
 
-💡 **Solución.** **Blackphone** —la empresa de celulares y servicio técnico de **Axel**— opera con este sistema **privado**: no tiene tienda pública ni pantallas abiertas a internet. Todo lo que está detrás de `/` pide sesión. Concentra el inventario, las ventas, las reservas con anticipo, el servicio técnico, las cotizaciones, los egresos, los clientes y los reportes de todas las sucursales, con un panel para administración y otro para vendedores.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+**Blackphone** —la empresa de celulares y servicio técnico de **Axel**— opera con este sistema **privado**: no tiene tienda pública ni pantallas abiertas a internet. Todo lo que está detrás de `/` pide sesión. Concentra el inventario, las ventas, las reservas con anticipo, el servicio técnico, las cotizaciones, los egresos, los clientes y los reportes de todas las sucursales, con un panel para administración y otro para vendedores.
 
 | Rol | Qué hace |
 |---|---|
@@ -1225,7 +1256,7 @@ erDiagram
 | **Vendedor** | Vende, reserva, recibe equipos de servicio técnico y cotiza desde su propio panel. |
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -1301,15 +1332,17 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
 <a name="sistema-boss"></a>
 ### 8. Sistema Boss
-🧩 **Problema.** La tienda vende equipos **por unidad** (cada uno con su IMEI o serie), maneja precios en dólares y en bolivianos según un tipo de cambio que cambia, y recibe consultas de WhatsApp a cualquier hora. Sin un sistema, cada respuesta depende de quién esté atendiendo, el stock puede venderse dos veces y un precio cotizado puede no coincidir con el del día.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+La tienda vende equipos **por unidad** (cada uno con su IMEI o serie), maneja precios en dólares y en bolivianos según un tipo de cambio que cambia, y recibe consultas de WhatsApp a cualquier hora. Sin un sistema, cada respuesta depende de quién esté atendiendo, el stock puede venderse dos veces y un precio cotizado puede no coincidir con el del día.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa                  | Tecnología                 | Versión                 |
 | --------------------- | -------------------------- | ----------------------- |
@@ -1338,7 +1371,9 @@ Todo corre **dentro del contenedor** con `./vendor/bin/sail`. `npm run` falla a 
 
 ---
 
-💡 **Solución.** APPLE BOSS vende productos Apple nuevos, sellados, seminuevos y a pedido, además de accesorios, incluida su marca propia MYSKIN. Este sistema le da:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+APPLE BOSS vende productos Apple nuevos, sellados, seminuevos y a pedido, además de accesorios, incluida su marca propia MYSKIN. Este sistema le da:
 
 - **Catálogo e inventario** por unidad (IMEI o serie) o por cantidad, con stock separado en **disponible, reservado, a pedido y sin confirmar**.
 - **Precios** en dólares y bolivianos con un **tipo de cambio autorizado** en el panel, con vigencia.
@@ -1353,7 +1388,7 @@ Todo corre **dentro del contenedor** con `./vendor/bin/sail`. `npm run` falla a 
 ---
 
 <details>
-<summary><b>📐 Ver 9 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 9 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -1630,7 +1665,7 @@ flowchart LR
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -1638,7 +1673,9 @@ flowchart LR
 ### 9. Odessa Oil
 > Cada equipo a presión con su estado real, su vencimiento y su recorrido por el taller, sin planillas sueltas.
 
-🧩 **Problema.** Odessa Oil inspecciona, repara y certifica equipos a presión de sus clientes. Cada pieza tiene una o varias certificaciones (COS, COC…) que vencen, y un equipo que sale a operar con una certificación vencida es un riesgo y un incumplimiento. Antes de este sistema, la información vivía en una plataforma anterior (auditada en [`docs/auditoria-sistema-actual.md`](docs/auditoria-sistema-actual.md)) con problemas concretos:
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
+
+Odessa Oil inspecciona, repara y certifica equipos a presión de sus clientes. Cada pieza tiene una o varias certificaciones (COS, COC…) que vencen, y un equipo que sale a operar con una certificación vencida es un riesgo y un incumplimiento. Antes de este sistema, la información vivía en una plataforma anterior (auditada en [`docs/auditoria-sistema-actual.md`](docs/auditoria-sistema-actual.md)) con problemas concretos:
 
 - **El estado de un equipo no se podía confiar.** Se veía como un ícono de color, sin texto, y no había forma de saber qué informe lo había fijado.
 - **Saber si un equipo armado podía salir** obligaba a abrir el set y revisar sus piezas una por una.
@@ -1648,7 +1685,7 @@ flowchart LR
 
 El detalle, punto por punto y con la solución aplicada, está en [`docs/problemas-y-oportunidades.md`](docs/problemas-y-oportunidades.md).
 
-🛠️ **Stack**
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -1667,7 +1704,9 @@ El detalle, punto por punto y con la solución aplicada, está en [`docs/problem
 
 <sub>Versiones de `composer.lock` y `package-lock.json`.</sub>
 
-💡 **Solución.** Una plataforma web multiempresa que registra el **inventario de cada cliente**, sus **informes de inspección** y vencimientos, y el **recorrido del equipo por el taller**, con aislamiento estricto entre organizaciones y auditoría de cada cambio.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Una plataforma web multiempresa que registra el **inventario de cada cliente**, sus **informes de inspección** y vencimientos, y el **recorrido del equipo por el taller**, con aislamiento estricto entre organizaciones y auditoría de cada cambio.
 
 - **El estado de un equipo se deriva, nunca se asigna a mano**: sale de sus informes finales.
 - **Cada equipo tiene una fecha «mandar antes de»** calculada con los días de taller de cada servicio, para que llegue y vuelva sin perder la certificación.
@@ -1683,7 +1722,7 @@ El detalle, punto por punto y con la solución aplicada, está en [`docs/problem
 El detalle está en la [matriz de roles y permisos](docs/matriz-roles-permisos.md), que se genera desde `Permissions::roleMatrix()`.
 
 <details>
-<summary><b>📐 Ver 5 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 5 diagramas y flujos</b></summary>
 <br>
 
 **Reportes avisos y administración**
@@ -1878,7 +1917,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -1886,14 +1925,16 @@ erDiagram
 ### 10. Moldpack
 > Sitio editorial, panel de gestión, portal B2B de clientes y facturación electrónica ARCA de Moldpack, en una sola aplicación Laravel.
 
-🧩 **Problema.** Moldpack es un fabricante argentino de packaging gastronómico que vende a distribuidores y comercios. Necesita presentarse como fabricante confiable, que cada visita encuentre productos y catálogos, convertir esas visitas en consultas comerciales y llevar cada pedido hasta su factura. Con el sistema anterior:
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
+
+Moldpack es un fabricante argentino de packaging gastronómico que vende a distribuidores y comercios. Necesita presentarse como fabricante confiable, que cada visita encuentre productos y catálogos, convertir esas visitas en consultas comerciales y llevar cada pedido hasta su factura. Con el sistema anterior:
 
 - El sitio era un **Laravel 9 con Blade, Bootstrap 4 y Laravel Mix**; la identidad visual nueva, definida en Figma, se construyó sobre una base nueva.
 - **Logística, Contabilidad, Facturación y la zona privada** mostraban datos que no siempre coincidían entre sí (el README del sistema anterior registra las correcciones que se hicieron para reducirlo).
 - La facturación electrónica dependía de un **SDK de AFIP embebido** en los controladores, cuando el CAE es irreversible y un error de datos del cliente tiene que detectarse antes de pedirlo.
 - Los pedidos se reparten entre **factura A/B y remito X** (sin valor fiscal) y cada parte necesita sus propios documentos, coherentes con lo que se preparó y se envió.
 
-🛠️ **Stack**
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -1908,7 +1949,9 @@ erDiagram
 | Pruebas | PHPUnit · scripts de navegador en `tests/Browser` | 13.3 |
 | Entorno | Node (`.nvmrc`) · npm | 26.7.0 · 11.12 |
 
-💡 **Solución.** Una sola aplicación Laravel con cuatro frentes, cada uno con su propia identidad de acceso:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Una sola aplicación Laravel con cuatro frentes, cada uno con su propia identidad de acceso:
 
 | Frente | Quién lo usa | Interfaz |
 |---|---|---|
@@ -1920,7 +1963,7 @@ erDiagram
 Roles del panel (definidos en `app/Support/AdminAccess.php`): **super administrador**, **administrador**, **comercial**, **logística**, **contabilidad** y **editor**. Cada módulo exige su permiso y los importes se ocultan a los roles que no deben verlos.
 
 <details>
-<summary><b>📐 Ver 6 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 6 diagramas y flujos</b></summary>
 <br>
 
 **Zona privada de clientes**
@@ -2069,7 +2112,7 @@ flowchart LR
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -2077,9 +2120,11 @@ flowchart LR
 ### 11. Tickets Osole
 > Mesa de ayuda interna para la atención de solicitudes de clientes: asignación, conversación, SLA y reportes.
 
-🧩 **Problema.** Una agencia de desarrollo web que también ofrece hosting y soporte recibe pedidos de clientes por correo, mensajes y llamadas. Sin un registro común, un pedido se pierde entre personas, nadie sabe quién lo tiene, los vencimientos no se controlan y no hay antecedentes del trabajo hecho en cada cuenta.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+Una agencia de desarrollo web que también ofrece hosting y soporte recibe pedidos de clientes por correo, mensajes y llamadas. Sin un registro común, un pedido se pierde entre personas, nadie sabe quién lo tiene, los vencimientos no se controlan y no hay antecedentes del trabajo hecho en cada cuenta.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión (composer.json / package.json) |
 |---|---|---|
@@ -2093,7 +2138,9 @@ flowchart LR
 
 El efecto visual de la página pública usa Three.js y Vanta, cargados en el front.
 
-💡 **Solución.** Osole Tickets es un sistema de mesa de ayuda: el cliente abre el ticket sin cuenta (o desde su portal), el equipo lo asigna, conversa con el cliente con notas internas, controla los plazos SLA y mide la atención con reportes.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Osole Tickets es un sistema de mesa de ayuda: el cliente abre el ticket sin cuenta (o desde su portal), el equipo lo asigna, conversa con el cliente con notas internas, controla los plazos SLA y mide la atención con reportes.
 
 Roles que usa el sistema:
 
@@ -2104,7 +2151,7 @@ Roles que usa el sistema:
 - **Diseñadora industrial**: rol propio, con permisos acotados por el sistema de roles.
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -2181,7 +2228,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -2189,9 +2236,11 @@ erDiagram
 ### 12. Pórpora — Producción
 > Sistema de producción de Porpora: configura productos, crea órdenes de fabricación y registra el avance de cada proceso en planta.
 
-🧩 **Problema.** En una planta, cada orden de fabricación depende de la configuración del producto (su estructura, sus procesos y sus controles), del operario que la trabaja, de las máquinas y de las paradas. Si esa información vive en planillas separadas, la orden no refleja fielmente el producto y no queda registro de quién hizo qué, cuándo y con qué resultado.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+En una planta, cada orden de fabricación depende de la configuración del producto (su estructura, sus procesos y sus controles), del operario que la trabaja, de las máquinas y de las paradas. Si esa información vive en planillas separadas, la orden no refleja fielmente el producto y no queda registro de quién hizo qué, cuándo y con qué resultado.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión (composer.json / package.json / Dockerfile) |
 |---|---|---|
@@ -2203,7 +2252,9 @@ erDiagram
 | Pruebas | PHPUnit · Mockery · Pint | PHPUnit ^12.5 |
 | Integración | Tango (API de ERP) | cliente propio `TangoApi` |
 
-💡 **Solución.** El sistema centraliza la configuración de productos y estructuras, genera órdenes de fabricación con sus pasos, registra turnos, pausas y avance de cada proceso, y guarda los controles de calidad y los rechazos. Cada orden conserva los datos del producto con los que se creó.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+El sistema centraliza la configuración de productos y estructuras, genera órdenes de fabricación con sus pasos, registra turnos, pausas y avance de cada proceso, y guarda los controles de calidad y los rechazos. Cada orden conserva los datos del producto con los que se creó.
 
 Roles que usa el sistema:
 
@@ -2212,7 +2263,7 @@ Roles que usa el sistema:
 - **Calidad**: registra mediciones según el plan y los rechazos con su motivo.
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -2273,7 +2324,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -2281,11 +2332,13 @@ erDiagram
 ### 13. Tigo — Tickets de soporte
 > Backend REST/JSON del proyecto P13 del Bootcamp de Desarrollo Tigo: cada ticket nace con su SLA, deja rastro de cada cambio y se escala solo cuando vence.
 
-🧩 **Problema.** En una mesa de soporte, un ticket que nadie mide se pierde: la urgencia queda a criterio de quien lo lee, nadie sabe cuánto tiempo le queda para cumplir el acuerdo de servicio, un caso cerrado vuelve a recibir mensajes y, cuando algo se vence, el escalamiento depende de que alguien se acuerde. Tampoco queda rastro de quién asignó, comentó o cambió el estado.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
+
+En una mesa de soporte, un ticket que nadie mide se pierde: la urgencia queda a criterio de quien lo lee, nadie sabe cuánto tiempo le queda para cumplir el acuerdo de servicio, un caso cerrado vuelve a recibir mensajes y, cuando algo se vence, el escalamiento depende de que alguien se acuerde. Tampoco queda rastro de quién asignó, comentó o cambió el estado.
 
 El proyecto **P13 — Tickets de Soporte** del Bootcamp de Desarrollo Tigo pide resolver eso como un servicio backend, sobre el template oficial y con los conectores de **Tigo Library**.
 
-🛠️ **Stack**
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -2302,7 +2355,9 @@ El proyecto **P13 — Tickets de Soporte** del Bootcamp de Desarrollo Tigo pide 
 | Contenedor | `gcr.io/distroless/nodejs22-debian13:nonroot` | Debian 13 |
 | CI | Jenkins (`Jenkinsfile` declarativo) | — |
 
-💡 **Solución.** Una API REST/JSON versionada en `/api/v1` que gestiona el ciclo de vida completo del ticket:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Una API REST/JSON versionada en `/api/v1` que gestiona el ciclo de vida completo del ticket:
 
 - **Cliente**: crea y actualiza tickets y agrega comentarios.
 - **Agente de soporte**: recibe tickets asignados, comenta y avanza el estado.
@@ -2311,7 +2366,7 @@ El proyecto **P13 — Tickets de Soporte** del Bootcamp de Desarrollo Tigo pide 
 Cada operación de negocio queda registrada en `actividad_ticket` con actor, tipo y detalle. En la implementación local el llamador se identifica con la cabecera `X-ClientId`; OAuth2/OIDC con JWT está modelado como integración objetivo en el [repositorio de arquitectura](https://gitlab.com/santiagoabastoortega-group/p13-arquitectura-tickets-soporte), no implementado aquí.
 
 <details>
-<summary><b>📐 Ver 6 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 6 diagramas y flujos</b></summary>
 <br>
 
 **Seguridad HTTP**
@@ -2460,7 +2515,7 @@ flowchart TB
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -2469,17 +2524,19 @@ flowchart TB
 
 <a name="industria"></a>
 
-## E-commerce, catálogos y sitios industriales
+## <img src="docs/readme/ic-industria.svg" width="26" height="26" alt=""> E-commerce, catálogos y sitios industriales
 
 <a name="conar"></a>
 ### 14. Conar
 > Sitio corporativo con catálogo técnico, panel de contenido y solicitudes comerciales.
 
-🧩 **Problema.** Un catálogo técnico con muchas familias de productos, especificaciones, descargas y industrias relacionadas no entra bien en una página estática. Cada cambio de producto, de ficha técnica o de novedad requería intervención de desarrollo, y las consultas comerciales (contacto, suscripción y presupuesto con datos técnicos y adjuntos) llegaban sin un registro ordenado.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
+
+Un catálogo técnico con muchas familias de productos, especificaciones, descargas y industrias relacionadas no entra bien en una página estática. Cada cambio de producto, de ficha técnica o de novedad requería intervención de desarrollo, y las consultas comerciales (contacto, suscripción y presupuesto con datos técnicos y adjuntos) llegaban sin un registro ordenado.
 
 Además, el catálogo necesitaba estar disponible en español, portugués e inglés sin duplicar páginas a mano.
 
-🛠️ **Stack**
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 | --- | --- | --- |
@@ -2494,7 +2551,9 @@ Además, el catálogo necesitaba estar disponible en español, portugués e ingl
 | Pruebas | PHPUnit | ^11.5 |
 | Base de datos | MySQL | configurada en `.env.example` |
 
-💡 **Solución.** **CONAR** es una aplicación Laravel con dos caras:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+**CONAR** es una aplicación Laravel con dos caras:
 
 - **Sitio público**, renderizado con Blade: catálogo por categorías, subcategorías y productos, con especificaciones, imágenes, descargas e industrias; páginas corporativas, novedades y formularios comerciales. El contenido se muestra en el idioma elegido por el visitante.
 - **Panel `/admin`**, con Inertia y React, para el equipo interno: catálogo, CMS, descargas, novedades, clientes, contactos, newsletter, usuarios y módulos de recursos humanos.
@@ -2502,7 +2561,7 @@ Además, el catálogo necesitaba estar disponible en español, portugués e ingl
 El panel exige sesión autenticada. Las solicitudes llegan a una bandeja y disparan notificaciones por correo a los destinatarios configurados.
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -2574,7 +2633,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -2582,9 +2641,11 @@ erDiagram
 ### 15. Felrro
 > Sitio corporativo bilingüe y CMS para un catálogo de productos eléctricos industriales.
 
-🧩 **Problema.** La empresa vende productos eléctricos industriales con fichas técnicas, aplicaciones, certificados y líneas de producto que cambian con frecuencia. Publicar o corregir un dato técnico exigía tocar el código, y las cotizaciones y consultas llegaban sin un flujo ordenado ni en los dos idiomas que usan sus clientes.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+La empresa vende productos eléctricos industriales con fichas técnicas, aplicaciones, certificados y líneas de producto que cambian con frecuencia. Publicar o corregir un dato técnico exigía tocar el código, y las cotizaciones y consultas llegaban sin un flujo ordenado ni en los dos idiomas que usan sus clientes.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 | --- | --- | --- |
@@ -2599,7 +2660,9 @@ erDiagram
 | Pruebas | PHPUnit | según `composer.json` |
 | Base de datos | MySQL o SQLite según `DB_CONNECTION` | — |
 
-💡 **Solución.** **Felrro** es una aplicación Laravel con dos caras:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+**Felrro** es una aplicación Laravel con dos caras:
 
 - **Sitio público** en español e inglés, renderizado en servidor con Blade: catálogo por categorías y sectores, fichas de producto, novedades, certificados, descargas y páginas institucionales. Un visitante arma una cotización en un carrito de sesión y la envía.
 - **Panel administrativo** con React e Inertia para el equipo administrador: CMS, catálogo, importación de fichas técnicas desde hojas de cálculo, cotizaciones, contactos, newsletter, certificados y recursos humanos.
@@ -2607,7 +2670,7 @@ erDiagram
 Los roles son `user`, `editor` y `admin`; el panel exige el rol `admin`.
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -2681,7 +2744,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -2689,9 +2752,11 @@ erDiagram
 ### 16. Fitinox
 > Plataforma corporativa y comercial: sitio bilingüe, catálogo técnico, portal de clientes, pedidos y API de integración.
 
-🧩 **Problema.** La empresa tenía su catálogo industrial repartido entre hojas de cálculo, un sitio institucional y procesos manuales para cotizar, vender a clientes con precios distintos y llevar pedidos. Cada cambio de precio, de stock o de ficha técnica se repetía en varios lugares, y el sistema de gestión de la empresa no recibía la información comercial de forma ordenada.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+La empresa tenía su catálogo industrial repartido entre hojas de cálculo, un sitio institucional y procesos manuales para cotizar, vender a clientes con precios distintos y llevar pedidos. Cada cambio de precio, de stock o de ficha técnica se repetía en varios lugares, y el sistema de gestión de la empresa no recibía la información comercial de forma ordenada.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 | --- | --- | --- |
@@ -2705,7 +2770,9 @@ erDiagram
 | Pruebas | PHPUnit | según `composer.json` |
 | Base de datos | MySQL | configurada en `.env.example` |
 
-💡 **Solución.** **FITINOX** es una aplicación Laravel con cuatro zonas:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+**FITINOX** es una aplicación Laravel con cuatro zonas:
 
 - **Sitio público** en español e inglés, renderizado con Blade: institucional, catálogo jerárquico con variantes técnicas, fichas PDF, distribuidores y presupuestos.
 - **Portal de clientes**: registro con aprobación, precios y listas privadas por cuenta, carrito, pedidos y comprobantes.
@@ -2715,7 +2782,7 @@ erDiagram
 Roles: superadministración, administración, edición de contenido y clientes.
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -2796,7 +2863,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -2804,9 +2871,11 @@ erDiagram
 ### 17. Iron-Screw
 > Sistema interno que sincroniza órdenes desde Contabilium y prepara etiquetas térmicas según la presentación de cada artículo.
 
-🧩 **Problema.** El depósito preparaba pedidos a partir de órdenes de venta que vivían en Contabilium, y las etiquetas dependían de cómo se presentaba cada artículo: por caja, a granel, por unidades, por kilogramos o por cantidad exacta del pedido. Esa lógica no existe en el sistema contable, así que se resolvía a mano, con riesgo de errores de cantidad y de etiquetas incorrectas.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+El depósito preparaba pedidos a partir de órdenes de venta que vivían en Contabilium, y las etiquetas dependían de cómo se presentaba cada artículo: por caja, a granel, por unidades, por kilogramos o por cantidad exacta del pedido. Esa lógica no existe en el sistema contable, así que se resolvía a mano, con riesgo de errores de cantidad y de etiquetas incorrectas.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 | --- | --- | --- |
@@ -2818,7 +2887,9 @@ erDiagram
 | Pruebas | PHPUnit | según `composer.json` |
 | Base de datos | MySQL | configurada en `.env.example` |
 
-💡 **Solución.** **Iron Screw** es una aplicación Laravel de uso interno, para personal de depósito y administración:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+**Iron Screw** es una aplicación Laravel de uso interno, para personal de depósito y administración:
 
 - Sincroniza productos y órdenes desde Contabilium, de forma manual y programada, sin modificar los datos externos.
 - Guarda en la base local la configuración operativa: presentaciones, cantidades por caja, ajustes de etiqueta y estado local de cada orden.
@@ -2827,7 +2898,7 @@ erDiagram
 Los roles y permisos definen qué puede ver y cambiar cada usuario.
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -2903,7 +2974,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -2911,11 +2982,13 @@ erDiagram
 ### 18. Calderas Hercal
 > Sitio corporativo industrial con panel CMS y bandeja unificada de presupuestos.
 
-🧩 **Problema.** Una empresa industrial que vende calderas y equipos necesitaba dos cosas que no convivían bien: un sitio que mostrara servicios, equipos y trabajos realizados a potenciales clientes, y una forma de recibir consultas comerciales sin depender de plantillas o de intervenir la base de datos para cada cambio de contenido.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
+
+Una empresa industrial que vende calderas y equipos necesitaba dos cosas que no convivían bien: un sitio que mostrara servicios, equipos y trabajos realizados a potenciales clientes, y una forma de recibir consultas comerciales sin depender de plantillas o de intervenir la base de datos para cada cambio de contenido.
 
 Sin una herramienta propia, cada actualización de un servicio, una ficha de equipo o una foto de obra dependía de quien pudiera tocar el código, y las solicitudes de contacto y presupuesto llegaban dispersas.
 
-🛠️ **Stack**
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 | --- | --- | --- |
@@ -2930,7 +3003,9 @@ Sin una herramienta propia, cada actualización de un servicio, una ficha de equ
 | Pruebas | PHPUnit | 11 |
 | Base de datos | SQLite por defecto (MySQL, MariaDB, PostgreSQL y SQL Server soportados por configuración) | — |
 
-💡 **Solución.** **Calderas Hercal** es una aplicación Laravel con dos caras:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+**Calderas Hercal** es una aplicación Laravel con dos caras:
 
 - **Sitio público** para visitantes y clientes potenciales: inicio, empresa, servicios, equipos, trabajos realizados, clientes, contacto y solicitud de presupuesto. Se renderiza en servidor con Blade.
 - **Panel administrativo** para el personal autorizado: edición de páginas por secciones, catálogos, proyectos, multimedia, SEO y la bandeja de solicitudes. Se construye con React e Inertia.js.
@@ -2938,7 +3013,7 @@ Sin una herramienta propia, cada actualización de un servicio, una ficha de equ
 El acceso al panel exige sesión autenticada y el permiso explícito `can_access_admin`. El personal edita contenido; el diseño de las páginas no cambia.
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -3017,7 +3092,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -3025,9 +3100,11 @@ erDiagram
 ### 19. Gran Sasso
 > Sitio corporativo con catálogo técnico de cajas de cambio, zona privada de clientes y panel de gestión.
 
-🧩 **Problema.** Encontrar una pieza para una caja de cambios exige cruzar marca, caja, producto y códigos de fabricante original (OEM). Ese cruce se hacía en planillas, y los precios y documentos de los clientes mayoristas no tenían un lugar propio: se enviaban por otros medios y se actualizaban a mano.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+Encontrar una pieza para una caja de cambios exige cruzar marca, caja, producto y códigos de fabricante original (OEM). Ese cruce se hacía en planillas, y los precios y documentos de los clientes mayoristas no tenían un lugar propio: se enviaban por otros medios y se actualizaban a mano.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 | --- | --- | --- |
@@ -3042,14 +3119,16 @@ erDiagram
 | Build | Vite | 7.3.1 |
 | Base de datos | SQLite en `.env.example`; otras conexiones por configuración | — |
 
-💡 **Solución.** **Gran Sasso** es una aplicación Laravel con tres perfiles:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+**Gran Sasso** es una aplicación Laravel con tres perfiles:
 
 - **Visitantes**: sitio institucional y catálogo navegable por marca, caja de cambios y producto, con fichas PDF y documentación.
 - **Clientes registrados**: zona privada con listas de precios, novedades, notificaciones e información de pagos. Las cuentas nuevas quedan pendientes hasta que el equipo las aprueba.
 - **Administración**: panel para catálogo, importaciones, CMS, usuarios, mensajes y estadísticas.
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -3120,7 +3199,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -3128,9 +3207,11 @@ erDiagram
 ### 20. Nicolais Mario e Hijo
 > Sitio corporativo con catálogo técnico de materiales, zona privada de clientes y panel de contenido.
 
-🧩 **Problema.** La empresa maneja un catálogo técnico amplio: familias, líneas, series, grados, formas, normas y composición química. Esa información vivía dispersa en planillas y documentos, y las consultas de clientes (precios, stock, presupuestos, pagos) llegaban por canales separados. Calcular el peso de una pieza y verificar una norma eran pasos manuales.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+La empresa maneja un catálogo técnico amplio: familias, líneas, series, grados, formas, normas y composición química. Esa información vivía dispersa en planillas y documentos, y las consultas de clientes (precios, stock, presupuestos, pagos) llegaban por canales separados. Calcular el peso de una pieza y verificar una norma eran pasos manuales.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 | --- | --- | --- |
@@ -3146,14 +3227,16 @@ erDiagram
 | Hojas de cálculo | PhpSpreadsheet | según `composer.json` |
 | Base de datos | MySQL | configurada en `.env.example` |
 
-💡 **Solución.** **Nicolais Mario e Hijo** es una aplicación Laravel con tres perfiles:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+**Nicolais Mario e Hijo** es una aplicación Laravel con tres perfiles:
 
 - **Visitantes**: sitio institucional, catálogo público jerárquico, buscador, calculadora de peso y consulta de ofertas y novedades.
 - **Clientes**: zona privada con acceso sujeto a aprobación, catálogo privado, carrito, pedidos, presupuestos, servicios adicionales, listas de precios y comprobantes de pago.
 - **Administración**: panel para contenidos, catálogo, importaciones desde Excel y CSV, usuarios, medios, SEO y campañas de newsletter.
 
 <details>
-<summary><b>📐 Ver 5 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 5 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -3238,7 +3321,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -3246,9 +3329,11 @@ erDiagram
 ### 21. Panelcar
 > Plataforma web y CMS para publicar el catálogo técnico de Panelcar y canalizar sus solicitudes comerciales.
 
-🧩 **Problema.** Un catálogo técnico con muchas familias, subfamilias y productos, con fichas, especificaciones y documentos, no se mantiene bien en hojas sueltas ni en una página estática: cada cambio de precio, ficha o aplicación exige tocar código o repetir el trabajo en varios lugares. Además, las consultas de cliente (pedir catálogo, pedir presupuesto, escribir por contacto) llegan por canales dispersos y sin registro.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+Un catálogo técnico con muchas familias, subfamilias y productos, con fichas, especificaciones y documentos, no se mantiene bien en hojas sueltas ni en una página estática: cada cambio de precio, ficha o aplicación exige tocar código o repetir el trabajo en varios lugares. Además, las consultas de cliente (pedir catálogo, pedir presupuesto, escribir por contacto) llegan por canales dispersos y sin registro.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -3262,7 +3347,9 @@ erDiagram
 | Pruebas | PHPUnit | ^12.0 |
 | Base de datos | MySQL/MariaDB, PostgreSQL, SQL Server o SQLite (configurable) | según el entorno |
 
-💡 **Solución.** Panelcar es un sitio público con catálogo navegable por familias y subfamilias, más un panel administrativo para cargar y ordenar ese contenido sin tocar el diseño. Cada consulta comercial queda guardada en la base de datos y puede notificarse por correo.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Panelcar es un sitio público con catálogo navegable por familias y subfamilias, más un panel administrativo para cargar y ordenar ese contenido sin tocar el diseño. Cada consulta comercial queda guardada en la base de datos y puede notificarse por correo.
 
 Roles que usa el sistema:
 
@@ -3271,7 +3358,7 @@ Roles que usa el sistema:
 - **Administrador**: gestiona catálogo, contenido, solicitudes, newsletter y usuarios; los usuarios administrativos con `super.admin` gestionan las cuentas del panel.
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -3335,7 +3422,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -3343,9 +3430,11 @@ erDiagram
 ### 22. Tarea SRL
 > Sitio corporativo y plataforma de contenido y catálogo técnico para una empresa B2B del sector industrial.
 
-🧩 **Problema.** Una empresa industrial que vende a otras empresas necesita que su catálogo técnico sea consultable por familia, subfamilia y ficha, y que cada pedido de presupuesto llegue completo y con registro. Cuando el catálogo vive en archivos sueltos y las consultas llegan por correo, las fichas quedan desactualizadas y los pedidos se pierden o se repiten.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+Una empresa industrial que vende a otras empresas necesita que su catálogo técnico sea consultable por familia, subfamilia y ficha, y que cada pedido de presupuesto llegue completo y con registro. Cuando el catálogo vive en archivos sueltos y las consultas llegan por correo, las fichas quedan desactualizadas y los pedidos se pierden o se repiten.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión (composer.json / package.json) |
 |---|---|---|
@@ -3359,7 +3448,9 @@ erDiagram
 | Pruebas | PHPUnit | ^11.5 |
 | Base de datos | MySQL recomendado (SQLite en pruebas) | según el entorno |
 
-💡 **Solución.** Tarea SRL es un sitio público con catálogo jerárquico, fichas en PDF y solicitudes de presupuesto, respaldado por un panel administrativo que edita el contenido sin tocar código. Las consultas quedan guardadas, con sus ítems y adjuntos, y notifican por correo.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Tarea SRL es un sitio público con catálogo jerárquico, fichas en PDF y solicitudes de presupuesto, respaldado por un panel administrativo que edita el contenido sin tocar código. Las consultas quedan guardadas, con sus ítems y adjuntos, y notifican por correo.
 
 Roles que usa el sistema:
 
@@ -3367,7 +3458,7 @@ Roles que usa el sistema:
 - **Administrador**: usuario con acceso concedido (`can_access_admin`) que gestiona catálogo, contenido, medios, solicitudes, newsletter y usuarios.
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -3432,7 +3523,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -3440,9 +3531,11 @@ erDiagram
 ### 23. San Justo Iluminación
 > Sitio público de iluminación con catálogo filtrable, zona privada de pedidos y panel administrativo.
 
-🧩 **Problema.** Una tienda de iluminación con mucho catálogo (líneas, espacios, usos, ambientes y colores) necesita que el cliente encuentre el producto correcto sin recorrer páginas, y que los clientes con cuenta compren con sus precios y condiciones. Cuando los precios, las listas y los pedidos viven en planillas, cada cambio es manual y se repite en varios lugares.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+Una tienda de iluminación con mucho catálogo (líneas, espacios, usos, ambientes y colores) necesita que el cliente encuentre el producto correcto sin recorrer páginas, y que los clientes con cuenta compren con sus precios y condiciones. Cuando los precios, las listas y los pedidos viven en planillas, cada cambio es manual y se repite en varios lugares.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión (composer.json / package.json) |
 |---|---|---|
@@ -3455,7 +3548,9 @@ erDiagram
 | Protección de formularios | `google/recaptcha` | ^1.3 |
 | Pruebas | Pest · PHPUnit | Pest ^3.8 |
 
-💡 **Solución.** San Justo Iluminación es un sitio con catálogo filtrado por espacio, uso, línea, ambiente y código, más una zona privada donde los clientes registrados arman pedidos con sus listas de precios. El panel administrativo mantiene el catálogo, los contenidos y los datos comerciales, e importa productos, precios y clientes desde Excel en segundo plano.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+San Justo Iluminación es un sitio con catálogo filtrado por espacio, uso, línea, ambiente y código, más una zona privada donde los clientes registrados arman pedidos con sus listas de precios. El panel administrativo mantiene el catálogo, los contenidos y los datos comerciales, e importa productos, precios y clientes desde Excel en segundo plano.
 
 Roles que usa el sistema:
 
@@ -3464,7 +3559,7 @@ Roles que usa el sistema:
 - **Administrador**: guard propio (`admin`), gestiona catálogo, contenidos y datos comerciales, y ejecuta importaciones.
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -3524,7 +3619,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -3532,9 +3627,11 @@ erDiagram
 ### 24. Elite — Inmobiliaria
 > Un solo sistema para el sitio público de la inmobiliaria y para la operación diaria de su equipo.
 
-🧩 **Problema.** Una inmobiliaria necesita dos cosas a la vez: un sitio público que se vea a la altura de sus propiedades, y un espacio de trabajo donde el equipo carga inmuebles, capta propietarios, sigue leads y agenda visitas. Cuando ambas partes viven en herramientas separadas, el contenido publicado y los datos comerciales se desfasan, y cada asesor lleva su seguimiento por otro lado.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+Una inmobiliaria necesita dos cosas a la vez: un sitio público que se vea a la altura de sus propiedades, y un espacio de trabajo donde el equipo carga inmuebles, capta propietarios, sigue leads y agenda visitas. Cuando ambas partes viven en herramientas separadas, el contenido publicado y los datos comerciales se desfasan, y cada asesor lleva su seguimiento por otro lado.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -3548,7 +3645,9 @@ erDiagram
 | Medios | Cloudinary | — |
 | Gestor de paquetes | pnpm (lockfile versionado) | — |
 
-💡 **Solución.** ELITE Nuvia reúne el sitio público y la operación interna en un mismo monorepo:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+ELITE Nuvia reúne el sitio público y la operación interna en un mismo monorepo:
 
 - **Sitio público:** catálogo de propiedades con filtros, fichas, agentes, testimonios y mapa, con formularios de consulta y boletín.
 - **CMS:** el equipo edita las secciones del sitio, textos, imágenes y datos de contacto, y revisa cómo quedan antes de publicar.
@@ -3557,7 +3656,7 @@ erDiagram
 Roles: `SUPER_ADMIN` (administra usuarios y el sitio), `COORDINADOR` (supervisa agentes, con permisos por módulo) y `AGENTE` (trabaja sus leads, agenda, captaciones y propiedades).
 
 <details>
-<summary><b>📐 Ver 3 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 3 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -3606,7 +3705,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -3614,9 +3713,11 @@ erDiagram
 ### 25. TechReturns
 > Del catálogo al pago confirmado por webhook, con precios y stock que solo decide el servidor.
 
-🧩 **Problema.** Un comercio de equipos reacondicionados tiene stock unitario y precios que cambian: si el carrito confía en el precio que manda el navegador, o si una orden se marca como pagada porque el cliente volvió de la pasarela, se venden equipos que ya no existen o al precio equivocado. Además, el cliente necesita su comprobante y el equipo interno, una forma simple de cargar productos y mover las órdenes.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+Un comercio de equipos reacondicionados tiene stock unitario y precios que cambian: si el carrito confía en el precio que manda el navegador, o si una orden se marca como pagada porque el cliente volvió de la pasarela, se venden equipos que ya no existen o al precio equivocado. Además, el cliente necesita su comprobante y el equipo interno, una forma simple de cargar productos y mover las órdenes.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -3629,7 +3730,9 @@ erDiagram
 | Pruebas | Jest + Supertest (API) · Vitest + TestBed (web) | 30 · 4.1 |
 | Infra | Docker Compose: PostgreSQL, API, web y pgAdmin | imágenes `node:24.21.0-bookworm-slim` |
 
-💡 **Solución.** Un monorepo con una **API NestJS** que recalcula precios y stock en el servidor, crea la orden dentro de una transacción y solo la da por pagada cuando **Stripe lo confirma por webhook firmado**, y una **web Angular** con storefront, cuenta y panel.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Un monorepo con una **API NestJS** que recalcula precios y stock en el servidor, crea la orden dentro de una transacción y solo la da por pagada cuando **Stripe lo confirma por webhook firmado**, y una **web Angular** con storefront, cuenta y panel.
 
 | Rol | Qué hace |
 |---|---|
@@ -3638,7 +3741,7 @@ erDiagram
 | **Administrador** (`ADMIN`) | Ve el resumen, crea, edita y activa productos con imágenes, y cambia el estado de las órdenes |
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -3758,7 +3861,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -3766,9 +3869,11 @@ erDiagram
 ### 26. Roberto Cordes — Web
 > Sitio corporativo y catálogo técnico de materiales industriales, con panel de administración y solicitudes de presupuesto.
 
-🧩 **Problema.** Una empresa proveedora de materiales industriales necesita publicar información técnica que cambia con frecuencia: familias de productos, grados, normas, composición química, formatos y disponibilidad. Esa información llega en hojas de cálculo con nombres y referencias normativas escritos de distintas maneras, y el cliente tiene que encontrar un material por su norma o por su uso, no solo por su nombre comercial.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+Una empresa proveedora de materiales industriales necesita publicar información técnica que cambia con frecuencia: familias de productos, grados, normas, composición química, formatos y disponibilidad. Esa información llega en hojas de cálculo con nombres y referencias normativas escritos de distintas maneras, y el cliente tiene que encontrar un material por su norma o por su uso, no solo por su nombre comercial.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 Versiones tomadas de los manifiestos (`composer.json`, `package.json`); no certifican el entorno desplegado.
 
@@ -3782,7 +3887,9 @@ Versiones tomadas de los manifiestos (`composer.json`, `package.json`); no certi
 | Datos | MySQL (`.env.example`) · SQLite en memoria (pruebas) | — |
 | Pruebas | PHPUnit · Mockery · Faker | `^12.0` |
 
-💡 **Solución.** El sitio publica el catálogo técnico y comercial, permite buscar por material o norma, estima el peso de una pieza y recibe solicitudes de presupuesto que llegan al equipo comercial. Un panel permite mantener los contenidos y cargar la información desde Excel con revisión previa.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+El sitio publica el catálogo técnico y comercial, permite buscar por material o norma, estima el peso de una pieza y recibe solicitudes de presupuesto que llegan al equipo comercial. Un panel permite mantener los contenidos y cargar la información desde Excel con revisión previa.
 
 | Actor | Qué hace |
 |---|---|
@@ -3790,7 +3897,7 @@ Versiones tomadas de los manifiestos (`composer.json`, `package.json`); no certi
 | **Administrador** | Mantiene contenidos, importa referencias y stock desde Excel, publica el catálogo y gestiona las solicitudes. |
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -3879,7 +3986,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -3887,9 +3994,11 @@ erDiagram
 ### 27. Cordes — Sistema de cotizaciones
 > Sistema interno de cotizaciones: cálculo de peso por fórmula, permisos por usuario, historial de cambios y lectura asistida por IA del pedido.
 
-🧩 **Problema.** Cotizar un caño o un producto metálico exige calcular el peso a partir del material, la forma y las medidas, y luego transcribir cada línea del pedido del cliente. Esa transcripción es lenta y propensa a errores de tipeo. Además, las condiciones pactadas con cada empresa y el precio de cada cotización se perdían en el historial del sistema anterior, y no había control de quién veía qué.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+Cotizar un caño o un producto metálico exige calcular el peso a partir del material, la forma y las medidas, y luego transcribir cada línea del pedido del cliente. Esa transcripción es lenta y propensa a errores de tipeo. Además, las condiciones pactadas con cada empresa y el precio de cada cotización se perdían en el historial del sistema anterior, y no había control de quién veía qué.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -3904,7 +4013,9 @@ erDiagram
 | Direcciones (opcional) | Google Places API (New) | — |
 | Pruebas | PHPUnit | 12 |
 
-💡 **Solución.** Un sistema a medida que reemplaza al anterior: el vendedor carga la cotización con líneas calculadas por fórmula, puede pedir a la IA que lea el texto del pedido del cliente, y el sistema guarda una copia de todo lo que se usó en el cálculo. Administración y vendedores trabajan cada uno con sus permisos.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Un sistema a medida que reemplaza al anterior: el vendedor carga la cotización con líneas calculadas por fórmula, puede pedir a la IA que lea el texto del pedido del cliente, y el sistema guarda una copia de todo lo que se usó en el cálculo. Administración y vendedores trabajan cada uno con sus permisos.
 
 | Usuario | Qué hace |
 |---|---|
@@ -3914,7 +4025,7 @@ erDiagram
 El sistema es de una sola empresa, con permisos por usuario y por ficha; no es multi-tenant.
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -3995,7 +4106,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -4003,11 +4114,13 @@ erDiagram
 ### 28. Elementos
 > Sitio público y CMS para Elementos x Muela del Diablo: carta, horarios y llegada, con publicación revisada.
 
-🧩 **Problema.** El restaurante vive de lo que el cliente encuentra antes de llegar: la carta vigente, los horarios reales y cómo llegar a Apote (Tiquipaya, Cochabamba). Cuando esa información está dispersa en redes, mensajes y fuentes que no coinciden, el visitante se encuentra con datos contradictorios. La investigación del proyecto (`docs/investigacion/`) documenta 29 fuentes, 52 medios con estado y conflictos abiertos: por ejemplo, las fuentes coinciden en «sábados, domingos y feriados» pero no en la hora de apertura (11:00, 11:30 o 12:00).
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
+
+El restaurante vive de lo que el cliente encuentra antes de llegar: la carta vigente, los horarios reales y cómo llegar a Apote (Tiquipaya, Cochabamba). Cuando esa información está dispersa en redes, mensajes y fuentes que no coinciden, el visitante se encuentra con datos contradictorios. La investigación del proyecto (`docs/investigacion/`) documenta 29 fuentes, 52 medios con estado y conflictos abiertos: por ejemplo, las fuentes coinciden en «sábados, domingos y feriados» pero no en la hora de apertura (11:00, 11:30 o 12:00).
 
 El sitio no debe publicar esos datos hasta que estén verificados, y los medios de terceros (fotos de clientes, colaboradores o personas) no pueden usarse sin autorización escrita.
 
-🛠️ **Stack**
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -4024,7 +4137,9 @@ El sitio no debe publicar esos datos hasta que estén verificados, y los medios 
 | Pruebas PHP | Pest · Larastan · Pint | `^5.3` · nivel 7 · |
 | Pruebas front | Playwright | `^1.65.0` |
 
-💡 **Solución.** Un sitio público en Blade (renderizado en servidor) y un CMS en React bajo `/admin`, pensado para que el equipo del restaurante edite el contenido sin tocar el diseño. Cada cambio pasa por borrador, vista previa, publicación o programación, y queda en un historial que permite restaurar.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Un sitio público en Blade (renderizado en servidor) y un CMS en React bajo `/admin`, pensado para que el equipo del restaurante edite el contenido sin tocar el diseño. Cada cambio pasa por borrador, vista previa, publicación o programación, y queda en un historial que permite restaurar.
 
 Quién lo usa:
 
@@ -4034,7 +4149,7 @@ Quién lo usa:
 - **Propietario**: administra cuentas, roles y restauraciones; es el único que crea cuentas nuevas (el registro público no existe).
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -4095,7 +4210,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -4103,11 +4218,13 @@ erDiagram
 ### 29. Muela del Diablo
 > Sitio oficial y CMS de Muela del Diablo: agenda, carta y portada editables, con publicación programada y revisión por roles.
 
-🧩 **Problema.** Un restobar con agenda de eventos, carta y fotos cambia cada semana. Sin un CMS, cada cambio depende de un desarrollador o de publicaciones sueltas en redes, y el público encuentra horarios, carta y programación desactualizados. Además, la marca necesita que la web sea rápida en el celular, porque es ahí donde el público la abre.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
+
+Un restobar con agenda de eventos, carta y fotos cambia cada semana. Sin un CMS, cada cambio depende de un desarrollador o de publicaciones sueltas en redes, y el público encuentra horarios, carta y programación desactualizados. Además, la marca necesita que la web sea rápida en el celular, porque es ahí donde el público la abre.
 
 Los riesgos que el proyecto atiende de forma explícita: publicar fotos sin autorización, publicar eventos vencidos y perder cambios que alguien hizo sin revisión.
 
-🛠️ **Stack**
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -4124,7 +4241,9 @@ Los riesgos que el proyecto atiende de forma explícita: publicar fotos sin auto
 | Base de datos | MySQL | 9.7 LTS objetivo; 9.6 en la máquina local |
 | Video | HyperFrames · FFmpeg | hero en `media/hyperframes/muela-hero/` |
 
-💡 **Solución.** Un sitio público en Blade (renderizado en servidor) y un CMS en React bajo `/admin`, pensado para que el equipo edite portada, carta, agenda, «la casa», medios y operación sin tocar código. Cada cambio pasa por borrador, vista previa, publicación o programación, con historial y restauración.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Un sitio público en Blade (renderizado en servidor) y un CMS en React bajo `/admin`, pensado para que el equipo edite portada, carta, agenda, «la casa», medios y operación sin tocar código. Cada cambio pasa por borrador, vista previa, publicación o programación, con historial y restauración.
 
 Quién lo usa:
 
@@ -4134,7 +4253,7 @@ Quién lo usa:
 - **Propietario**: administra el equipo y los ajustes, y es el único que crea cuentas (no hay registro público).
 
 <details>
-<summary><b>📐 Ver 3 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 3 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -4179,7 +4298,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -4188,15 +4307,17 @@ erDiagram
 
 <a name="ia"></a>
 
-## IA, datos y automatización
+## <img src="docs/readme/ic-ia.svg" width="26" height="26" alt=""> IA, datos y automatización
 
 <a name="bmh-asesor-con-ia"></a>
 ### 30. BMH — Asesor con IA
 > La IA interpreta. La aplicación decide. La base de datos confirma.
 
-🧩 **Problema.** Un mostrador de repuestos eléctricos recibe pedidos como «la bobina del Gol que vino la otra vez» o una foto borrosa de un regulador. El catálogo de BMH tiene unos 5.000 productos con **74 atributos técnicos guardados en columnas posicionales** (`columna_57` es «terminales descripción»), códigos duplicados y equivalencias entre marcas. Identificar la pieza correcta dependía de que un vendedor la reconociera, y cotizarla, de aplicar a mano la fórmula de descuentos del cliente.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+Un mostrador de repuestos eléctricos recibe pedidos como «la bobina del Gol que vino la otra vez» o una foto borrosa de un regulador. El catálogo de BMH tiene unos 5.000 productos con **74 atributos técnicos guardados en columnas posicionales** (`columna_57` es «terminales descripción»), códigos duplicados y equivalencias entre marcas. Identificar la pieza correcta dependía de que un vendedor la reconociera, y cotizarla, de aplicar a mano la fórmula de descuentos del cliente.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -4209,7 +4330,9 @@ erDiagram
 | Integraciones | Georef (Argentina) · reCAPTCHA · Laravel Mail · PhpSpreadsheet 2.1 · Guzzle 7 | — |
 | Calidad | PHPUnit · Laravel Pint | 10.5 · 1 |
 
-💡 **Solución.** Una aplicación Laravel que ya resolvía catálogo, clientes, carrito y pedidos, más un **asesor conversacional** dentro de la Zona de Clientes que:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Una aplicación Laravel que ya resolvía catálogo, clientes, carrito y pedidos, más un **asesor conversacional** dentro de la Zona de Clientes que:
 
 - interpreta texto, códigos y fotos con un proveedor de IA (Gemini, OpenAI o un Mock que funciona sin clave);
 - busca y rankea candidatos **contra el catálogo real**, con lógica determinística;
@@ -4223,7 +4346,7 @@ erDiagram
 | **Vendedor** | Recibe las derivaciones del asesor con el contexto de la conversación |
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -4386,7 +4509,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -4394,9 +4517,11 @@ erDiagram
 ### 31. GACRI — Asistente
 > La IA entiende. Laravel decide. La base de datos confirma.
 
-🧩 **Problema.** GACRI vende autopartes a mayoristas y minoristas registrados, y la mayoría de las consultas llegan por WhatsApp: «necesito un soporte de motor derecho», una foto de la pieza vieja, «¿cuánto descuento tengo?», «¿paso a buscarlo a las 14?». Cada respuesta exige buscar en el catálogo, mirar el stock real, validar quién pregunta antes de hablar de precios y coordinar el retiro. Un modelo de lenguaje suelto contestaría rápido, pero inventaría códigos, compatibilidades o descuentos.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+GACRI vende autopartes a mayoristas y minoristas registrados, y la mayoría de las consultas llegan por WhatsApp: «necesito un soporte de motor derecho», una foto de la pieza vieja, «¿cuánto descuento tengo?», «¿paso a buscarlo a las 14?». Cada respuesta exige buscar en el catálogo, mirar el stock real, validar quién pregunta antes de hablar de precios y coordinar el retiro. Un modelo de lenguaje suelto contestaría rápido, pero inventaría códigos, compatibilidades o descuentos.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -4409,7 +4534,9 @@ erDiagram
 | Canales | WhatsApp Cloud API · Twilio · simulador local | — |
 | Calidad | Pest · Larastan · Pint | 4.7.8 · 3.10 · 1.30 |
 
-💡 **Solución.** Un asistente Laravel donde **el modelo solo entiende y redacta**: todo dato comercial sale de herramientas que Laravel autoriza y que consultan la base real de GACRI en modo lectura.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Un asistente Laravel donde **el modelo solo entiende y redacta**: todo dato comercial sale de herramientas que Laravel autoriza y que consultan la base real de GACRI en modo lectura.
 
 | Rol | Dónde | Qué hace |
 |---|---|---|
@@ -4421,7 +4548,7 @@ erDiagram
 Hay **dos líneas**: la de **pedidos** (clientes registrados: precios, validación y carrito) y la de **consultas** (ayuda con piezas, también por foto, sin precios). Lo decide el servidor según el número que recibió el mensaje, nunca el modelo.
 
 <details>
-<summary><b>📐 Ver 5 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 5 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -4545,7 +4672,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -4553,9 +4680,11 @@ erDiagram
 ### 32. AIQ
 > El catálogo de AIQ, su CMS y una zona privada donde cada cliente consulta a un asesor técnico con IA.
 
-🧩 **Problema.** AIQ trabaja en el rubro plástico: masterbatches, bobinas y termoformados. Sus clientes consultan por procesos, aplicaciones y requisitos técnicos, y esas respuestas dependían de que un asesor estuviera disponible. Al mismo tiempo, el sitio institucional y el catálogo necesitaban actualizarse sin tocar las vistas, y la documentación técnica interna (fichas, hojas de seguridad, certificados) no debía circular sin control.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+AIQ trabaja en el rubro plástico: masterbatches, bobinas y termoformados. Sus clientes consultan por procesos, aplicaciones y requisitos técnicos, y esas respuestas dependían de que un asesor estuviera disponible. Al mismo tiempo, el sitio institucional y el catálogo necesitaban actualizarse sin tocar las vistas, y la documentación técnica interna (fichas, hojas de seguridad, certificados) no debía circular sin control.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -4567,7 +4696,9 @@ erDiagram
 | IA | Google Gemini (modelo por `GEMINI_MODEL`) · webhooks de n8n | — |
 | Calidad | PHPUnit · Laravel Pint | 11.5.55 · 1.29.0 |
 
-💡 **Solución.** Un monolito Laravel que reúne el sitio público, un CMS completo y una **zona privada de clientes** con un **asesor técnico** que conserva cada conversación, acepta fotos y responde a partir de la base de conocimiento de AIQ.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Un monolito Laravel que reúne el sitio público, un CMS completo y una **zona privada de clientes** con un **asesor técnico** que conserva cada conversación, acepta fotos y responde a partir de la base de conocimiento de AIQ.
 
 | Rol | Qué hace |
 |---|---|
@@ -4577,7 +4708,7 @@ erDiagram
 | **Administrador** | Aprueba clientes y su vigencia, importa contactos, carga PDFs de conocimiento y configura las integraciones de IA |
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -4717,7 +4848,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -4725,7 +4856,9 @@ erDiagram
 ### 33. Melectric IA
 > Plataforma técnico-comercial para MElectric: catálogo con procedencia y asistente que responde solo con evidencia.
 
-🧩 **Problema.** El catálogo técnico de MElectric (productos eléctricos B2B) vive repartido en tres fuentes: un Excel con la lista de productos, PDF de fichas técnicas y el sitio público. Los valores no siempre coinciden entre ellas. Un caso real documentado: el Excel indica 17 A en AC-3 para el DILM17 y el catálogo, en su página 3, indica 18 A.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
+
+El catálogo técnico de MElectric (productos eléctricos B2B) vive repartido en tres fuentes: un Excel con la lista de productos, PDF de fichas técnicas y el sitio público. Los valores no siempre coinciden entre ellas. Un caso real documentado: el Excel indica 17 A en AC-3 para el DILM17 y el catálogo, en su página 3, indica 18 A.
 
 Cuando un cliente pregunta por una referencia, un asistente que completa huecos con suposiciones es peligroso en este rubro. El repositorio está diseñado alrededor de tres riesgos concretos:
 
@@ -4733,7 +4866,7 @@ Cuando un cliente pregunta por una referencia, un asistente que completa huecos 
 - **Compatibilidades no verificadas**: afirmar que un relé o accesorio sirve para un contactor solo porque una frase del catálogo lo menciona.
 - **Decisiones de cálculo**: kVAR, cortocircuito, selectividad o caída de tensión que requieren un ingeniero, no un chat.
 
-🛠️ **Stack**
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -4754,7 +4887,9 @@ Cuando un cliente pregunta por una referencia, un asistente que completa huecos 
 | Sincronizador web | Python 3 (biblioteca estándar) | del sistema |
 | OCR | Framework Vision de macOS (binario Swift) | solo macOS |
 
-💡 **Solución.** MElectric IA es un monolito que ingiere las fuentes autorizadas con su procedencia, normaliza los datos a unidades canónicas y responde con un asistente que **solo afirma lo que tiene como evidencia**. Cuando no la tiene, se abstiene, pregunta o deriva a una persona.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+MElectric IA es un monolito que ingiere las fuentes autorizadas con su procedencia, normaliza los datos a unidades canónicas y responde con un asistente que **solo afirma lo que tiene como evidencia**. Cuando no la tiene, se abstiene, pregunta o deriva a una persona.
 
 Quién lo usa:
 
@@ -4766,7 +4901,7 @@ Quién lo usa:
 Los permisos son de nueve roles con dieciséis permisos (`App\Enums\Role`), verificados en cada ruta con middleware `can:`.
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -4845,7 +4980,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -4853,11 +4988,13 @@ erDiagram
 ### 34. X-Urban IA
 > Plataforma de inteligencia de producto y documentos para X-URBAN: el catálogo es la fuente de verdad y la IA razona sobre él, con trazabilidad y reglas de seguridad.
 
-🧩 **Problema.** X-URBAN vende equipos de trabajo en altura, izaje y sujeción de cargas: eslingas, arneses, cintas, herrajes. Cada producto se identifica por un código que codifica capacidad y longitud, y un error de selección puede dejar una carga sin la capacidad necesaria.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
+
+X-URBAN vende equipos de trabajo en altura, izaje y sujeción de cargas: eslingas, arneses, cintas, herrajes. Cada producto se identifica por un código que codifica capacidad y longitud, y un error de selección puede dejar una carga sin la capacidad necesaria.
 
 Los datos están en catálogos PDF de 2026 (ALTURA, IZAJE y SUJECIÓN, con 52 páginas en total) y en el sitio público. Según `docs/xurban-source-inventory.md`, la importación dio 570 productos, 452 especificaciones y 116 celdas de matriz de carga por longitud. Un asistente conversacional que adivine capacidades, certificaciones o compatibilidades pondría en riesgo a quien usa el equipo.
 
-🛠️ **Stack**
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -4874,7 +5011,9 @@ Los datos están en catálogos PDF de 2026 (ALTURA, IZAJE y SUJECIÓN, con 52 p�
 | IA | Proveedores Anthropic, Ollama y OpenAI (configurables) | por variable de entorno |
 | OCR | Tesseract | no instalado; pendiente de la Fase 8 |
 
-💡 **Solución.** Una plataforma que separa los datos de la conversación. El catálogo estructurado (productos, especificaciones, matrices y procedencia) es la fuente de verdad. Las consultas se resuelven primero con búsqueda estructurada: por código exacto, por capacidad y longitud, o por texto. Cuando la evidencia no alcanza para una selección segura, el sistema se abstiene, pide datos faltantes o deriva a una persona.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Una plataforma que separa los datos de la conversación. El catálogo estructurado (productos, especificaciones, matrices y procedencia) es la fuente de verdad. Las consultas se resuelven primero con búsqueda estructurada: por código exacto, por capacidad y longitud, o por texto. Cuando la evidencia no alcanza para una selección segura, el sistema se abstiene, pide datos faltantes o deriva a una persona.
 
 Quién lo usa:
 
@@ -4882,7 +5021,7 @@ Quién lo usa:
 - **Equipo interno**: panel con fuentes (subida de catálogos, mapeo de tablas y sincronización web), control de IA, prompts y guía, tras iniciar sesión.
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -4947,7 +5086,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -4955,14 +5094,20 @@ erDiagram
 ### 35. Carlos — Bolsa de Valores
 > Carpeta de trabajo de investigación financiera: una plataforma de riesgo en desarrollo, dos estudios de estrategias y un prototipo de reportes por ticker.
 
-🧩 **Problema.** Evaluar una acción con criterio institucional —estados financieros, ratios, márgenes y una tesis clara de asignación de capital— es lento y disperso de hacer a mano.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack.** Python · APIs de datos financieros · LLM (Gemini / Anthropic) · dashboards HTML/CSS · motor 'sentinel-engine' (Next.js en el frontend).
+Evaluar una acción con criterio institucional —estados financieros, ratios, márgenes y una tesis clara de asignación de capital— es lento y disperso de hacer a mano.
 
-💡 **Solución.** Un motor que reúne los datos financieros de una empresa, calcula indicadores (Altman Z, capital de trabajo, etc.) y arma con un LLM una tesis de inversión razonada, con dashboards por caso (MCD, NVO, UBER).
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
+
+Python · APIs de datos financieros · LLM (Gemini / Anthropic) · dashboards HTML/CSS · motor 'sentinel-engine' (Next.js en el frontend).
+
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Un motor que reúne los datos financieros de una empresa, calcula indicadores (Altman Z, capital de trabajo, etc.) y arma con un LLM una tesis de inversión razonada, con dashboards por caso (MCD, NVO, UBER).
 
 <details>
-<summary><b>📐 Ver 1 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 1 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -4976,7 +5121,7 @@ flowchart LR
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -4984,9 +5129,11 @@ flowchart LR
 ### 36. Burrow Prospects
 > de la ficha de Google a la reunión
 
-🧩 **Problema.** Conseguir clientes para un estudio de software pequeño obliga a buscar negocios, decidir a quién escribir, cuidar lo que se les dice y no volver a escribir a quien pidió que no. Hecho a mano, ese trabajo no deja historial ni reglas. Además, WhatsApp tiene reglas propias que un envío mal hecho rompe: plantillas aprobadas por Meta, bajas, topes diarios y números que no tienen WhatsApp, como los fijos.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+Conseguir clientes para un estudio de software pequeño obliga a buscar negocios, decidir a quién escribir, cuidar lo que se les dice y no volver a escribir a quien pidió que no. Hecho a mano, ese trabajo no deja historial ni reglas. Además, WhatsApp tiene reglas propias que un envío mal hecho rompe: plantillas aprobadas por Meta, bajas, topes diarios y números que no tienen WhatsApp, como los fijos.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -5000,7 +5147,9 @@ flowchart LR
 | Calidad | PHPUnit · Laravel Pint · ESLint · Prettier | PHPUnit 13.4.3 · ESLint 9 · Prettier 3 |
 | Marca | Archivo · JetBrains Mono | `@fontsource-variable` |
 
-💡 **Solución.** Burrow Prospect lleva la prospección de punta a punta en un solo sistema:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Burrow Prospect lleva la prospección de punta a punta en un solo sistema:
 
 - **Busca** negocios en Google Places por ciudad y rubro, y los **puntúa** solo con hechos observados.
 - **Arma la ficha**: auditoría web, análisis de zona, lectura de IA y los datos del negocio.
@@ -5011,7 +5160,7 @@ flowchart LR
 Todo cambio de estado, mensaje y envío queda en el historial de la ficha. Lo usa el equipo de Burrow Labs; el dueño aprueba cada lote y fija la lista de precios que el agente puede citar. Los textos van en español de Bolivia y la zona horaria es `America/La_Paz`.
 
 <details>
-<summary><b>📐 Ver 5 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 5 diagramas y flujos</b></summary>
 <br>
 
 **Acceso e integración**
@@ -5177,7 +5326,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -5185,9 +5334,11 @@ erDiagram
 ### 37. Commerce Intelligence
 > La IA interpreta y recomienda; nunca origina una cifra financiera.
 
-🧩 **Problema.** Elegir qué producto importar y vender en Mercado Libre suele decidirse con una planilla: precios de proveedor en una moneda, comisiones en otra, tipo de cambio de memoria y márgenes que cambian cada vez que alguien toca una celda. Con un operador en Bolivia (BOB) vendiendo a Argentina (ARS, alta inflación) y reportando en USD, un redondeo o una tasa vieja alcanzan para «aprobar» un producto que pierde plata. Y si un modelo de IA mete una cifra inventada, nadie se entera.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+Elegir qué producto importar y vender en Mercado Libre suele decidirse con una planilla: precios de proveedor en una moneda, comisiones en otra, tipo de cambio de memoria y márgenes que cambian cada vez que alguien toca una celda. Con un operador en Bolivia (BOB) vendiendo a Argentina (ARS, alta inflación) y reportando en USD, un redondeo o una tasa vieja alcanzan para «aprobar» un producto que pierde plata. Y si un modelo de IA mete una cifra inventada, nadie se entera.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -5198,7 +5349,9 @@ erDiagram
 | IA | Interfaz `AIProviderInterface` preparada; ningún proveedor conectado | — |
 | Calidad | Pest · Vitest · ESLint · Pint | 5.1.1 · 4.1.10 · 10.8 · 1.30 |
 
-💡 **Solución.** Un monolito modular donde **cada importe sale de un motor determinístico** con su origen trazado (provenance), los resultados quedan **congelados** y la decisión final es siempre de una persona.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Un monolito modular donde **cada importe sale de un motor determinístico** con su origen trazado (provenance), los resultados quedan **congelados** y la decisión final es siempre de una persona.
 
 - Objetivos de negocio editables desde la aplicación (por defecto USD 8.000 de facturación, USD 2.000 de beneficio y 25 % de margen al mes).
 - Un **motor de decisión** recomienda `REJECT`, `HOLD`, `RESEARCH`, `SAMPLE_TEST` o `VALIDATE`; una persona aprueba o corrige.
@@ -5207,7 +5360,7 @@ erDiagram
 Hoy la usa un solo operador autenticado; no hay roles todavía, pero toda acción pasa por una policy.
 
 <details>
-<summary><b>📐 Ver 5 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 5 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -5371,7 +5524,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -5379,9 +5532,11 @@ erDiagram
 ### 38. CotizaFlow
 > Sistema operativo de cotizaciones para distribuidores y empresas B2B: clientes, productos, precios, PDF y seguimiento en un solo flujo.
 
-🧩 **Problema.** En un equipo comercial B2B, una cotización sigue un recorrido que se rompe fácil: el cliente consulta, alguien busca el producto y su precio, se arma un PDF o una planilla, se envía, y después nadie vuelve a llamar. Las cotizaciones enviadas que no reciben respuesta son ventas que se pierden sin que nadie lo note. La documentación de producto apunta a ese punto como el problema visible.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+En un equipo comercial B2B, una cotización sigue un recorrido que se rompe fácil: el cliente consulta, alguien busca el producto y su precio, se arma un PDF o una planilla, se envía, y después nadie vuelve a llamar. Las cotizaciones enviadas que no reciben respuesta son ventas que se pierden sin que nadie lo note. La documentación de producto apunta a ese punto como el problema visible.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 Versiones tomadas de `composer.json` y `package.json`.
 
@@ -5396,7 +5551,9 @@ Versiones tomadas de `composer.json` y `package.json`.
 | Pruebas | Pest · Vitest · Playwright | — · `^5.0.0` · `^1.63.0` |
 | Calidad | oxlint · Prettier | `^1.82.0` · `^3.9.6` |
 
-💡 **Solución.** CotizaFlow mantiene en un solo lugar los clientes, los productos, las listas de precios, las cotizaciones con su PDF y los seguimientos pendientes, con un dashboard que prioriza qué llamar hoy.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+CotizaFlow mantiene en un solo lugar los clientes, los productos, las listas de precios, las cotizaciones con su PDF y los seguimientos pendientes, con un dashboard que prioriza qué llamar hoy.
 
 | Actor | Qué hace |
 |---|---|
@@ -5406,7 +5563,7 @@ Versiones tomadas de `composer.json` y `package.json`.
 Cada empresa es un tenant aislado: un usuario nunca ve datos de otra empresa, aunque tenga cuenta en varias.
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -5487,7 +5644,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -5495,9 +5652,11 @@ erDiagram
 ### 39. Pruebas de estrés
 > Convertir «el sitio anda lento» en mediciones repetibles: latencia, disponibilidad y checks, siempre juntos.
 
-🧩 **Problema.** «El sitio se cae cuando hay mucha gente» no es un diagnóstico. Sin una línea base no se sabe si el problema existía antes de la carga; sin umbrales no se sabe si una corrida «pasó»; y un p95 bajo puede esconder que el servidor estaba respondiendo errores rápidos. Hacía falta medir con el mismo método cada vez, dejar la evidencia guardada y poder comparar después de optimizar.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+«El sitio se cae cuando hay mucha gente» no es un diagnóstico. Sin una línea base no se sabe si el problema existía antes de la carga; sin umbrales no se sabe si una corrida «pasó»; y un p95 bajo puede esconder que el servidor estaba respondiendo errores rápidos. Hacía falta medir con el mismo método cada vez, dejar la evidencia guardada y poder comparar después de optimizar.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Pieza | Uso |
 |---|---|
@@ -5506,7 +5665,9 @@ erDiagram
 | [k6-reporter](https://github.com/benc-uk/k6-reporter) | Reporte HTML, importado como módulo remoto desde GitHub |
 | Grafana | Dashboard exportado de la prueba 3 (throughput, fallos, promedio y p95) |
 
-💡 **Solución.** Escenarios de **k6** escritos en JavaScript que generan concurrencia con usuarios virtuales (VUs), validan cada respuesta con `check()`, declaran objetivos de servicio con `thresholds` y guardan el resumen en JSON y un reporte HTML. El trabajo evolucionó en tres etapas:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Escenarios de **k6** escritos en JavaScript que generan concurrencia con usuarios virtuales (VUs), validan cada respuesta con `check()`, declaran objetivos de servicio con `thresholds` y guardan el resumen en JSON y un reporte HTML. El trabajo evolucionó en tres etapas:
 
 1. **Estrés sobre Todo Colombraro**: ráfagas de hasta 300 VUs y, después, versiones `*-real.js` con cabeceras de navegador y pausas aleatorias.
 2. **Navegación humana sobre WordPress** (`colombraro.com.ar`): menos intensidad, recorridos plausibles de 8 a 10 minutos.
@@ -5515,7 +5676,7 @@ erDiagram
 k6 mide el comportamiento del servidor a nivel HTTP: estos scripts **no** ejecutan un navegador ni miden Core Web Vitals. Para esa capa conviene sumar Lighthouse, WebPageTest o k6 browser.
 
 <details>
-<summary><b>📐 Ver 3 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 3 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -5569,7 +5730,7 @@ flowchart TD
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -5578,20 +5739,26 @@ flowchart TD
 
 <a name="web-reservas-salud-y-landing"></a>
 
-## Web, reservas, salud y landing
+## <img src="docs/readme/ic-web.svg" width="26" height="26" alt=""> Web, reservas, salud y landing
 
 <a name="burrow-labs"></a>
 ### 40. Burrow Labs
 > Codificando soluciones.
 
-🧩 **Problema.** El estudio necesitaba una presencia propia que mostrara su trabajo con nivel y convirtiera visitas en clientes, no una plantilla más.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack.** Next.js 16 · React 19 · TypeScript estricto · Tailwind 4 · three.js (React Three Fiber) · GSAP ScrollTrigger · PostgreSQL 18 · Drizzle ORM · Docker. 159 pruebas Vitest y 62 E2E Playwright.
+El estudio necesitaba una presencia propia que mostrara su trabajo con nivel y convirtiera visitas en clientes, no una plantilla más.
 
-💡 **Solución.** Sitio en producción (burrowlabs.com.bo) con hero 3D, casos de estudio, planes, diagnóstico express, panel de administración y SEO con búsqueda asistida por IA.
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
+
+Next.js 16 · React 19 · TypeScript estricto · Tailwind 4 · three.js (React Three Fiber) · GSAP ScrollTrigger · PostgreSQL 18 · Drizzle ORM · Docker. 159 pruebas Vitest y 62 E2E Playwright.
+
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Sitio en producción (burrowlabs.com.bo) con hero 3D, casos de estudio, planes, diagnóstico express, panel de administración y SEO con búsqueda asistida por IA.
 
 <details>
-<summary><b>📐 Ver 1 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 1 diagramas y flujos</b></summary>
 <br>
 
 **Privacidad y correo**
@@ -5611,7 +5778,7 @@ flowchart LR
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -5619,9 +5786,11 @@ flowchart LR
 ### 41. Ninth Group
 > CRM inmobiliario, sitio público y proyectos en preventa
 
-🧩 **Problema.** Una inmobiliaria con proyectos en preventa necesitaba unir el sitio público, el CRM, el avance de obra, los planes de pago y las comisiones del equipo en un solo sistema.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+Una inmobiliaria con proyectos en preventa necesitaba unir el sitio público, el CRM, el avance de obra, los planes de pago y las comisiones del equipo en un solo sistema.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología |
 |---|---|
@@ -5633,9 +5802,11 @@ flowchart LR
 | Calidad | Pest · Vitest 5 · Playwright · `tsc --noEmit` |
 | Integraciones | Google Maps · OpenAI y Anthropic (texto, CMA, imágenes) · correo por interfaz |
 
-💡 **Solución.** Plataforma en producción (ninthgroup.bo) con 26 módulos de dominio: sitio público, fichas de proyectos en preventa con avance de obra y plan de pago, CRM y reparto de comisiones.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
 
-[⬆ Volver al índice](#indice)
+Plataforma en producción (ninthgroup.bo) con 26 módulos de dominio: sitio público, fichas de proyectos en preventa con avance de obra y plan de pago, CRM y reparto de comisiones.
+
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -5643,40 +5814,46 @@ flowchart LR
 ### 42. CalendarioW
 > La plataforma de agenda, caja y reservas para los negocios de servicios de Bolivia.
 
-🧩 **Problema.** Peluquerías, spas, consultorios y veterinarias llevaban su agenda, su caja y sus reservas entre planillas y WhatsApp: dobles reservas, cobros sin control y clientes que se perdían.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack.** Laravel 13 · PHP 8.5 · React 19 + Inertia · Tailwind 4 · Flutter 3.47 (iOS/Android) · PostgreSQL 17 · Supabase Realtime. Monorepo con 408 pruebas Pest y 93.7% de cobertura.
+Peluquerías, spas, consultorios y veterinarias llevaban su agenda, su caja y sus reservas entre planillas y WhatsApp: dobles reservas, cobros sin control y clientes que se perdían.
 
-💡 **Solución.** Una sola plataforma —agenda + caja + pagos + clientes + marketing— por web y por celular, en bolivianos y zona horaria de Bolivia, con las reglas de dinero y de reservas hechas en serio: sin dobles reservas y sin confundir un comprobante con un pago.
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
+
+Laravel 13 · PHP 8.5 · React 19 + Inertia · Tailwind 4 · Flutter 3.47 (iOS/Android) · PostgreSQL 17 · Supabase Realtime. Monorepo con 408 pruebas Pest y 93.7% de cobertura.
+
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Una sola plataforma —agenda + caja + pagos + clientes + marketing— por web y por celular, en bolivianos y zona horaria de Bolivia, con las reglas de dinero y de reservas hechas en serio: sin dobles reservas y sin confundir un comprobante con un pago.
 
 <details>
-<summary><b>📐 Ver 5 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 5 diagramas y flujos</b></summary>
 <br>
 
 **Crecer y fidelizar**
 
 ```mermaid
 flowchart TB
-    subgraph cli["👤 Clientes finales"]
+    subgraph cli["Clientes finales"]
         A1["CalendarioW<br/>app Flutter"]
         A2["Sitio público<br/>/negocios · /r/slug"]
     end
-    subgraph neg["🧑‍💼 Dueños y equipo"]
+    subgraph neg["Dueños y equipo"]
         B1["CalendarioW Business<br/>app Flutter"]
         B2["Panel web<br/>Inertia + React 19"]
     end
 
-    subgraph core["📦 cw_core — paquete Flutter compartido"]
+    subgraph core["cw_core — paquete Flutter compartido"]
         C1["tokens de marca · íconos SVG<br/>cliente HTTP · formatos · prefs"]
     end
 
-    subgraph back["🛠️ Laravel 13 · backend/"]
+    subgraph back["Laravel 13 · backend/"]
         D1["API REST<br/>/api/v1"]
         D2["Web Inertia<br/>(panel del negocio)"]
         D3["Sitio público<br/>(marketplace + reservas)"]
     end
 
-    subgraph data["🗄️ Supabase"]
+    subgraph data["Supabase"]
         E1[("PostgreSQL 17<br/>schema app")]
         E2(["Realtime"])
     end
@@ -5711,12 +5888,12 @@ sequenceDiagram
     A->>API: POST reserva 10:00 · profesional Ana
     B->>API: POST reserva 10:00 · profesional Ana
     API->>DB: BEGIN · SELECT … FOR UPDATE (Ana)
-    Note over DB: fila de Ana bloqueada 🔒
+    Note over DB: fila de Ana bloqueada
     API->>DB: INSERT cita A ✓ · COMMIT
-    API-->>A: 201 Reservado ✅
+    API-->>A: 201 Reservado
     API->>DB: SELECT … FOR UPDATE (Ana) — espera…
     DB-->>API: el horario ya está tomado
-    API-->>B: 409 Horario ocupado ⛔
+    API-->>B: 409 Horario ocupado
 ```
 
 **Estados de una cita independientes del pago y la asistencia**
@@ -5738,13 +5915,13 @@ stateDiagram-v2
 
 ```mermaid
 flowchart LR
-    G["📍 Geocerca del negocio<br/>native_geofence"] -->|"entra ~200 m"| CB["Callback en background"]
+    G["Geocerca del negocio<br/>native_geofence"] -->|"entra ~200 m"| CB["Callback en background"]
     CB --> CD{"¿cooldown<br/>24 h?"}
-    CD -- sí --> X["🤫 nada"]
-    CD -- no --> N["🔔 Notificación local"]
+    CD -- sí --> X["nada"]
+    CD -- no --> N["Notificación local"]
     N --> AP["Abre la app"]
     AP --> API["/api/v1/cliente/cercanos"]
-    API --> CARD["🪪 Tarjeta con el ícono<br/>del rubro + mini-mapa"]
+    API --> CARD["Tarjeta con el ícono<br/>del rubro + mini-mapa"]
 
     classDef blue fill:#0A6AB5,stroke:#0B3363,color:#fff;
     classDef go fill:#077A43,stroke:#06241a,color:#fff;
@@ -5756,8 +5933,8 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    P["🎨 Pint<br/>(formato PHP)"] --> L["🔎 vp check<br/>(lint front)"] --> T["📐 tsc<br/>(tipos)"] --> V["📦 Vite<br/>(build)"] --> PE["🧪 Pest<br/>cobertura ≥ 90%"]
-    F["📱 Flutter ×3<br/>analyze + test"]
+    P["Pint<br/>(formato PHP)"] --> L["vp check<br/>(lint front)"] --> T["tsc<br/>(tipos)"] --> V["Vite<br/>(build)"] --> PE["Pest<br/>cobertura ≥ 90%"]
+    F["Flutter ×3<br/>analyze + test"]
 
     classDef ok fill:#077A43,stroke:#06241a,color:#fff;
     classDef blue fill:#0A6AB5,stroke:#0B3363,color:#fff;
@@ -5767,15 +5944,17 @@ flowchart LR
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
 <a name="vision-tours"></a>
 ### 43. Visión Tours
-🧩 **Problema.** El repositorio no documenta el detalle del punto de partida del cliente. Lo que sí figura en la documentación es el objetivo: que la agencia presente sus rutas en un sitio propio, que el viajero arme su viaje en pocos pasos y que la venta se cierre por WhatsApp, con la agencia validando cupo y precio antes de cualquier cobro. Los pendientes de dominio incluyen además las redirecciones desde el sitio anterior en WordPress.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+El repositorio no documenta el detalle del punto de partida del cliente. Lo que sí figura en la documentación es el objetivo: que la agencia presente sus rutas en un sitio propio, que el viajero arme su viaje en pocos pasos y que la venta se cierre por WhatsApp, con la agencia validando cupo y precio antes de cualquier cobro. Los pendientes de dominio incluyen además las redirecciones desde el sitio anterior en WordPress.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión | Para qué |
 |---|---|---|---|
@@ -5793,7 +5972,9 @@ flowchart LR
 
 Versiones de `composer.lock` y `package.json` / `node_modules`. Node: 26.7.0 según `.nvmrc`.
 
-💡 **Solución.** Un sitio en **Laravel 13** que presenta cinco rutas (**Torotoro, Chiquitania, Sajama, Salar de Uyuni y Villa Tunari**), con sus siete opciones de viaje, y permite armar el viaje: elegir programa, fecha y personas, agregarlo a la maleta y confirmar un pedido con código `VT-P-XXXXXX`.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Un sitio en **Laravel 13** que presenta cinco rutas (**Torotoro, Chiquitania, Sajama, Salar de Uyuni y Villa Tunari**), con sus siete opciones de viaje, y permite armar el viaje: elegir programa, fecha y personas, agregarlo a la maleta y confirmar un pedido con código `VT-P-XXXXXX`.
 
 Dos tipos de usuario:
 
@@ -5813,7 +5994,7 @@ Dos tipos de usuario:
 |  |  |
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 **Para la agencia CMS en /admin**
@@ -5875,7 +6056,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -5883,11 +6064,13 @@ erDiagram
 ### 44. Visión Tours 2
 > Sitio y catálogo de Visión Tours Bolivia (Cochabamba): paquetes, ofertas vigentes y consultas por WhatsApp.
 
-🧩 **Problema.** La oferta de la agencia está repartida entre publicaciones de WordPress, un blog espejo en Blogger y PDFs de ediciones distintas. Un mismo programa aparece con duraciones, salidas y paradas diferentes según la fecha. Por ejemplo, Chiquitania figura como 3D/1N en el título de WordPress y como 3D/2N en el texto y en el espejo. Sin un catálogo aprobado por la agencia, no hay forma segura de mostrar precios, fechas o puntos de salida.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
+
+La oferta de la agencia está repartida entre publicaciones de WordPress, un blog espejo en Blogger y PDFs de ediciones distintas. Un mismo programa aparece con duraciones, salidas y paradas diferentes según la fecha. Por ejemplo, Chiquitania figura como 3D/1N en el título de WordPress y como 3D/2N en el texto y en el espejo. Sin un catálogo aprobado por la agencia, no hay forma segura de mostrar precios, fechas o puntos de salida.
 
 Las URLs antiguas quedan inventariadas en `internal/sources/` para planear las redirecciones cuando la agencia confirme el dominio (`docs/fuentes.md`).
 
-🛠️ **Stack**
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 | --- | --- | --- |
@@ -5907,7 +6090,9 @@ Las URLs antiguas quedan inventariadas en `internal/sources/` para planear las r
 
 Las versiones están comprobadas en `docs/versiones.md` (corte del 6 de noviembre de 2026). Node se usa para compilar y para las pruebas de navegador; la aplicación corre con PHP.
 
-💡 **Solución.** Un sitio Laravel con vistas Blade y un catálogo editable en archivos JSON. Sus reglas principales:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Un sitio Laravel con vistas Blade y un catálogo editable en archivos JSON. Sus reglas principales:
 
 - **Solo sale lo aprobado.** Los destinos visibles están en estado `consulta` y solo se muestran sus variantes `confirmado`. Los datos que aún no tienen aprobación quedan en `null`.
 - **Las ofertas tienen vigencia en hora de Bolivia**, desde el inicio inclusive hasta el fin exclusivo.
@@ -5915,7 +6100,7 @@ Las versiones están comprobadas en `docs/versiones.md` (corte del 6 de noviembr
 - **Tres tipos de uso:** el público sin cuenta, el viajero con cuenta (pedidos y compra de prueba) y el operador de la agencia (catálogo y confirmación de cupos).
 
 <details>
-<summary><b>📐 Ver 5 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 5 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -6021,15 +6206,17 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
 <a name="summer-s-style"></a>
 ### 45. Summer's Style
-🧩 **Problema.** El salón necesitaba una web propia que mostrara su catálogo con precios confirmados y dejara reservar en horarios realmente libres, sin depender de mensajes sueltos para cada cita. Además, el equipo necesitaba una herramienta para la agenda del día, los clientes y la caja, y el dueño necesitaba cambiar textos, fotos y precios sin pedir cambios de código.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+El salón necesitaba una web propia que mostrara su catálogo con precios confirmados y dejara reservar en horarios realmente libres, sin depender de mensajes sueltos para cada cita. Además, el equipo necesitaba una herramienta para la agenda del día, los clientes y la caja, y el dueño necesitaba cambiar textos, fotos y precios sin pedir cambios de código.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 | --- | --- | --- |
@@ -6049,7 +6236,9 @@ erDiagram
 | Borde | Cloudflare (DNS, proxy y Turnstile) y Caddy compartido | según `docs/DEPLOYMENT.md` |
 | Marca | Parlour Sans (títulos) y DM Sans (lectura) | según `DESIGN.md` |
 
-💡 **Solución.** Una sola aplicación con dos caras:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Una sola aplicación con dos caras:
 
 - **La web pública** muestra servicios, equipo, trabajos y preguntas frecuentes, y permite reservar sin pagar ni crear una cuenta. Los horarios se calculan en el servidor.
 - **El panel del equipo** maneja la agenda, los clientes, la caja, los reportes y el contenido del sitio. Cada rol ve solo lo que su permiso y su sucursal permiten.
@@ -6057,7 +6246,7 @@ erDiagram
 Hay ocho roles fijos (propietario, administrador, encargado, recepcionista, cajero, profesional, editor y cliente) con 23 habilidades. El alcance por sucursal y profesional se aplica en el servidor, y el acceso administrativo puede exigir MFA.
 
 <details>
-<summary><b>📐 Ver 7 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 7 diagramas y flujos</b></summary>
 <br>
 
 **Cómo llegar en 3D**
@@ -6207,7 +6396,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -6215,11 +6404,13 @@ erDiagram
 ### 46. Sumer Style
 > Plataforma de marca para Summer's Style (Barber · Beauty Salon): reservas en línea con disponibilidad real, agenda, caja y sitio administrable, en una sola aplicación.
 
-🧩 **Problema.** Un salón de barbería y belleza en Calacala (Cochabamba) recibe citas por WhatsApp, Facebook y en persona. Sin un sistema, la agenda vive en papel o en el celular de cada profesional, y eso provoca dobles reservas, clientes sin historial y cierres de caja que no cuadran. Quien reserva desde el móvil necesita ver horarios reales y saber que su cita quedó confirmada, sin crear una cuenta obligatoria.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
+
+Un salón de barbería y belleza en Calacala (Cochabamba) recibe citas por WhatsApp, Facebook y en persona. Sin un sistema, la agenda vive en papel o en el celular de cada profesional, y eso provoca dobles reservas, clientes sin historial y cierres de caja que no cuadran. Quien reserva desde el móvil necesita ver horarios reales y saber que su cita quedó confirmada, sin crear una cuenta obligatoria.
 
 El proyecto (`PRODUCT.md`) define el éxito así: una persona reserva en menos de un minuto desde el móvil, y el salón opera su día (agenda, cobros y cierre de caja) sin herramientas externas.
 
-🛠️ **Stack**
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -6234,7 +6425,9 @@ El proyecto (`PRODUCT.md`) define el éxito así: una persona reserva en menos d
 | Pruebas | Pest (PHPUnit) · Playwright | Pest con Laravel · `1.64` |
 | Base de datos | MySQL | 9.6 verificado; 8.0 o superior en `INSTALL.md` |
 
-💡 **Solución.** Una aplicación de una sola marca que une el sitio público, las reservas, la agenda, el CRM, la caja y el CMS. La disponibilidad se calcula contra la base de datos con bloqueo real (`SELECT … FOR UPDATE`), así dos personas no pueden reservar el mismo horario. Las reservas no requieren cuenta: el cliente recibe un comprobante con un enlace privado para reprogramar o cancelar.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Una aplicación de una sola marca que une el sitio público, las reservas, la agenda, el CRM, la caja y el CMS. La disponibilidad se calcula contra la base de datos con bloqueo real (`SELECT … FOR UPDATE`), así dos personas no pueden reservar el mismo horario. Las reservas no requieren cuenta: el cliente recibe un comprobante con un enlace privado para reprogramar o cancelar.
 
 Quién lo usa:
 
@@ -6242,7 +6435,7 @@ Quién lo usa:
 - **Equipo del salón**: propietario, administración, encargados de sucursal, recepción, caja, profesionales y editor de contenido, cada uno con su alcance (`docs/architecture/PERMISSIONS.md`).
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -6315,7 +6508,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -6323,14 +6516,16 @@ erDiagram
 ### 47. Ginos Barbershop
 > Una sola app móvil para que GINO'S reserve sin llamadas, llene cada minuto de la agenda y lleve la caja, la fidelidad y el control del dueño desde el teléfono.
 
-🧩 **Problema.** GINO'S es una barbería con tres sucursales en Cochabamba (dos de barbería para hombres y el **Beauty Lounge** para mujeres). Antes de la app, todo pasaba por la recepción y la memoria del personal:
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
+
+GINO'S es una barbería con tres sucursales en Cochabamba (dos de barbería para hombres y el **Beauty Lounge** para mujeres). Antes de la app, todo pasaba por la recepción y la memoria del personal:
 
 - **Reservar era llamar o escribir.** Nadie aplicaba igual las reglas de anticipo, cancelación y límites; el cliente no veía qué horarios había de verdad.
 - **La agenda tenía huecos muertos.** Un turno que se cancelaba, un cliente que no llegaba o un servicio que se pasaba de tiempo dejaban minutos perdidos que nadie ofrecía a otro.
 - **La caja iba a ciegas.** Cobros mezclados (QR, efectivo, descuentos), comprobantes en fotos sueltas, sellos de fidelidad en papel e inventario sin bitácora.
 - **El dueño no tenía números.** Ganancias por barbero, quién capta clientes, resúmenes del día y de la semana: todo había que reconstruirlo a mano.
 
-🛠️ **Stack**
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -6349,7 +6544,9 @@ erDiagram
 | Utilidades | intl · shared_preferences · url_launcher | ^0.20.3 · ^2.5.5 · ^6.3.2 |
 | Desarrollo | device_preview (solo debug) · flutter_lints · flutter_test | ^3.0.0 · ^6.0.0 · SDK |
 
-💡 **Solución.** Una **app Flutter única** (iOS, Android y web) que aplica sola las reglas del negocio y conecta a todos sobre la misma agenda en vivo:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Una **app Flutter única** (iOS, Android y web) que aplica sola las reglas del negocio y conecta a todos sobre la misma agenda en vivo:
 
 | Rol | Qué hace en la app |
 |---|---|
@@ -6361,7 +6558,7 @@ erDiagram
 Detrás corre **Supabase** (Postgres con RLS, Auth, Realtime, Storage y funciones Edge). Sin las llaves de Supabase, la app arranca en **modo demo** con datos en memoria, que es lo que usan las pruebas y la guía del presentador.
 
 <details>
-<summary><b>📐 Ver 8 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 8 diagramas y flujos</b></summary>
 <br>
 
 **Capturas**
@@ -6635,7 +6832,7 @@ flowchart TD
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -6643,9 +6840,11 @@ flowchart TD
 ### 48. Dra. Isabel Piérola
 > Sistema de gestión y sitio público para un centro estético: pacientes, tratamientos, citas, sesiones con fotos y cotizaciones con PDF.
 
-🧩 **Problema.** Un centro estético lleva a la vez sus pacientes, sus tratamientos, la agenda, el seguimiento de cada sesión (con fotos de antes y después) y los presupuestos. Cuando esa información vive en cuadernos, agendas y mensajes separados, es difícil saber qué se hizo, qué quedó agendado y cuánto corresponde cobrar.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+Un centro estético lleva a la vez sus pacientes, sus tratamientos, la agenda, el seguimiento de cada sesión (con fotos de antes y después) y los presupuestos. Cuando esa información vive en cuadernos, agendas y mensajes separados, es difícil saber qué se hizo, qué quedó agendado y cuánto corresponde cobrar.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión (composer.json / package.json / Docker) |
 |---|---|---|
@@ -6658,7 +6857,9 @@ flowchart TD
 | Base de datos | PostgreSQL 16 (Docker) · SQLite en memoria para pruebas | `postgres:16` |
 | Pruebas | PHPUnit | ^11 |
 
-💡 **Solución.** DRAISABEL es un sistema con un sitio público informativo (con contacto por WhatsApp) y un panel interno que concentra la operación: pacientes, tratamientos, citas en calendario, sesiones con imágenes y cotizaciones calculadas en el servidor y enviadas en PDF por correo.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+DRAISABEL es un sistema con un sitio público informativo (con contacto por WhatsApp) y un panel interno que concentra la operación: pacientes, tratamientos, citas en calendario, sesiones con imágenes y cotizaciones calculadas en el servidor y enviadas en PDF por correo.
 
 Roles que usa el sistema:
 
@@ -6667,7 +6868,7 @@ Roles que usa el sistema:
 - **Cliente**: rol con acceso a su propio panel.
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -6725,7 +6926,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -6733,9 +6934,11 @@ erDiagram
 ### 49. Valentina's Medical Store
 > Sistema multi-sucursal para saber cuánto hay de cada artículo en cada tienda y vender con trazabilidad.
 
-🧩 **Problema.** Una tienda de indumentaria e insumos médicos con varias sucursales reparte su control entre planillas, cajas y conteos manuales. Sin un inventario por sucursal, nadie sabe con certeza qué hay disponible en cada tienda, las transferencias se pierden entre mensajes y el cierre de caja depende de lo que cada cajero recuerde.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+Una tienda de indumentaria e insumos médicos con varias sucursales reparte su control entre planillas, cajas y conteos manuales. Sin un inventario por sucursal, nadie sabe con certeza qué hay disponible en cada tienda, las transferencias se pierden entre mensajes y el cierre de caja depende de lo que cada cajero recuerde.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión (manifiestos) |
 |---|---|---|
@@ -6748,7 +6951,9 @@ erDiagram
 | Base de datos y caché | PostgreSQL, Redis | — |
 | Contenedores | PHP-FPM (`php:8.4-fpm-alpine`), Nginx, Vite, pgAdmin (opcional) | — |
 
-💡 **Solución.** Valentina's Medical Store centraliza esas operaciones:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Valentina's Medical Store centraliza esas operaciones:
 
 - **Catálogo:** productos con categorías, variantes, atributos, SKU y precios.
 - **Inventario:** existencias independientes por sucursal, stock mínimo y disponibilidad calculada.
@@ -6759,7 +6964,7 @@ erDiagram
 Los permisos son predefinidos: administración, gerencia de sucursal, caja e inventario.
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -6820,7 +7025,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -6828,9 +7033,11 @@ erDiagram
 ### 50. Wasi Pet
 > Página de servicios de peluquería canina y petshop, pensada para que cada visita termine en una consulta por WhatsApp.
 
-🧩 **Problema.** Quien busca peluquería para su perro llega desde redes sociales y necesita, en pocos segundos, entender qué servicios hay, cómo es la atención y cómo pedir una cita. Sin una página ordenada, la consulta se pierde entre publicaciones y mensajes sueltos.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+Quien busca peluquería para su perro llega desde redes sociales y necesita, en pocos segundos, entender qué servicios hay, cómo es la atención y cómo pedir una cita. Sin una página ordenada, la consulta se pierde entre publicaciones y mensajes sueltos.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión (`package.json`) |
 |---|---|---|
@@ -6842,7 +7049,9 @@ erDiagram
 | Iconos | Lucide React | ^1.17.0 |
 | Backend, base de datos, contenedores | No aplica | — |
 
-💡 **Solución.** Wasi Pet es una landing de una sola página para la peluquería canina y el petshop de Cochabamba. Presenta:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Wasi Pet es una landing de una sola página para la peluquería canina y el petshop de Cochabamba. Presenta:
 
 - los servicios, con un mensaje de WhatsApp preparado para cada uno;
 - el proceso de atención en cuatro pasos;
@@ -6852,7 +7061,7 @@ erDiagram
 La página no registra reservas ni confirma horarios: la cita se cierra en la conversación de WhatsApp.
 
 <details>
-<summary><b>📐 Ver 2 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 2 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -6884,7 +7093,7 @@ sequenceDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -6892,9 +7101,11 @@ sequenceDiagram
 ### 51. FundasAlis
 > Catálogo para explorar fundas y protectores por modelo, marca y color, y continuar la consulta por WhatsApp.
 
-🧩 **Problema.** Quien vende fundas para celular tiene decenas de modelos, marcas y colores. Un cliente que pregunta por una funda necesita ver cómo queda en su teléfono y confirmar que existe en su modelo antes de seguir la conversación por WhatsApp. Sin un catálogo ordenado, esa consulta se hace a ciegas y con muchas idas y vueltas.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+Quien vende fundas para celular tiene decenas de modelos, marcas y colores. Un cliente que pregunta por una funda necesita ver cómo queda en su teléfono y confirmar que existe en su modelo antes de seguir la conversación por WhatsApp. Sin un catálogo ordenado, esa consulta se hace a ciegas y con muchas idas y vueltas.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión (`package-lock.json`) |
 |---|---|---|
@@ -6907,12 +7118,14 @@ sequenceDiagram
 | Empaquetado | Vite | 8.0.16 |
 | Gestor de paquetes | npm | `package-lock.json` |
 
-💡 **Solución.** FundasAlis es un catálogo de una sola página para explorar los accesorios por categoría, marca, modelo y color. Cada producto abre su ficha con fotos y características, y un visor 3D muestra cómo se ven los acabados sobre un teléfono. Cuando la persona decide, el sitio arma un mensaje de WhatsApp con el producto, el modelo y el color ya escritos.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+FundasAlis es un catálogo de una sola página para explorar los accesorios por categoría, marca, modelo y color. Cada producto abre su ficha con fotos y características, y un visor 3D muestra cómo se ven los acabados sobre un teléfono. Cuando la persona decide, el sitio arma un mensaje de WhatsApp con el producto, el modelo y el color ya escritos.
 
 Roles: visitante. No hay cuentas, carrito ni panel de administración.
 
 <details>
-<summary><b>📐 Ver 2 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 2 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -6945,7 +7158,7 @@ sequenceDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -6953,9 +7166,11 @@ sequenceDiagram
 ### 52. LavaFácil
 > Registra servicios, recibe pedidos de clientes y controla cobros y estados desde un solo panel.
 
-🧩 **Problema.** Una lavandería maneja pedidos con fecha y hora de recojo, varios servicios con precio distinto, pagos en efectivo, QR o transferencia, y clientes que preguntan por el estado de su ropa. Cuando todo eso vive en cuadernos y mensajes, es fácil perder pedidos, cobrar mal o no saber qué sigue en proceso.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+Una lavandería maneja pedidos con fecha y hora de recojo, varios servicios con precio distinto, pagos en efectivo, QR o transferencia, y clientes que preguntan por el estado de su ropa. Cuando todo eso vive en cuadernos y mensajes, es fácil perder pedidos, cobrar mal o no saber qué sigue en proceso.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión (composer.json / package.json) |
 |---|---|---|
@@ -6967,7 +7182,9 @@ sequenceDiagram
 | Pruebas | PHPUnit | ^11.5.3 |
 | Contenedores | Docker (PHP 8.4-FPM), Nginx, PostgreSQL | — |
 
-💡 **Solución.** LavaFácil centraliza esa operación:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+LavaFácil centraliza esa operación:
 
 - **Cliente:** elige servicios, indica fecha, hora y dirección de recojo, y consulta su historial y su último pedido.
 - **Administrador:** ve pedidos y clientes, cambia el estado de cada pedido, registra pagos y revisa reportes.
@@ -6976,7 +7193,7 @@ sequenceDiagram
 Roles: `cliente`, `admin` y `super_admin`, con rutas separadas por rol.
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -7038,7 +7255,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -7046,9 +7263,11 @@ erDiagram
 ### 53. Match & Adopt
 > Plataforma de adopción de mascotas: refugios y adoptantes se encuentran, conversan y tramitan la solicitud en un mismo lugar.
 
-🧩 **Problema.** Adoptar una mascota suele depender de publicaciones sueltas, mensajes en canales distintos y solicitudes en papel o en hojas de cálculo. Para el refugio, eso significa perseguir datos incompletos; para la persona que quiere adoptar, no saber en qué estado va su trámite ni con quién está hablando.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+Adoptar una mascota suele depender de publicaciones sueltas, mensajes en canales distintos y solicitudes en papel o en hojas de cálculo. Para el refugio, eso significa perseguir datos incompletos; para la persona que quiere adoptar, no saber en qué estado va su trámite ni con quién está hablando.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -7064,7 +7283,9 @@ erDiagram
 | Contenedores | Docker, Kubernetes, Helm | — |
 | CI | GitHub Actions (un flujo por servicio) | — |
 
-💡 **Solución.** Match&Adopt reúne el proceso completo en una sola aplicación:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Match&Adopt reúne el proceso completo en una sola aplicación:
 
 - **El refugio** registra su perfil, sus mascotas con fotos, y publica listados de adopción.
 - **El adoptante** completa un perfil de preferencias, descubre mascotas deslizando y envía una solicitud de adopción.
@@ -7074,7 +7295,7 @@ erDiagram
 Roles que contempla el modelo de datos: `adopter`, `shelter_staff` y `admin`.
 
 <details>
-<summary><b>📐 Ver 3 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 3 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -7146,7 +7367,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -7154,11 +7375,13 @@ erDiagram
 ### 54. Juegos 2D
 > Plataforma reutilizable para juegos 2D multijugador: salas de hasta 100 jugadores y servidor autoritativo. Hoy está en la Fase 0 (foundation).
 
-🧩 **Problema.** Los juegos 2D para móvil con partidas de muchos jugadores a la vez exigen un servidor que decida el resultado, no el teléfono, porque un cliente manipulado puede inventar puntajes. También exigen cuentas, sesiones revocables, rankings y perfiles, y eso se repite en cada juego nuevo si no se construye una base común.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
+
+Los juegos 2D para móvil con partidas de muchos jugadores a la vez exigen un servidor que decida el resultado, no el teléfono, porque un cliente manipulado puede inventar puntajes. También exigen cuentas, sesiones revocables, rankings y perfiles, y eso se repite en cada juego nuevo si no se construye una base común.
 
 El plan de producto (`docs/product/GAME_CATALOG.md`) define cinco juegos sobre la misma plataforma: Sprint, Obstacle Dash, Maze Race, Point Collector y Checkpoint Challenge. El objetivo es no reconstruir cuentas, salas y rankings para cada uno.
 
-🛠️ **Stack**
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -7176,14 +7399,16 @@ El plan de producto (`docs/product/GAME_CATALOG.md`) define cinco juegos sobre l
 | Seguridad | trivy | opcional |
 | Cliente planificado | Unity 6.3 LTS · Colyseus 0.18 | no instalados (Fase 1 y 2) |
 
-💡 **Solución.** Un monorepo con una API NestJS que ya resuelve la base: registro, login, sesiones con rotación de refresh tokens, perfil con avatar, salud, métricas y telemetría. Los contratos Zod compartidos (REST, realtime y configuración de juegos) viven en un paquete propio para que cliente y servidor compartan los mismos esquemas.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Un monorepo con una API NestJS que ya resuelve la base: registro, login, sesiones con rotación de refresh tokens, perfil con avatar, salud, métricas y telemetría. Los contratos Zod compartidos (REST, realtime y configuración de juegos) viven en un paquete propio para que cliente y servidor compartan los mismos esquemas.
 
 Quién lo usa: jugadores (cuenta, perfil y, en fases siguientes, salas y partidas). Hoy no hay cliente: el cliente Unity está planificado para la Fase 2.
 
 Lo que **no** existe todavía: salas, realtime, juegos, rankings y cliente. Las fases 1 a 2 los traen; `docs/PLAN_TECNICO.md` describe el orden y los criterios de salida de cada una.
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -7244,7 +7469,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -7252,9 +7477,11 @@ erDiagram
 ### 55. 21 — Regalo para Sharol
 > Un regalo de cumpleaños hecho página: un corazón de florcitas que se arma solo y mensajes que aparecen al tocar.
 
-🧩 **Problema.** Hacer un regalo digital distinto: una página hecha a mano para una persona, no una tarjeta genérica.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+Hacer un regalo digital distinto: una página hecha a mano para una persona, no una tarjeta genérica.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -7262,10 +7489,12 @@ erDiagram
 | Animación | JavaScript sin librerías, Canvas 2D, `requestAnimationFrame` | estándar del navegador |
 | Tipografía | Google Fonts: Cormorant Garamond y Nunito | cargadas con `@import` |
 
-💡 **Solución.** Una página de regalo con mensajes que se revelan por interacción y estados animados, pensada para abrirse desde el celular.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Una página de regalo con mensajes que se revelan por interacción y estados animados, pensada para abrirse desde el celular.
 
 <details>
-<summary><b>📐 Ver 2 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 2 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -7296,7 +7525,7 @@ stateDiagram-v2
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -7305,15 +7534,17 @@ stateDiagram-v2
 
 <a name="colaboraciones"></a>
 
-## Colaboraciones
+## <img src="docs/readme/ic-colaboraciones.svg" width="26" height="26" alt=""> Colaboraciones
 
 <a name="frenos-sr33"></a>
 ### 56. Frenos SR33
 > Catálogo de repuestos de frenos para clientes mayoristas: búsqueda por marca, modelo y medida, precios por cuenta y pedidos.
 
-🧩 **Problema.** En el mercado de repuestos de frenos, el cliente necesita encontrar la pieza correcta por marca, modelo del vehículo y medida, y ver el precio que le corresponde a su cuenta. Con listas de precios en hojas de cálculo y pedidos por mensaje, cada consulta exige intervención manual y los precios distintos por cliente son difíciles de sostener.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+En el mercado de repuestos de frenos, el cliente necesita encontrar la pieza correcta por marca, modelo del vehículo y medida, y ver el precio que le corresponde a su cuenta. Con listas de precios en hojas de cálculo y pedidos por mensaje, cada consulta exige intervención manual y los precios distintos por cliente son difíciles de sostener.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 | --- | --- | --- |
@@ -7328,14 +7559,16 @@ stateDiagram-v2
 | Pruebas | Pest | ^3.8 |
 | Base de datos | MySQL | configurada en `.env` |
 
-💡 **Solución.** **SR33** es una aplicación Laravel con tres zonas:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+**SR33** es una aplicación Laravel con tres zonas:
 
 - **Sitio público**: inicio, novedades, calidad, nosotros, contacto, búsqueda y fichas de producto. Cada producto tiene un código con su propia URL, que también puede abrirse desde un código QR.
 - **Zona privada para clientes**: productos y listas de precios de la cuenta, carrito, pedidos propios, recompra y datos de pago.
 - **Panel administrativo** para el equipo: marcas, modelos, categorías, subproductos, importación desde Excel, listas de precios, margenes por cliente, pedidos, clientes, vendedores, sucursales, newsletter y contenidos del sitio.
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -7410,7 +7643,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -7418,9 +7651,11 @@ erDiagram
 ### 57. Testori
 > Sitio corporativo trilingüe con panel de administración para contenidos, novedades, calidad y consultas comerciales.
 
-🧩 **Problema.** Una empresa del sector plástico e industrial necesita que su sitio cambie con frecuencia (novedades, clientes, documentos de calidad, textos en tres idiomas) sin que cada cambio requiera editar plantillas. Las consultas comerciales, además, deben llegar a alguien con registro y poder responderse desde el mismo lugar.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+Una empresa del sector plástico e industrial necesita que su sitio cambie con frecuencia (novedades, clientes, documentos de calidad, textos en tres idiomas) sin que cada cambio requiera editar plantillas. Las consultas comerciales, además, deben llegar a alguien con registro y poder responderse desde el mismo lugar.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión (composer.json / package.json) |
 |---|---|---|
@@ -7431,7 +7666,9 @@ erDiagram
 | Pruebas | PHPUnit · Mockery · Pint | PHPUnit ^12.5 |
 | Gestor de paquetes | pnpm (lock `pnpm-lock.yaml`) | — |
 
-💡 **Solución.** Testori combina un sitio público en español, inglés y portugués con un panel donde el equipo edita textos, imágenes, videos, novedades y metadatos SEO. Las consultas del formulario de contacto quedan guardadas, notifican por correo y se pueden responder desde el panel.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Testori combina un sitio público en español, inglés y portugués con un panel donde el equipo edita textos, imágenes, videos, novedades y metadatos SEO. Las consultas del formulario de contacto quedan guardadas, notifican por correo y se pueden responder desde el panel.
 
 Roles que usa el sistema:
 
@@ -7440,7 +7677,7 @@ Roles que usa el sistema:
 - **Superadministrador**: además crea y elimina administradores.
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -7508,7 +7745,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -7516,9 +7753,11 @@ erDiagram
 ### 58. AgroMarket
 > App para que clientes, productores y administradores gestionen catálogo, pedidos y saldo en un mismo lugar.
 
-🧩 **Problema.** Productores agrícolas y compradores coordinan pedidos, stock, entregas y pagos por canales dispersos. Sin un registro común, el productor no sabe qué está reservado, el cliente no ve el estado de su compra y nadie lleva la cuenta del saldo disponible ni de las recargas.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-🛠️ **Stack**
+Productores agrícolas y compradores coordinan pedidos, stock, entregas y pagos por canales dispersos. Sin un registro común, el productor no sabe qué está reservado, el cliente no ve el estado de su compra y nadie lleva la cuenta del saldo disponible ni de las recargas.
+
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión (`pubspec.yaml`) |
 |---|---|---|
@@ -7532,7 +7771,9 @@ erDiagram
 | Notificaciones | flutter_local_notifications | ^17.2.4 |
 | Servidor web (imagen) | Nginx | 1.27 (alpine) |
 
-💡 **Solución.** AgroMarket es una aplicación Flutter con tres interfaces según el rol:
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+AgroMarket es una aplicación Flutter con tres interfaces según el rol:
 
 - **Cliente:** consulta productos, arma el carrito, elige retiro o entrega, paga con saldo interno y sigue su pedido.
 - **Productor:** publica productos con precio, unidad, fotografía, fecha de cosecha y stock; atiende pedidos y consulta sus monedas.
@@ -7541,7 +7782,7 @@ erDiagram
 El saldo funciona con monedas internas: cada compra descuenta saldo y cada recarga se aprueba antes de acreditarse.
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 ```mermaid
@@ -7599,7 +7840,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -7607,7 +7848,9 @@ erDiagram
 ### 59. Nikitos — Figma
 > El sitio de la marca de snacks Nikitos llevado del mockup de Figma a Laravel 13 + React 19, con su panel de catálogo.
 
-🧩 **Problema.** Nikitos es una marca de snacks que vende por líneas de producto (cada una con su color) a comercios y distribuidores de Argentina. Su sitio tiene que mostrar el catálogo completo con código, tamaño y vida útil de cada producto, publicar recetas, decir dónde comprar, recibir consultas comerciales y postulaciones de RRHH, y darle a los clientes mayoristas un lugar donde armar pedidos.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
+
+Nikitos es una marca de snacks que vende por líneas de producto (cada una con su color) a comercios y distribuidores de Argentina. Su sitio tiene que mostrar el catálogo completo con código, tamaño y vida útil de cada producto, publicar recetas, decir dónde comprar, recibir consultas comerciales y postulaciones de RRHH, y darle a los clientes mayoristas un lugar donde armar pedidos.
 
 La prueba técnica consistía en llevar ese sitio desde un **mockup de Figma** a una aplicación real, con un **panel** para que el equipo cargue productos, categorías y recetas sin tocar código.
 
@@ -7619,7 +7862,7 @@ Este repositorio es una de las tres implementaciones de la misma prueba que conv
 | [nikitos-prueba-tecnica](https://github.com/BruninAlv61/nikitos-prueba-tecnica) | Laravel 12 + Blade + Breeze |
 | [PruebaTecnica-Osole](https://github.com/Marki0/PruebaTecnica-Osole) | Laravel 8 + Blade + Laravel Mix |
 
-🛠️ **Stack**
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -7635,7 +7878,9 @@ Este repositorio es una de las tres implementaciones de la misma prueba que conv
 | Pruebas | Pest · plugin Laravel | ^4.7 · ^4.1 |
 | Calidad | Pint · ESLint 9 · Prettier 3 | — |
 
-💡 **Solución.** Una aplicación Laravel 13 que sirve páginas React por Inertia. Las páginas públicas leen el catálogo y las recetas desde SQLite; el panel `/admin` permite editarlos.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Una aplicación Laravel 13 que sirve páginas React por Inertia. Las páginas públicas leen el catálogo y las recetas desde SQLite; el panel `/admin` permite editarlos.
 
 | Rol | Qué hace |
 |---|---|
@@ -7644,7 +7889,7 @@ Este repositorio es una de las tres implementaciones de la misma prueba que conv
 | **Administrador** (`role = admin`) | Gestiona categorías, productos con galería, recetas con ingredientes y pasos, y los mensajes de contacto. |
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 **Cuenta starter kit**
@@ -7778,7 +8023,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -7786,7 +8031,9 @@ erDiagram
 ### 60. Nikitos — Prueba técnica
 > Réplica del sitio de snacks Nikitos en Laravel 12 y Blade, con un panel donde se edita todo lo que se ve.
 
-🧩 **Problema.** Nikitos es una marca argentina de snacks que vende a comercios y distribuidores. Su sitio necesita mostrar el catálogo por líneas (cada una con su color y su catálogo en PDF), publicar recetas, indicar los puntos de venta en un mapa y recibir dos tipos de contacto muy distintos: **consultas comerciales** (razón social, CUIT, tipo de negocio) y **postulaciones laborales** (datos personales y CV).
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
+
+Nikitos es una marca argentina de snacks que vende a comercios y distribuidores. Su sitio necesita mostrar el catálogo por líneas (cada una con su color y su catálogo en PDF), publicar recetas, indicar los puntos de venta en un mapa y recibir dos tipos de contacto muy distintos: **consultas comerciales** (razón social, CUIT, tipo de negocio) y **postulaciones laborales** (datos personales y CV).
 
 Si todo eso se escribe a mano en las plantillas, cada producto nuevo o texto del inicio depende de un programador. La prueba técnica pedía replicar el sitio y sumarle un **panel de administración** para que el contenido se edite sin tocar código.
 
@@ -7798,7 +8045,7 @@ Este repositorio es una de las tres implementaciones de la misma prueba que conv
 | **nikitos-prueba-tecnica** (este) | Laravel 12 + Blade + Breeze |
 | [PruebaTecnica-Osole](https://github.com/Marki0/PruebaTecnica-Osole) | Laravel 8 + Blade + Laravel Mix |
 
-🛠️ **Stack**
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -7813,7 +8060,9 @@ Este repositorio es una de las tres implementaciones de la misma prueba que conv
 | Datos | SQLite (por defecto) o MySQL | — |
 | Pruebas | Pest · plugin Laravel | ^3.8 · ^3.2 |
 
-💡 **Solución.** Un sitio Laravel 12 con vistas Blade y un back-office bajo `/admin`. El contenido (productos, categorías, recetas, textos del inicio y de nosotros) vive en la base de datos; las imágenes que se suben desde el panel se optimizan a WebP antes de guardarse.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Un sitio Laravel 12 con vistas Blade y un back-office bajo `/admin`. El contenido (productos, categorías, recetas, textos del inicio y de nosotros) vive en la base de datos; las imágenes que se suben desde el panel se optimizan a WebP antes de guardarse.
 
 | Rol | Qué hace |
 |---|---|
@@ -7821,7 +8070,7 @@ Este repositorio es una de las tres implementaciones de la misma prueba que conv
 | **Usuario autenticado** (Breeze) | Entra al panel `/admin` y administra productos, categorías, recetas, contenidos y mensajes recibidos. |
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 **Imágenes optimizadas**
@@ -7955,7 +8204,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -7963,7 +8212,9 @@ erDiagram
 ### 61. Prueba técnica Osole
 > Réplica funcional del sitio de snacks Nikitos, con un panel que administra textos, banners, catálogo, recetas y mensajes.
 
-🧩 **Problema.** Nikitos es una marca argentina de snacks con varias líneas de producto. Su sitio tiene que mostrar el catálogo por línea, publicar recetas, contar quiénes son, indicar dónde comprar y recibir consultas, y cada sección tiene su propia imagen de cabecera.
+<img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
+
+Nikitos es una marca argentina de snacks con varias líneas de producto. Su sitio tiene que mostrar el catálogo por línea, publicar recetas, contar quiénes son, indicar dónde comprar y recibir consultas, y cada sección tiene su propia imagen de cabecera.
 
 La prueba técnica pedía replicar el sitio a partir del [prototipo de Figma](https://www.figma.com/proto/rMIU14zUYIY3Ci5A1bZYLy/Nikitos?page-id=0%3A1&node-id=2181-2957&viewport=431%2C389%2C0.02&t=Ak5PWNjAU2rrtwq1-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2181%3A2957) y sumar un **panel de administración** para cambiar textos, imágenes y catálogo sin tocar las plantillas.
 
@@ -7975,7 +8226,7 @@ Este repositorio es una de las tres implementaciones de la misma prueba que conv
 | [nikitos-prueba-tecnica](https://github.com/BruninAlv61/nikitos-prueba-tecnica) | Laravel 12 + Blade + Breeze |
 | **PruebaTecnica-Osole** (este) | Laravel 8 + Blade + Laravel Mix |
 
-🛠️ **Stack**
+<img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
 | Capa | Tecnología | Versión |
 |---|---|---|
@@ -7989,7 +8240,9 @@ Este repositorio es una de las tres implementaciones de la misma prueba que conv
 | Datos | SQLite (por defecto) o MySQL | — |
 | Pruebas | PHPUnit | ^9.5.10 |
 
-💡 **Solución.** Un sitio Laravel 8 con vistas Blade y un panel `/admin` restringido a administradores. Los textos de cada sección viven en `site_sections`, las cabeceras de sección en `banners`, y el catálogo en `categories → products → product_images`. Las imágenes que se suben pasan por Intervention Image antes de guardarse.
+<img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
+
+Un sitio Laravel 8 con vistas Blade y un panel `/admin` restringido a administradores. Los textos de cada sección viven en `site_sections`, las cabeceras de sección en `banners`, y el catálogo en `categories → products → product_images`. Las imágenes que se suben pasan por Intervention Image antes de guardarse.
 
 | Rol | Qué hace |
 |---|---|
@@ -7997,7 +8250,7 @@ Este repositorio es una de las tres implementaciones de la misma prueba que conv
 | **Administrador** (`is_admin = true`) | Inicia sesión y gestiona secciones, banners, categorías, productos, recetas y mensajes. |
 
 <details>
-<summary><b>📐 Ver 4 diagramas y flujos</b></summary>
+<summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
 <br>
 
 **Panel /admin**
@@ -8134,7 +8387,7 @@ erDiagram
 
 </details>
 
-[⬆ Volver al índice](#indice)
+[↑ Volver al índice](#indice)
 
 ---
 
@@ -8142,10 +8395,13 @@ erDiagram
 
 <a name="contacto"></a>
 
-## 📬 Contacto
+## <img src="docs/readme/ic-contacto.svg" width="26" height="26" alt=""> Contacto
 
 **Ing. Santiago Abasto** — Ingeniero de software full-stack.
 Diseño, construyo y despliego el producto completo: backend, frontend, móvil, datos e IA.
+
+<a href="https://www.linkedin.com/in/santiagoabasto/"><img src="docs/readme/btn-linkedin.svg" height="46" alt="LinkedIn"></a>
+<a href="https://burrowlabs.com.bo"><img src="docs/readme/btn-burrow.svg" height="46" alt="Burrow Labs"></a>
 
 > Portafolio generado el 2026-11-16. 61 proyectos · 251 diagramas. Cada ficha enlaza su arquitectura y flujos reales; las cifras de pruebas y el estado de producción son los documentados en cada repositorio.
 
