@@ -1,0 +1,499 @@
+{
+  "_nota": "Datos verificados el 16-11-2026 contra el código, la configuración, el historial de git y respuestas HTTP. Ver docs/auditoria-portfolio.md. No agregar cifras ni afirmaciones sin evidencia.",
+  "proyectos": [
+    {
+      "n": 1,
+      "slug": "apple-boss",
+      "nombre": "Apple Boss",
+      "ancla": "apple-boss",
+      "categoria": "SISTEMA DE GESTIÓN COMERCIAL",
+      "mensaje": "Gestión comercial con tienda en línea.",
+      "problema": "Stock y reparaciones en planillas: dobles ventas sobre un mismo equipo y costos a la vista.",
+      "chips": [
+        "Inventario",
+        "Ventas",
+        "Servicio técnico",
+        "E-commerce"
+      ],
+      "flujo": [
+        "Ingreso por IMEI o número de serie",
+        "Venta o reserva",
+        "Servicio técnico",
+        "Tienda en línea"
+      ],
+      "estado": "prod",
+      "enlace": "https://appleboss.com.bo",
+      "enlace_txt": "appleboss.com.bo",
+      "acento": [
+        "#C6CB36",
+        "#8F95D6"
+      ],
+      "canales": [
+        "Panel interno · admin y vendedor",
+        "Tienda en línea · clientes"
+      ],
+      "app": "Laravel 13 · Inertia 3 · React 19",
+      "modulos": [
+        "Ventas y reservas",
+        "Inventario por IMEI",
+        "Servicio técnico",
+        "Reportes y auditorías"
+      ],
+      "datos": [
+        "PostgreSQL 18",
+        "Colas: correo y PDF"
+      ],
+      "integraciones": [
+        "OpenAI · reporte semanal",
+        "n8n · respaldos",
+        "Google Drive · cotizaciones"
+      ],
+      "stack": [
+        "Laravel 13",
+        "PHP 8.5",
+        "React 19",
+        "Inertia 3",
+        "PostgreSQL 18",
+        "Docker"
+      ],
+      "capacidades": [
+        "Costo y procedencia ocultos al vendedor desde el servidor",
+        "Auditoría de inventario por escaneo",
+        "915 pruebas automatizadas en verde"
+      ]
+    },
+    {
+      "n": 2,
+      "slug": "burrow-prospect",
+      "nombre": "Burrow Prospect",
+      "ancla": "burrow-prospect",
+      "categoria": "PROSPECCIÓN COMERCIAL CON IA",
+      "mensaje": "De encontrar negocios a generar oportunidades comerciales.",
+      "problema": "Prospectar a mano no deja historial ni reglas, y un envío mal hecho rompe las reglas de WhatsApp.",
+      "chips": [
+        "Prospección",
+        "IA",
+        "Automatización",
+        "WhatsApp"
+      ],
+      "flujo": [
+        "Búsqueda en Google Places",
+        "Puntaje con hechos observados",
+        "Mensaje aprobado por una persona",
+        "Envío por WhatsApp o correo"
+      ],
+      "estado": "prod",
+      "enlace": "https://burrowlabs.com.bo/proyectos/burrow-prospect",
+      "enlace_txt": "burrowlabs.com.bo/proyectos/burrow-prospect",
+      "acento": [
+        "#4FA3E0",
+        "#FCEA10"
+      ],
+      "canales": [
+        "Equipo comercial · panel",
+        "Negocios prospectados · WhatsApp y correo"
+      ],
+      "app": "Laravel 13 · Inertia 3 · React 19 · TS",
+      "modulos": [
+        "Búsqueda y puntaje",
+        "Ficha del negocio",
+        "Mensajes con aprobación",
+        "Agente de respuestas"
+      ],
+      "datos": [
+        "PostgreSQL 18",
+        "Redis · colas"
+      ],
+      "integraciones": [
+        "Google Places",
+        "WhatsApp · API de Meta",
+        "OpenAI",
+        "Correo"
+      ],
+      "stack": [
+        "Laravel 13",
+        "PHP 8.5",
+        "React 19",
+        "TypeScript 6",
+        "Tailwind 4",
+        "PostgreSQL 18"
+      ],
+      "capacidades": [
+        "Puntaje solo con hechos observados",
+        "Aprobación humana antes de cada envío",
+        "Agente de IA que responde a los prospectos"
+      ]
+    },
+    {
+      "n": 3,
+      "slug": "odessa-oil",
+      "nombre": "Odessa Oil",
+      "ancla": "odessa-oil",
+      "categoria": "TRAZABILIDAD INDUSTRIAL",
+      "mensaje": "Control y trazabilidad de activos industriales.",
+      "problema": "Certificaciones que vencen en equipos a presión, y un estado del equipo que no se podía confiar.",
+      "chips": [
+        "Inspecciones",
+        "Certificaciones",
+        "Taller",
+        "Multiempresa"
+      ],
+      "flujo": [
+        "Equipo del cliente",
+        "Recepción en el taller",
+        "Informe de inspección",
+        "Estado y vencimiento"
+      ],
+      "estado": "prod",
+      "enlace": "https://sistema.odessaoil.com",
+      "enlace_txt": "sistema.odessaoil.com · acceso con usuario",
+      "acento": [
+        "#E04A63",
+        "#5B8DEF"
+      ],
+      "canales": [
+        "Personal del taller",
+        "Clientes · su inventario"
+      ],
+      "app": "Laravel 13 · Inertia 3 · React 19 · TS",
+      "modulos": [
+        "Inventario de equipos",
+        "Informes de inspección",
+        "Vencimientos",
+        "Recorrido por el taller"
+      ],
+      "datos": [
+        "MariaDB / MySQL",
+        "Auditoría de cambios"
+      ],
+      "integraciones": [
+        "Correo en cola",
+        "API con Sanctum"
+      ],
+      "stack": [
+        "Laravel 13",
+        "PHP 8.3+",
+        "React 19",
+        "TypeScript 7",
+        "Tailwind 4",
+        "MariaDB"
+      ],
+      "capacidades": [
+        "Aislamiento estricto entre empresas",
+        "Estado del equipo derivado de sus informes",
+        "Fecha «mandar antes de» calculada por servicio"
+      ]
+    },
+    {
+      "n": 4,
+      "slug": "moldpack",
+      "nombre": "Moldpack",
+      "ancla": "moldpack",
+      "categoria": "PORTAL B2B Y FACTURACIÓN ELECTRÓNICA",
+      "mensaje": "Del pedido a la factura electrónica.",
+      "problema": "Logística, contabilidad, facturación y clientes con datos que no siempre coincidían entre sí.",
+      "chips": [
+        "Portal B2B",
+        "Logística",
+        "ARCA",
+        "CMS"
+      ],
+      "flujo": [
+        "Pedido del cliente",
+        "Logística y remito",
+        "Factura A/B con CAE",
+        "Seguimiento en el área de clientes"
+      ],
+      "estado": "prod",
+      "enlace": "https://www.moldpack.com.ar",
+      "enlace_txt": "moldpack.com.ar",
+      "acento": [
+        "#EC458B",
+        "#F7A8CB"
+      ],
+      "canales": [
+        "Sitio público · distribuidores",
+        "Área de clientes",
+        "Panel /admin · equipo"
+      ],
+      "app": "Laravel 13 · Inertia 3 · React 19",
+      "modulos": [
+        "CMS con TipTap",
+        "Logística",
+        "Contabilidad",
+        "Área de clientes"
+      ],
+      "datos": [
+        "MySQL 8"
+      ],
+      "integraciones": [
+        "ARCA · factura electrónica",
+        "WhatsApp",
+        "Mapas · Leaflet y OSM",
+        "PDF"
+      ],
+      "stack": [
+        "Laravel 13",
+        "PHP 8.5",
+        "React 19",
+        "Inertia 3",
+        "Blade",
+        "MySQL 8"
+      ],
+      "capacidades": [
+        "Cuatro frentes con acceso propio",
+        "Facturas A/B con CAE emitido por ARCA",
+        "Sitio público fiel al diseño de Figma"
+      ]
+    },
+    {
+      "n": 5,
+      "slug": "locoton",
+      "nombre": "Locoton",
+      "ancla": "locoton",
+      "categoria": "POS Y GESTIÓN GASTRONÓMICA",
+      "mensaje": "Del pedido al control de costos.",
+      "problema": "Sistemas genéricos multi-rubro: menús de otros rubros, recetas sin costo real y stock negativo.",
+      "chips": [
+        "POS",
+        "Recetas",
+        "Inventario",
+        "Caja"
+      ],
+      "flujo": [
+        "Pedido en mesa o por QR",
+        "Comanda a cocina y barra",
+        "Cobro y caja",
+        "Costo desde la receta"
+      ],
+      "estado": "pend",
+      "enlace": "",
+      "enlace_txt": "Enlace público pendiente de verificar",
+      "acento": [
+        "#FB923C",
+        "#F43F5E"
+      ],
+      "canales": [
+        "Salón y caja",
+        "Cocina y barra",
+        "Cliente · QR y autopedido",
+        "Repartidor · delivery"
+      ],
+      "app": "Laravel 13 · Inertia 3 · Vue 3.5 · TS",
+      "modulos": [
+        "Venta de restaurante",
+        "Recetas y producción",
+        "Inventario y compras",
+        "Caja y crédito"
+      ],
+      "datos": [
+        "MySQL 9.6",
+        "20 módulos por sede"
+      ],
+      "integraciones": [
+        "SIAT · simulador",
+        "Mapas OSM · delivery",
+        "Impresoras térmicas"
+      ],
+      "stack": [
+        "Laravel 13",
+        "PHP 8.5",
+        "Vue 3.5",
+        "Inertia 3",
+        "TypeScript",
+        "MySQL 9.6"
+      ],
+      "capacidades": [
+        "20 módulos que se encienden por sede",
+        "Costo de lo producido desde lotes reales",
+        "26 reportes en un motor único"
+      ]
+    },
+    {
+      "n": 6,
+      "slug": "ninth-group",
+      "nombre": "Ninth Group",
+      "ancla": "ninth-group",
+      "categoria": "CRM Y PROYECTOS INMOBILIARIOS",
+      "mensaje": "Del prospecto a la gestión inmobiliaria.",
+      "problema": "Sitio, CRM, avance de obra, planes de pago y comisiones que tenían que vivir en un solo sistema.",
+      "chips": [
+        "CRM",
+        "Preventa",
+        "Proyectos",
+        "Comisiones"
+      ],
+      "flujo": [
+        "Prospecto desde el sitio",
+        "Seguimiento en el CRM",
+        "Preventa y plan de pago",
+        "Comisiones del equipo"
+      ],
+      "estado": "prod",
+      "enlace": "https://ninthgroup.bo/",
+      "enlace_txt": "ninthgroup.bo",
+      "acento": [
+        "#C9AD7E",
+        "#E9DCC2"
+      ],
+      "canales": [
+        "Sitio público · compradores",
+        "CRM · equipo comercial",
+        "Panel de proyectos"
+      ],
+      "app": "Laravel 13 · Inertia 3 · React 19 · TS",
+      "modulos": [
+        "26 módulos de dominio",
+        "Preventa y avance de obra",
+        "Plan de pago",
+        "Comisiones"
+      ],
+      "datos": [
+        "MySQL 8.4",
+        "Redis 8 · caché y colas"
+      ],
+      "integraciones": [
+        "WhatsApp",
+        "OpenAI",
+        "Google Maps y Places"
+      ],
+      "stack": [
+        "Laravel 13",
+        "PHP 8.5",
+        "React 19",
+        "TypeScript",
+        "MySQL 8.4",
+        "Redis 8"
+      ],
+      "capacidades": [
+        "26 módulos de dominio",
+        "Avance de obra y plan de pago por proyecto",
+        "Reparto de comisiones del equipo"
+      ]
+    },
+    {
+      "n": 7,
+      "slug": "aiq",
+      "nombre": "AIQ",
+      "ancla": "aiq",
+      "categoria": "PLATAFORMA Y ASESOR TÉCNICO CON IA",
+      "mensaje": "Conocimiento técnico empresarial asistido por IA.",
+      "problema": "Las consultas técnicas de los clientes dependían de que un asesor estuviera disponible.",
+      "chips": [
+        "Catálogo",
+        "Documentación",
+        "Asesor multimodal",
+        "CMS"
+      ],
+      "flujo": [
+        "Cliente aprobado",
+        "Consulta con texto o foto",
+        "Base técnica de AIQ",
+        "Respuesta con contexto"
+      ],
+      "estado": "prod",
+      "enlace": "https://aiq.com.ar/",
+      "enlace_txt": "aiq.com.ar · asesor en la zona de clientes",
+      "acento": [
+        "#F04452",
+        "#5B93F2"
+      ],
+      "canales": [
+        "Visitantes · sitio y catálogo",
+        "Clientes aprobados · zona privada",
+        "Administración · CMS"
+      ],
+      "app": "Laravel 12 · Inertia 2 · Vue 3",
+      "modulos": [
+        "Catálogo y CMS",
+        "Zona de clientes",
+        "Asesor técnico",
+        "Base de conocimiento"
+      ],
+      "datos": [
+        "MySQL",
+        "PDFs de conocimiento"
+      ],
+      "integraciones": [
+        "Google Gemini · multimodal",
+        "n8n · recuperación semántica",
+        "Correo"
+      ],
+      "stack": [
+        "Laravel 12",
+        "PHP 8.2+",
+        "Vue 3",
+        "Inertia 2",
+        "Tailwind 3",
+        "Gemini"
+      ],
+      "capacidades": [
+        "Memoria por conversación y adjuntos de imagen",
+        "Conocimiento desde PDFs del administrador",
+        "Credenciales de IA cifradas en la base"
+      ]
+    },
+    {
+      "n": 8,
+      "slug": "calendariow",
+      "nombre": "CalendarioW",
+      "ancla": "calendariow",
+      "categoria": "SAAS DE RESERVAS",
+      "mensaje": "Agenda y gestión para negocios de servicios.",
+      "problema": "Agenda, caja y reservas entre planillas y WhatsApp: dobles reservas y cobros sin control.",
+      "chips": [
+        "SaaS",
+        "Reservas",
+        "Web",
+        "Mobile"
+      ],
+      "flujo": [
+        "Reserva del cliente",
+        "Agenda sin dobles reservas",
+        "Cobro y caja",
+        "Recordatorio por WhatsApp"
+      ],
+      "estado": "dev",
+      "enlace": "",
+      "enlace_txt": "Sin aplicación pública todavía",
+      "acento": [
+        "#3B8FD9",
+        "#FCE301"
+      ],
+      "canales": [
+        "Web · dueños y equipo",
+        "App Business · Flutter",
+        "App de clientes · Flutter"
+      ],
+      "app": "Laravel 13 · Inertia 3 · React 19 · API v1",
+      "modulos": [
+        "Agenda y reservas",
+        "Caja y pagos",
+        "Clientes y fidelización",
+        "IA con herramientas"
+      ],
+      "datos": [
+        "PostgreSQL 17 · Supabase",
+        "Tiempo real"
+      ],
+      "integraciones": [
+        "WhatsApp · API de Meta",
+        "Geocercas",
+        "Paquete Flutter compartido"
+      ],
+      "stack": [
+        "Laravel 13",
+        "PHP 8.5",
+        "React 19",
+        "Flutter",
+        "PostgreSQL 17",
+        "Supabase"
+      ],
+      "capacidades": [
+        "Sin dobles reservas, garantizado en la base",
+        "Dinero en centavos e instantes en UTC",
+        "Monorepo: web y dos apps móviles"
+      ]
+    }
+  ]
+}
