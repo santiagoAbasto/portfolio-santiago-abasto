@@ -10,10 +10,10 @@
 | 4 | Diagramas Mermaid | ✅ 251 de 251 válidos | `mermaid.parse` (Mermaid 11.4.1) en Chrome headless |
 | 5 | Revisión visual de las miniaturas | ✅ 16 diseños revisados en 1200 × 675 y los casos más ajustados en 1200 × 630 | Render y lectura de cada PNG; ver correcciones |
 | 6 | Textos, tildes y nombres | ✅ | Revisión de los textos nuevos; nombres oficiales verificados (Burrow Prospect, Locoton según el autor) |
-| 7 | Contraste, tamaños y móvil | ✅ en miniaturas · ⏳ README en móvil | Textos claros sobre azul marino; tamaño mínimo 11 px en etiquetas y 14 px en contenido |
+| 7 | Contraste, tamaños y móvil | ✅ | Textos claros sobre azul marino (mínimo 11 px en etiquetas y 14 px en contenido); README revisado a 375 px: miniaturas de a dos y leyendas en texto real legibles |
 | 8 | SVG y PNG coinciden | ✅ idénticos byte a byte | Cada PNG se renderiza desde su SVG; se volvió a renderizar y se compararon los archivos |
 | 9 | Archivos privados | ✅ ninguno | 0 correos o teléfonos en lo publicado; `evidencias/` en `.gitignore`; sin capturas de paneles privados |
-| 10 | README en GitHub | ⏳ después de publicar | Se verifica en vivo |
+| 10 | README en GitHub | ✅ | Verificado en vivo después de publicar (ver abajo) |
 
 ## Detalle de enlaces externos
 
@@ -32,6 +32,12 @@
 - **Versiones partidas y separadores colgando.** «Vue / 3.5» y «PostgreSQL 17 ·» al cortar línea; ahora la versión no se separa de su tecnología y ningún «·» queda al borde.
 - **Capacidad sin respaldo.** «CRM» en Burrow Prospect se cambió por «WhatsApp».
 
-## Verificación en GitHub (después de publicar)
+## Verificación en GitHub (16-11-2026, después de publicar)
 
-⏳ Pendiente: render del README, anclas `#locoton` y `#burrow-prospect`, imágenes de casos destacados y lectura en móvil.
+- README renderizado con 292 imágenes y **0 rotas**.
+- Casos destacados: las 8 miniaturas A cargan; las 8 imágenes B cargan dentro de sus fichas.
+- **Anclas presentes:** `#apple-boss`, `#burrow-prospect`, `#odessa-oil`, `#moldpack`, `#locoton`, `#ninth-group`, `#aiq` y `#calendariow` (los destinos de los elementos B en LinkedIn), los alias `#burrow-prospects` y `#mahiki-restaurante-y-bar`, y `#casos-destacados` y `#problemas`.
+- Títulos en vivo: «1. Locoton — POS y gestión gastronómica» y «36. Burrow Prospect».
+- Lectura en móvil (375 px): `#casos-destacados` abre en su sección; miniaturas de a dos y leyendas legibles.
+
+**No verificado desde acá:** LinkedIn. Las imágenes y la guía están listas, pero el perfil se actualiza a mano (ver `linkedin-reinsercion-miniaturas.md`).
