@@ -31,17 +31,69 @@ Casos reales de sistemas empresariales, POS, CRM, industria, e-commerce, automat
 
 Este documento reúne mi trabajo en un solo lugar. Cada proyecto dice **qué problema resolvía**, **con qué stack** y **qué solución le dimos**, con sus **diagramas de arquitectura y flujos** (se despliegan al hacer clic). Desarrollo de **Ing. Santiago Abasto**; las colaboraciones están marcadas al final.
 
+<a name="casos-destacados"></a>
+## <img src="docs/readme/ic-destacados.svg" width="26" height="26" alt=""> Casos destacados
+
+Ocho sistemas que representan mi trabajo: un problema real, la solución construida y evidencia que se puede comprobar. Cada imagen lleva al producto o a su caso público; la ficha técnica completa está más abajo.
+
+<p>
+<a href="https://appleboss.com.bo"><img src="assets/portfolio/projects/apple-boss/producto-1200x675.png" width="49%" alt="Apple Boss — Gestión comercial con tienda en línea."></a>
+<a href="https://burrowlabs.com.bo/proyectos/burrow-prospect"><img src="assets/portfolio/projects/burrow-prospect/producto-1200x675.png" width="49%" alt="Burrow Prospect — De encontrar negocios a generar oportunidades comerciales."></a>
+</p>
+
+- **Apple Boss** · Gestión comercial con tienda en línea. *En producción* · [Ver producto](https://appleboss.com.bo) · [Ficha técnica](#apple-boss)
+- **Burrow Prospect** · De encontrar negocios a generar oportunidades comerciales. *En producción* · [Ver producto](https://burrowlabs.com.bo/proyectos/burrow-prospect) · [Ficha técnica](#burrow-prospect)
+
+<p>
+<a href="https://sistema.odessaoil.com"><img src="assets/portfolio/projects/odessa-oil/producto-1200x675.png" width="49%" alt="Odessa Oil — Control y trazabilidad de activos industriales."></a>
+<a href="https://www.moldpack.com.ar"><img src="assets/portfolio/projects/moldpack/producto-1200x675.png" width="49%" alt="Moldpack — Del pedido a la factura electrónica."></a>
+</p>
+
+- **Odessa Oil** · Control y trazabilidad de activos industriales. *En producción* · [Ver producto](https://sistema.odessaoil.com) · [Ficha técnica](#odessa-oil)
+- **Moldpack** · Del pedido a la factura electrónica. *En producción* · [Ver producto](https://www.moldpack.com.ar) · [Ficha técnica](#moldpack)
+
+<p>
+<a href="#locoton"><img src="assets/portfolio/projects/locoton/producto-1200x675.png" width="49%" alt="Locoton — Del pedido al control de costos."></a>
+<a href="https://ninthgroup.bo/"><img src="assets/portfolio/projects/ninth-group/producto-1200x675.png" width="49%" alt="Ninth Group — Del prospecto a la gestión inmobiliaria."></a>
+</p>
+
+- **Locoton** · Del pedido al control de costos. *Producción por verificar* · [Ficha técnica](#locoton)
+- **Ninth Group** · Del prospecto a la gestión inmobiliaria. *En producción* · [Ver producto](https://ninthgroup.bo/) · [Ficha técnica](#ninth-group)
+
+<p>
+<a href="https://aiq.com.ar/"><img src="assets/portfolio/projects/aiq/producto-1200x675.png" width="49%" alt="AIQ — Conocimiento técnico empresarial asistido por IA."></a>
+<a href="#calendariow"><img src="assets/portfolio/projects/calendariow/producto-1200x675.png" width="49%" alt="CalendarioW — Agenda y gestión para negocios de servicios."></a>
+</p>
+
+- **AIQ** · Conocimiento técnico empresarial asistido por IA. *En producción* · [Ver producto](https://aiq.com.ar/) · [Ficha técnica](#aiq)
+- **CalendarioW** · Agenda y gestión para negocios de servicios. *En desarrollo* · [Ficha técnica](#calendariow)
+
+<a name="problemas"></a>
+## <img src="docs/readme/ic-resuelvo.svg" width="26" height="26" alt=""> Qué problemas resuelvo
+
+| Si tu empresa… | Construyo… | Casos |
+|---|---|---|
+| Lleva ventas, stock, caja o reservas en planillas y WhatsApp | Sistemas de gestión con roles, caja, inventario y reportes | [Apple Boss](#apple-boss) · [Locoton](#locoton) · [CalendarioW](#calendariow) |
+| Vende a otras empresas y factura a mano | Portales B2B con logística y factura electrónica | [Moldpack](#moldpack) |
+| Tiene que demostrar inspecciones, certificaciones o vencimientos | Trazabilidad multiempresa con estados que salen de la evidencia | [Odessa Oil](#odessa-oil) |
+| Depende de que una persona responda o salga a buscar clientes | IA aplicada con reglas, contexto y aprobación humana | [AIQ](#aiq) · [Burrow Prospect](#burrow-prospect) |
+| Necesita unir sitio, CRM y gestión de proyectos | Plataformas integrales con módulos de dominio | [Ninth Group](#ninth-group) |
+
+**Cómo leer las fichas.** Cada una separa *problema*, *stack* y *solución*; los casos destacados suman *participación y evidencia* (producción, código y pruebas, verificados el 16-11-2026). Las fichas 1 a 55 son proyectos desarrollados en mis repositorios; las 56 a 61 son colaboraciones en repositorios de terceros, y cada una indica mi participación.
+
 <a name="indice"></a>
 ## <img src="docs/readme/ic-indice.svg" width="26" height="26" alt=""> Índice
 
+**Empezá por acá:** [Casos destacados](#casos-destacados) · [Qué problemas resuelvo](#problemas) · [Contacto](#contacto)
+
 **Sistemas de gestión, POS y ERP**  
-[Mahiki — Restaurante y bar](#mahiki-restaurante-y-bar) · [Qué Tacos — Katt](#que-tacos-katt) · [Lima Sushi — Nikkei](#lima-sushi-nikkei) · [Macondo POS](#macondo-pos) · [Solo Pastas](#solo-pastas) · [Apple Boss](#apple-boss) · [Blackphone (Axel)](#blackphone-axel) · [Sistema Boss](#sistema-boss) · [Odessa Oil](#odessa-oil) · [Moldpack](#moldpack) · [Tickets Osole](#tickets-osole) · [Pórpora — Producción](#porpora-produccion) · [Tigo — Tickets de soporte](#tigo-tickets-de-soporte)
+[Locoton — POS y gestión gastronómica](#locoton) · [Qué Tacos — Katt](#que-tacos-katt) · [Lima Sushi — Nikkei](#lima-sushi-nikkei) · [Macondo POS](#macondo-pos) · [Solo Pastas](#solo-pastas) · [Apple Boss](#apple-boss) · [Blackphone (Axel)](#blackphone-axel) · [Sistema Boss](#sistema-boss) · [Odessa Oil](#odessa-oil) · [Moldpack](#moldpack) · [Tickets Osole](#tickets-osole) · [Pórpora — Producción](#porpora-produccion) · [Tigo — Tickets de soporte](#tigo-tickets-de-soporte)
 
 **E-commerce, catálogos y sitios industriales**  
 [Conar](#conar) · [Felrro](#felrro) · [Fitinox](#fitinox) · [Iron-Screw](#iron-screw) · [Calderas Hercal](#calderas-hercal) · [Gran Sasso](#gran-sasso) · [Nicolais Mario e Hijo](#nicolais-mario-e-hijo) · [Panelcar](#panelcar) · [Tarea SRL](#tarea-srl) · [San Justo Iluminación](#san-justo-iluminacion) · [Elite — Inmobiliaria](#elite-inmobiliaria) · [TechReturns](#techreturns) · [Roberto Cordes — Web](#roberto-cordes-web) · [Cordes — Sistema de cotizaciones](#cordes-sistema-de-cotizaciones) · [Elementos](#elementos) · [Muela del Diablo](#muela-del-diablo)
 
 **IA, datos y automatización**  
-[BMH — Asesor con IA](#bmh-asesor-con-ia) · [GACRI — Asistente](#gacri-asistente) · [AIQ](#aiq) · [Melectric IA](#melectric-ia) · [X-Urban IA](#x-urban-ia) · [Carlos — Bolsa de Valores](#carlos-bolsa-de-valores) · [Burrow Prospects](#burrow-prospects) · [Commerce Intelligence](#commerce-intelligence) · [CotizaFlow](#cotizaflow) · [Pruebas de estrés](#pruebas-de-estres)
+[BMH — Asesor con IA](#bmh-asesor-con-ia) · [GACRI — Asistente](#gacri-asistente) · [AIQ](#aiq) · [Melectric IA](#melectric-ia) · [X-Urban IA](#x-urban-ia) · [Carlos — Bolsa de Valores](#carlos-bolsa-de-valores) · [Burrow Prospect](#burrow-prospect) · [Commerce Intelligence](#commerce-intelligence) · [CotizaFlow](#cotizaflow) · [Pruebas de estrés](#pruebas-de-estres)
 
 **Web, reservas, salud y landing**  
 [Burrow Labs](#burrow-labs) · [Ninth Group](#ninth-group) · [CalendarioW](#calendariow) · [Visión Tours](#vision-tours) · [Visión Tours 2](#vision-tours-2) · [Summer's Style](#summer-s-style) · [Sumer Style](#sumer-style) · [Ginos Barbershop](#ginos-barbershop) · [Dra. Isabel Piérola](#dra-isabel-pierola) · [Valentina's Medical Store](#valentina-s-medical-store) · [Wasi Pet](#wasi-pet) · [FundasAlis](#fundasalis) · [LavaFácil](#lavafacil) · [Match & Adopt](#match-adopt) · [Juegos 2D](#juegos-2d) · [21 — Regalo para Sharol](#21-regalo-para-sharol)
@@ -56,13 +108,15 @@ Este documento reúne mi trabajo en un solo lugar. Cada proyecto dice **qué pro
 
 ## <img src="docs/readme/ic-sistemas.svg" width="26" height="26" alt=""> Sistemas de gestión, POS y ERP
 
-<a name="mahiki-restaurante-y-bar"></a>
-### 1. Mahiki — Restaurante y bar
-> El sistema de gestión de un restaurante y bar boliviano, de la receta al cobro: todo lo que se vende descuenta sus insumos, todo el dinero pasa por una caja y cada módulo se enciende o se apaga sin tocar código.
+<a name="locoton"></a><a name="mahiki-restaurante-y-bar"></a>
+### 1. Locoton — POS y gestión gastronómica
+> Sistema POS, inventario y gestión integral para restaurantes y bares, de la receta al cobro: todo lo que se vende descuenta sus insumos, todo el dinero pasa por una caja y cada módulo se enciende o se apaga sin tocar código.
+
+<img src="assets/portfolio/projects/locoton/arquitectura-1200x675.png" width="100%" alt="Locoton — arquitectura y stack verificado">
 
 <img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
-El local trabaja hoy con **Siesam**, un sistema genérico multi-rubro (sirve igual a un hotel, una distribuidora o un taller). Para un restaurante y bar eso se traduce en:
+Locoton parte de una investigación de procesos en un restaurante y bar en operación (ver *Procedencia*), que trabaja con **Siesam**, un sistema genérico multi-rubro (sirve igual a un hotel, una distribuidora o un taller). Ese relevamiento mostró lo que eso significa para el rubro:
 
 - **Un menú de ~95 entradas y 229 rutas**, muchas de otros rubros, y acciones que dependen de seleccionar una fila y buscar el botón o de atajos F4, F8 y F9.
 - **Recetas que no se usan bien:** el costo de materia prima figura en 0,00 en todas las recetas, así que no se sabe cuánto cuesta de verdad una hamburguesa o un trago.
@@ -93,7 +147,7 @@ Punto de partida: `laravel/vue-starter-kit` (rama `dev-main`, la que trae Larave
 
 <img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
 
-**MAHIKI** reproduce la lógica de negocio que el local ya conoce (los mismos nombres de módulos, roles y permisos que Siesam) y la ordena en un sistema hecho solo para restaurante y bar, rápido en celular, tablet y computadora.
+**Locoton** toma la lógica de negocio que el rubro ya conoce (los nombres de módulos, roles y permisos de Siesam, relevados en la investigación) y la ordena en un sistema hecho solo para restaurante y bar, rápido en celular, tablet y computadora.
 
 Tres principios guían todo:
 
@@ -103,7 +157,7 @@ Tres principios guían todo:
 
 **Quién lo usa** (8 roles de fábrica, con los permisos de Siesam):
 
-| Rol | Qué hace en MAHIKI |
+| Rol | Qué hace en Locoton |
 |---|---|
 | Superadministrador · Administrador | Configuración, sedes, usuarios, cargos, permisos y todo el sistema |
 | Mesero | Mesas, comandas, clientes y pantalla de cocina; no ve costos ni cobra |
@@ -114,6 +168,14 @@ Tres principios guían todo:
 | Repartidor (cargo) | App del repartidor con GPS mientras está en servicio |
 
 Y fuera del personal: el **cliente en la mesa** (autopedido por QR) y el **cliente a domicilio** (tienda en línea), ambos sin crear cuenta.
+
+<img src="docs/readme/tag-evidencia.svg" height="28" alt="Participación y evidencia">
+
+- **Procedencia:** la investigación de procesos del restaurante y bar Mahiki, que opera con Siesam, fue la referencia de diseño. Mahiki no figura como cliente: no hay evidencia contractual en el repositorio.
+- **Implementado (verificado en local):** las 11 fases del plan, desde la base y el inventario hasta la venta de restaurante, la caja, multi-sede, los reportes y el delivery, cada una con sus pruebas.
+- **Pendiente:** conexión real con el SIAT (hoy con simulador), la app del repartidor en un celular real y las impresoras térmicas reales.
+- **Producción:** reportada por el autor; la documentación del repositorio (15-11-2026) indica ejecución local. URL pública pendiente de verificar.
+- **Código:** privado. Conserva el nombre interno `mahiki` de la etapa de investigación (por ejemplo, `config/mahiki.php`).
 
 <details>
 <summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 5 diagramas y flujos</b></summary>
@@ -1075,6 +1137,8 @@ erDiagram
 ### 6. Apple Boss
 > Sistema de gestión comercial e inventario, con tienda pública, para un negocio de productos y servicios tecnológicos.
 
+<img src="assets/portfolio/projects/apple-boss/arquitectura-1200x675.png" width="100%" alt="Apple Boss — arquitectura y stack verificado">
+
 <img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
 Un negocio de equipos Apple y tecnología vende unidades **únicas**: cada celular, computadora o accesorio tiene su código, su IMEI o su número de serie. Antes del sistema, el stock, las reservas, las permutas y las reparaciones vivían en planillas y en la memoria del equipo de ventas. Eso producía dobles ventas sobre el mismo equipo, costos y procedencias visibles para quien no debía verlos, y reportes que no coincidían con la caja.
@@ -1103,6 +1167,12 @@ Un negocio de equipos Apple y tecnología vende unidades **únicas**: cada celul
 | **Administrador** | Ve todo: costos, ganancias, procedencia, usuarios, reportes, auditorías y configuración de la tienda. |
 | **Vendedor** | Registra ventas, reservas, clientes, cotizaciones y servicios. Nunca ve costo, ganancia ni procedencia: se quitan en el servidor. |
 | **Cliente de la tienda** | Navega el catálogo, compara modelos, arma su carrito, paga y sigue su pedido. |
+
+<img src="docs/readme/tag-evidencia.svg" height="28" alt="Participación y evidencia">
+
+- **Participación:** desarrollo integral, como fundador de Apple Boss. 193 commits entre mayo de 2025 y noviembre de 2026.
+- **Producción:** [appleboss.com.bo](https://appleboss.com.bo) responde (verificado el 16-11-2026).
+- **Código:** [público en GitHub](https://github.com/santiagoAbasto/ApplebBoss-Laravel). La suite de 915 pruebas pasó completa el 16-11-2026.
 
 <details>
 <summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 5 diagramas y flujos</b></summary>
@@ -1673,6 +1743,8 @@ flowchart LR
 ### 9. Odessa Oil
 > Cada equipo a presión con su estado real, su vencimiento y su recorrido por el taller, sin planillas sueltas.
 
+<img src="assets/portfolio/projects/odessa-oil/arquitectura-1200x675.png" width="100%" alt="Odessa Oil — arquitectura y stack verificado">
+
 <img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
 Odessa Oil inspecciona, repara y certifica equipos a presión de sus clientes. Cada pieza tiene una o varias certificaciones (COS, COC…) que vencen, y un equipo que sale a operar con una certificación vencida es un riesgo y un incumplimiento. Antes de este sistema, la información vivía en una plataforma anterior (auditada en [`docs/auditoria-sistema-actual.md`](docs/auditoria-sistema-actual.md)) con problemas concretos:
@@ -1720,6 +1792,12 @@ Una plataforma web multiempresa que registra el **inventario de cada cliente**, 
 | Cliente · Consulta | Lo propio, solo lectura. |
 
 El detalle está en la [matriz de roles y permisos](docs/matriz-roles-permisos.md), que se genera desde `Permissions::roleMatrix()`.
+
+<img src="docs/readme/tag-evidencia.svg" height="28" alt="Participación y evidencia">
+
+- **Participación:** desarrollo integral; único autor en el historial de git (49 commits).
+- **Producción:** [sistema.odessaoil.com](https://sistema.odessaoil.com) (acceso con usuario); la configuración de despliegue está en el repositorio.
+- **Código:** [público en GitHub](https://github.com/santiagoAbasto/odessa).
 
 <details>
 <summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 5 diagramas y flujos</b></summary>
@@ -1925,6 +2003,8 @@ erDiagram
 ### 10. Moldpack
 > Sitio editorial, panel de gestión, portal B2B de clientes y facturación electrónica ARCA de Moldpack, en una sola aplicación Laravel.
 
+<img src="assets/portfolio/projects/moldpack/arquitectura-1200x675.png" width="100%" alt="Moldpack — arquitectura y stack verificado">
+
 <img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
 Moldpack es un fabricante argentino de packaging gastronómico que vende a distribuidores y comercios. Necesita presentarse como fabricante confiable, que cada visita encuentre productos y catálogos, convertir esas visitas en consultas comerciales y llevar cada pedido hasta su factura. Con el sistema anterior:
@@ -1961,6 +2041,12 @@ Una sola aplicación Laravel con cuatro frentes, cada uno con su propia identida
 | **Zona privada `/area-clientes`** | Clientes aprobados | Blade, integrada al layout público (guard `cliente`) |
 
 Roles del panel (definidos en `app/Support/AdminAccess.php`): **super administrador**, **administrador**, **comercial**, **logística**, **contabilidad** y **editor**. Cada módulo exige su permiso y los importes se ocultan a los roles que no deben verlos.
+
+<img src="docs/readme/tag-evidencia.svg" height="28" alt="Participación y evidencia">
+
+- **Participación:** desarrollo integral; único autor en el historial de git del sistema vigente (14 commits).
+- **Producción:** [moldpack.com.ar](https://www.moldpack.com.ar): el sitio público sale de este código (sus recursos y su dominio coinciden con el repositorio).
+- **Código:** privado.
 
 <details>
 <summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 6 diagramas y flujos</b></summary>
@@ -4680,6 +4766,8 @@ erDiagram
 ### 32. AIQ
 > El catálogo de AIQ, su CMS y una zona privada donde cada cliente consulta a un asesor técnico con IA.
 
+<img src="assets/portfolio/projects/aiq/arquitectura-1200x675.png" width="100%" alt="AIQ — arquitectura y stack verificado">
+
 <img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
 AIQ trabaja en el rubro plástico: masterbatches, bobinas y termoformados. Sus clientes consultan por procesos, aplicaciones y requisitos técnicos, y esas respuestas dependían de que un asesor estuviera disponible. Al mismo tiempo, el sitio institucional y el catálogo necesitaban actualizarse sin tocar las vistas, y la documentación técnica interna (fichas, hojas de seguridad, certificados) no debía circular sin control.
@@ -4706,6 +4794,12 @@ Un monolito Laravel que reúne el sitio público, un CMS completo y una **zona p
 | **Cliente** | Se registra (queda pendiente de aprobación), entra a la zona privada y conversa con el asesor |
 | **Personal interno** | Gestiona contenido, catálogo, medios, metadatos, mensajes y suscriptores |
 | **Administrador** | Aprueba clientes y su vigencia, importa contactos, carga PDFs de conocimiento y configura las integraciones de IA |
+
+<img src="docs/readme/tag-evidencia.svg" height="28" alt="Participación y evidencia">
+
+- **Participación:** desarrollo integral; único autor en el historial de git.
+- **Producción:** sitio en [aiq.com.ar](https://aiq.com.ar/); el asesor con IA funciona en la zona privada de clientes (`/zona-clientes`, con usuario), verificado el 16-11-2026.
+- **Código:** [público en GitHub](https://github.com/santiagoAbasto/AIQ).
 
 <details>
 <summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 4 diagramas y flujos</b></summary>
@@ -5125,9 +5219,11 @@ flowchart LR
 
 ---
 
-<a name="burrow-prospects"></a>
-### 36. Burrow Prospects
+<a name="burrow-prospect"></a><a name="burrow-prospects"></a>
+### 36. Burrow Prospect
 > de la ficha de Google a la reunión
+
+<img src="assets/portfolio/projects/burrow-prospect/arquitectura-1200x675.png" width="100%" alt="Burrow Prospect — arquitectura y stack verificado">
 
 <img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
@@ -5158,6 +5254,12 @@ Burrow Prospect lleva la prospección de punta a punta en un solo sistema:
 - **Muestra** una demo que funciona con los datos del negocio y lleva la conversación a una reunión.
 
 Todo cambio de estado, mensaje y envío queda en el historial de la ficha. Lo usa el equipo de Burrow Labs; el dueño aprueba cada lote y fija la lista de precios que el agente puede citar. Los textos van en español de Bolivia y la zona horaria es `America/La_Paz`.
+
+<img src="docs/readme/tag-evidencia.svg" height="28" alt="Participación y evidencia">
+
+- **Participación:** desarrollo integral; producto propio de Burrow Labs, único autor en el historial de git (84 commits).
+- **Producción:** aplicación en [prospect.burrowlabs.com.bo](https://prospect.burrowlabs.com.bo/login) (acceso con usuario) y caso público en [burrowlabs.com.bo](https://burrowlabs.com.bo/proyectos/burrow-prospect).
+- **Código:** privado.
 
 <details>
 <summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 5 diagramas y flujos</b></summary>
@@ -5786,6 +5888,8 @@ flowchart LR
 ### 41. Ninth Group
 > CRM inmobiliario, sitio público y proyectos en preventa
 
+<img src="assets/portfolio/projects/ninth-group/arquitectura-1200x675.png" width="100%" alt="Ninth Group — arquitectura y stack verificado">
+
 <img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
 Una inmobiliaria con proyectos en preventa necesitaba unir el sitio público, el CRM, el avance de obra, los planes de pago y las comisiones del equipo en un solo sistema.
@@ -5806,6 +5910,12 @@ Una inmobiliaria con proyectos en preventa necesitaba unir el sitio público, el
 
 Plataforma en producción (ninthgroup.bo) con 26 módulos de dominio: sitio público, fichas de proyectos en preventa con avance de obra y plan de pago, CRM y reparto de comisiones.
 
+<img src="docs/readme/tag-evidencia.svg" height="28" alt="Participación y evidencia">
+
+- **Participación:** desarrollo integral; único autor en el historial de git (42 commits).
+- **Producción:** [ninthgroup.bo](https://ninthgroup.bo/).
+- **Código:** privado.
+
 [↑ Volver al índice](#indice)
 
 ---
@@ -5813,6 +5923,8 @@ Plataforma en producción (ninthgroup.bo) con 26 módulos de dominio: sitio púb
 <a name="calendariow"></a>
 ### 42. CalendarioW
 > La plataforma de agenda, caja y reservas para los negocios de servicios de Bolivia.
+
+<img src="assets/portfolio/projects/calendariow/arquitectura-1200x675.png" width="100%" alt="CalendarioW — arquitectura y stack verificado">
 
 <img src="docs/readme/tag-problema.svg" height="28" alt="Problema">
 
@@ -5825,6 +5937,12 @@ Laravel 13 · PHP 8.5 · React 19 + Inertia · Tailwind 4 · Flutter 3.47 (iOS/A
 <img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
 
 Una sola plataforma —agenda + caja + pagos + clientes + marketing— por web y por celular, en bolivianos y zona horaria de Bolivia, con las reglas de dinero y de reservas hechas en serio: sin dobles reservas y sin confundir un comprobante con un pago.
+
+<img src="docs/readme/tag-evidencia.svg" height="28" alt="Participación y evidencia">
+
+- **Participación:** desarrollo integral; único autor en el historial de git.
+- **Estado:** en desarrollo; corre en local, sin despliegue a producción ni publicación en tiendas.
+- **Código:** privado.
 
 <details>
 <summary><img src='docs/readme/ic-diagramas.svg' width='16' height='16' alt=''> <b>Ver 5 diagramas y flujos</b></summary>
