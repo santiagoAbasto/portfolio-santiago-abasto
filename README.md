@@ -13,6 +13,19 @@ Sistemas de gestión y POS, e-commerce, IA y datos, apps móviles y sitios web �
 
 </div>
 
+<div align="center">
+
+### ¿Tu empresa depende de Excel, WhatsApp o procesos manuales?
+
+**Diseño y desarrollo sistemas que convierten esos procesos en operaciones controladas, integradas y preparadas para crecer.**
+Casos reales de sistemas empresariales, POS, CRM, industria, e-commerce, automatización e IA.
+
+**61 proyectos · 251 diagramas · Laravel · React · Flutter · APIs · IA**
+
+[🏢 Sistemas empresariales](#sistemas) · [🤖 IA y automatización](#ia) · [🏭 Industria y B2B](#industria) · [✉️ Contactarme](#contacto)
+
+</div>
+
 Este documento reúne mi trabajo en un solo lugar. Cada proyecto dice **qué problema resolvía**, **con qué stack** y **qué solución le dimos**, con sus **diagramas de arquitectura y flujos** (se despliegan al hacer clic). Desarrollo de **Ing. Santiago Abasto**; las colaboraciones están marcadas al final.
 
 <a name="indice"></a>
@@ -35,6 +48,8 @@ Este documento reúne mi trabajo en un solo lugar. Cada proyecto dice **qué pro
 
 
 <img src="docs/readme/divider.svg" alt="" width="100%">
+
+<a name="sistemas"></a>
 
 ## Sistemas de gestión, POS y ERP
 
@@ -2452,6 +2467,8 @@ flowchart TB
 
 <img src="docs/readme/divider.svg" alt="" width="100%">
 
+<a name="industria"></a>
+
 ## E-commerce, catálogos y sitios industriales
 
 <a name="conar"></a>
@@ -4169,6 +4186,8 @@ erDiagram
 
 <img src="docs/readme/divider.svg" alt="" width="100%">
 
+<a name="ia"></a>
+
 ## IA, datos y automatización
 
 <a name="bmh-asesor-con-ia"></a>
@@ -5556,6 +5575,8 @@ flowchart TD
 
 
 <img src="docs/readme/divider.svg" alt="" width="100%">
+
+<a name="web-reservas-salud-y-landing"></a>
 
 ## Web, reservas, salud y landing
 
@@ -7282,6 +7303,8 @@ stateDiagram-v2
 
 <img src="docs/readme/divider.svg" alt="" width="100%">
 
+<a name="colaboraciones"></a>
+
 ## Colaboraciones
 
 <a name="frenos-sr33"></a>
@@ -8116,6 +8139,8 @@ erDiagram
 ---
 
 <img src="docs/readme/divider.svg" alt="" width="100%">
+
+<a name="contacto"></a>
 
 ## 📬 Contacto
 
