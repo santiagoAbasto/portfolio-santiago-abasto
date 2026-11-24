@@ -2,7 +2,7 @@
 """Genera el README maestro del portafolio desde los README de cada proyecto (en ~/Projects).
 
 Uso: python3 assets/portfolio/generador/readme_maestro.py assets/portfolio/generador/manifiesto.tsv
-Las correcciones de identidad (FIXES), la evidencia (EVIDENCE) y los casos destacados salen de acá y de proyectos.json."""
+Las correcciones de identidad (FIXES), la evidencia (EVIDENCE) y los casos destacados salen de aquí y de proyectos.json."""
 import re
 import sys
 import unicodedata
@@ -56,7 +56,7 @@ FIXES = {
                      "Locoton parte de una investigación de procesos en un restaurante y bar en operación (ver *Procedencia*), que trabaja con **Siesam**, un sistema genérico multi-rubro (sirve igual a un hotel, una distribuidora o un taller). Ese relevamiento mostró lo que eso significa para el rubro:"),
         ("solucion", "**MAHIKI** reproduce la lógica de negocio que el local ya conoce (los mismos nombres de módulos, roles y permisos que Siesam)",
                      "**Locoton** toma la lógica de negocio que el rubro ya conoce (los nombres de módulos, roles y permisos de Siesam, relevados en la investigación)"),
-        ("solucion", "| Rol | Qué hace en MAHIKI |", "| Rol | Qué hace en Locoton |"),
+        ("solucion", "Qué hace en MAHIKI", "Qué hace en Locoton"),
     ],
 }
 # Ancla principal y alias (las anclas viejas siguen funcionando)
@@ -64,12 +64,12 @@ ANCHORS = {LOC: ("locoton", ["mahiki-restaurante-y-bar"]), "Burrow Prospect": ("
 # Participación y evidencia de los 8 casos bandera (verificado el 16-11-2026)
 EVIDENCE = {
     "Apple Boss": [
-        "**Participación:** desarrollo integral, como fundador de Apple Boss. 193 commits entre mayo de 2025 y noviembre de 2026.",
+        "**Participación:** fundador y desarrollador de Apple Boss; desarrollo integral del sistema. 193 commits entre mayo de 2025 y noviembre de 2026.",
         "**Producción:** [appleboss.com.bo](https://appleboss.com.bo) responde (verificado el 16-11-2026).",
         "**Código:** [público en GitHub](https://github.com/santiagoAbasto/ApplebBoss-Laravel). La suite de 915 pruebas pasó completa el 16-11-2026.",
     ],
     "Burrow Prospect": [
-        "**Participación:** desarrollo integral; producto propio de Burrow Labs, único autor en el historial de git (84 commits).",
+        "**Participación:** desarrollo integral; producto de Burrow Labs, la empresa que fundó, y único autor en el historial de git (84 commits).",
         "**Producción:** aplicación en [prospect.burrowlabs.com.bo](https://prospect.burrowlabs.com.bo/login) (acceso con usuario) y caso público en [burrowlabs.com.bo](https://burrowlabs.com.bo/proyectos/burrow-prospect).",
         "**Código:** privado.",
     ],
@@ -319,7 +319,7 @@ for g in groups:
         body_parts.append("\n".join(s) + "\n---\n")
 
 # índice
-index = [f"<a name=\"indice\"></a>\n## {ICON('indice', 26)} Índice\n", "**Empezá por acá:** [Casos destacados](#casos-destacados) · [Qué problemas resuelvo](#problemas) · [Contacto](#contacto)\n"]
+index = [f"<a name=\"indice\"></a>\n## {ICON('indice', 26)} Índice\n", "**Empieza por aquí:** [Casos destacados](#casos-destacados) · [Qué problemas resuelvo](#problemas) · [Contacto](#contacto)\n"]
 for g in groups:
     index.append(f"**{g}**  ")
     links = []
@@ -334,7 +334,7 @@ head = f"""<div align="center">
 
 <br/>
 
-**Ingeniero de software · {total} proyectos · Bolivia**
+**Ingeniero de Sistemas · Desarrollador Full Stack · Fundador de [Burrow Labs](https://burrowlabs.com.bo) y de Apple Boss**
 Sistemas de gestión y POS, e-commerce, IA y datos, apps móviles y sitios web — de principio a fin.
 
 ![Proyectos](https://img.shields.io/badge/proyectos-{total}-0ea5e9?style=for-the-badge)
@@ -370,7 +370,7 @@ foot = f"""
 
 ## {ICON('contacto', 26)} Contacto
 
-**Ing. Santiago Abasto** — Ingeniero de software full-stack.
+**Ing. Santiago Abasto** — Ingeniero de Sistemas, desarrollador full stack y fundador de Burrow Labs y de Apple Boss.
 Diseño, construyo y despliego el producto completo: backend, frontend, móvil, datos e IA.
 
 <a href="https://www.linkedin.com/in/santiagoabasto/"><img src="docs/readme/btn-linkedin.svg" height="46" alt="LinkedIn"></a>

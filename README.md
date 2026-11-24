@@ -4,7 +4,7 @@
 
 <br/>
 
-**Ingeniero de software · 61 proyectos · Bolivia**
+**Ingeniero de Sistemas · Desarrollador Full Stack · Fundador de [Burrow Labs](https://burrowlabs.com.bo) y de Apple Boss**
 Sistemas de gestión y POS, e-commerce, IA y datos, apps móviles y sitios web — de principio a fin.
 
 ![Proyectos](https://img.shields.io/badge/proyectos-61-0ea5e9?style=for-the-badge)
@@ -84,7 +84,7 @@ Ocho sistemas que representan mi trabajo: un problema real, la solución constru
 <a name="indice"></a>
 ## <img src="docs/readme/ic-indice.svg" width="26" height="26" alt=""> Índice
 
-**Empezá por acá:** [Casos destacados](#casos-destacados) · [Qué problemas resuelvo](#problemas) · [Contacto](#contacto)
+**Empieza por aquí:** [Casos destacados](#casos-destacados) · [Qué problemas resuelvo](#problemas) · [Contacto](#contacto)
 
 **Sistemas de gestión, POS y ERP**  
 [Locoton — POS y gestión gastronómica](#locoton) · [Qué Tacos — Katt](#que-tacos-katt) · [Lima Sushi — Nikkei](#lima-sushi-nikkei) · [Macondo POS](#macondo-pos) · [Solo Pastas](#solo-pastas) · [Apple Boss](#apple-boss) · [Blackphone (Axel)](#blackphone-axel) · [Sistema Boss](#sistema-boss) · [Odessa Oil](#odessa-oil) · [Moldpack](#moldpack) · [Tickets Osole](#tickets-osole) · [Pórpora — Producción](#porpora-produccion) · [Tigo — Tickets de soporte](#tigo-tickets-de-soporte)
@@ -128,20 +128,20 @@ El relevamiento completo (pantallas, campos y los 8 roles con sus permisos reale
 
 <img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
-| Capa | Tecnología | Versión |
-|---|---|---|
-| Lenguaje | PHP | 8.5 (composer exige ^8.3) |
-| Framework | Laravel | 13.42 |
-| Puente | Inertia (Laravel · Vue) | 3.7 · 3.11 |
-| Acceso | Fortify (clave, 2FA, passkeys) | 1.42 |
-| Rutas tipadas | Wayfinder | 0.1 |
-| Frontend | Vue · TypeScript | 3.5 · 5.9 |
-| Estilos | Tailwind CSS · reka-ui (shadcn-vue) | 4.3 · 2.11 |
-| Compilación | Vite+ (`vite-plus`) | 1.4 |
-| Mapas | Leaflet + teselas de OpenStreetMap | 1.9 |
-| Exportación | OpenSpout (Excel) · Dompdf (PDF) | 5.14 · 3.1 |
-| Base de datos | MySQL | 9.6 |
-| Calidad | PHPUnit · Larastan (PHPStan nivel 7) · Pint · vue-tsc | 12.5 · 3.15 · 1.32 · 3.3 |
+| Capa          | Tecnología                                            | Versión                   |
+| ------------- | ----------------------------------------------------- | ------------------------- |
+| Lenguaje      | PHP                                                   | 8.5 (composer exige ^8.3) |
+| Framework     | Laravel                                               | 13.42                     |
+| Puente        | Inertia (Laravel · Vue)                               | 3.7 · 3.11                |
+| Acceso        | Fortify (clave, 2FA, passkeys)                        | 1.42                      |
+| Rutas tipadas | Wayfinder                                             | 0.1                       |
+| Frontend      | Vue · TypeScript                                      | 3.5 · 5.9                 |
+| Estilos       | Tailwind CSS · reka-ui (shadcn-vue)                   | 4.3 · 2.11                |
+| Compilación   | Vite+ (`vite-plus`)                                   | 1.4                       |
+| Mapas         | Leaflet + teselas de OpenStreetMap                    | 1.9                       |
+| Exportación   | OpenSpout (Excel) · Dompdf (PDF)                      | 5.14 · 3.1                |
+| Base de datos | MySQL                                                 | 9.6                       |
+| Calidad       | PHPUnit · Larastan (PHPStan nivel 7) · Pint · vue-tsc | 12.5 · 3.15 · 1.32 · 3.3  |
 
 Punto de partida: `laravel/vue-starter-kit` (rama `dev-main`, la que trae Laravel 13 y Tailwind 4).
 
@@ -157,15 +157,15 @@ Tres principios guían todo:
 
 **Quién lo usa** (8 roles de fábrica, con los permisos de Siesam):
 
-| Rol | Qué hace en Locoton |
-|---|---|
-| Superadministrador · Administrador | Configuración, sedes, usuarios, cargos, permisos y todo el sistema |
-| Mesero | Mesas, comandas, clientes y pantalla de cocina; no ve costos ni cobra |
-| Asesor de ventas (cajera) | Cobro, caja (también ciega), facturas, cuentas por cobrar, anular comandas |
-| Almacenero | Productos, stock, transferencias, kardex y reportes de inventario |
-| Contador | Compras, ventas, cuentas, costos, ajustes y reportes |
-| Supervisor gerente · T.I | Consulta y reportes; catálogos y caja según el rol |
-| Repartidor (cargo) | App del repartidor con GPS mientras está en servicio |
+| Rol                                | Qué hace en Locoton                                                         |
+| ---------------------------------- | -------------------------------------------------------------------------- |
+| Superadministrador · Administrador | Configuración, sedes, usuarios, cargos, permisos y todo el sistema         |
+| Mesero                             | Mesas, comandas, clientes y pantalla de cocina; no ve costos ni cobra      |
+| Asesor de ventas (cajera)          | Cobro, caja (también ciega), facturas, cuentas por cobrar, anular comandas |
+| Almacenero                         | Productos, stock, transferencias, kardex y reportes de inventario          |
+| Contador                           | Compras, ventas, cuentas, costos, ajustes y reportes                       |
+| Supervisor gerente · T.I           | Consulta y reportes; catálogos y caja según el rol                         |
+| Repartidor (cargo)                 | App del repartidor con GPS mientras está en servicio                       |
 
 Y fuera del personal: el **cliente en la mesa** (autopedido por QR) y el **cliente a domicilio** (tienda en línea), ambos sin crear cuenta.
 
@@ -1170,7 +1170,7 @@ Un negocio de equipos Apple y tecnología vende unidades **únicas**: cada celul
 
 <img src="docs/readme/tag-evidencia.svg" height="28" alt="Participación y evidencia">
 
-- **Participación:** desarrollo integral, como fundador de Apple Boss. 193 commits entre mayo de 2025 y noviembre de 2026.
+- **Participación:** fundador y desarrollador de Apple Boss; desarrollo integral del sistema. 193 commits entre mayo de 2025 y noviembre de 2026.
 - **Producción:** [appleboss.com.bo](https://appleboss.com.bo) responde (verificado el 16-11-2026).
 - **Código:** [público en GitHub](https://github.com/santiagoAbasto/ApplebBoss-Laravel). La suite de 915 pruebas pasó completa el 16-11-2026.
 
@@ -1347,15 +1347,15 @@ flowchart LR
 ```mermaid
 sequenceDiagram
     autonumber
-    participant O as Sucursal origen
+    participant S as Super administrador
     participant L as Laravel
     participant DB as PostgreSQL
     participant D as Sucursal destino
-    O->>L: Crea traspaso (equipo, destino)
-    L->>DB: traspaso en_transito · equipo en tránsito
-    L-->>O: traspaso enviado
-    D->>L: Recibe el equipo
-    L->>DB: traspaso recibido · equipo vuelve a la venta en destino
+    S->>L: Envía traspaso (origen, destino, equipos)
+    L->>DB: traspaso en_transito · equipo fuera de la venta en las dos
+    L-->>S: traspaso enviado
+    D->>L: Confirma que llegó
+    L->>DB: traspaso recibido · equipo pasa a la sucursal destino
     L-->>D: equipo disponible en la sucursal
 ```
 
@@ -1365,7 +1365,7 @@ sequenceDiagram
 stateDiagram-v2
     [*] --> EnTransito
     EnTransito --> Recibido: la sucursal destino lo recibe
-    EnTransito --> Cancelado: se anula antes de recibirlo
+    EnTransito --> Cancelado: la sucursal origen lo cancela antes de que llegue
     Recibido --> [*]
     Cancelado --> [*]
 ```
@@ -1386,7 +1386,7 @@ erDiagram
     CELULAR ||--o{ VENTA_ITEM : "referencia"
     COMPUTADORA ||--o{ VENTA_ITEM : "referencia"
 
-    SUCURSAL { bigint id PK string codigo }
+    SUCURSAL { bigint id PK string prefijo }
     USUARIO { bigint id PK bigint sucursal_id }
     VENTA { bigint id PK bigint sucursal_id }
     VENTA_ITEM { bigint id PK bigint producto_id }
@@ -4208,20 +4208,20 @@ El sitio no debe publicar esos datos hasta que estén verificados, y los medios 
 
 <img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
-| Capa | Tecnología | Versión |
-|---|---|---|
-| Lenguaje | PHP | `^8.5` (composer.json) |
-| Framework | Laravel | `^13.17` (composer.json); 13.40 verificado en `docs/engineering/stack-matrix.md` |
-| Puente SPA | Inertia (`inertiajs/inertia-laravel`) | `^3.0` |
-| Interfaz | React · TypeScript | `^19.2` · `^7.0.2` |
-| Estilos | Tailwind CSS · `@tailwindcss/vite` | `^4.0.0` · `^4.1.11` |
-| Build | Vite | `^8.3.6` |
-| Animación | GSAP · Three.js | `^3.15.1` · `^0.187.0` |
-| Componentes | Radix UI, class-variance-authority, lucide-react | varias |
-| Video del hero | HyperFrames (animatic) | `^0.9.20` |
-| Base de datos | MySQL en Docker | 9.7.4 LTS |
-| Pruebas PHP | Pest · Larastan · Pint | `^5.3` · nivel 7 · |
-| Pruebas front | Playwright | `^1.65.0` |
+| Capa           | Tecnología                                       | Versión                                                                          |
+| -------------- | ------------------------------------------------ | -------------------------------------------------------------------------------- |
+| Lenguaje       | PHP                                              | `^8.5` (composer.json)                                                           |
+| Framework      | Laravel                                          | `^13.17` (composer.json); 13.40 verificado en `docs/engineering/stack-matrix.md` |
+| Puente SPA     | Inertia (`inertiajs/inertia-laravel`)            | `^3.0`                                                                           |
+| Interfaz       | React · TypeScript                               | `^19.2` · `^7.0.2`                                                               |
+| Estilos        | Tailwind CSS · `@tailwindcss/vite`               | `^4.0.0` · `^4.1.11`                                                             |
+| Build          | Vite                                             | `^8.3.6`                                                                         |
+| Animación      | GSAP · Three.js                                  | `^3.15.1` · `^0.187.0`                                                           |
+| Componentes    | Radix UI, class-variance-authority, lucide-react | varias                                                                           |
+| Video del hero | HyperFrames (animatic)                           | `^0.9.20`                                                                        |
+| Base de datos  | MySQL en Docker                                  | 9.7.4 LTS                                                                        |
+| Pruebas PHP    | Pest · Larastan · Pint                           | `^5.3` · nivel 7 ·                                                               |
+| Pruebas front  | Playwright                                       | `^1.65.0`                                                                        |
 
 <img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
 
@@ -4312,20 +4312,20 @@ Los riesgos que el proyecto atiende de forma explícita: publicar fotos sin auto
 
 <img src="docs/readme/tag-stack.svg" height="28" alt="Stack">
 
-| Capa | Tecnología | Versión |
-|---|---|---|
-| Lenguaje | PHP | `^8.3` en composer.json; 8.5.12 verificado en `docs/engineering/stack-matrix.md` |
-| Framework | Laravel | `^13.17` en composer.json; 13.40.0 verificado |
-| Puente SPA | Inertia (`inertiajs/inertia-laravel`) | `^3.0` |
-| Pruebas PHP | Pest · PHPStan · Pint | `^5.3` · nivel 7 · |
-| Interfaz | React · TypeScript | `^19.2.0` · `^7.0.2` |
-| Adaptador Inertia (React) | `@inertiajs/react` | `^3.0.0` |
-| Estilos | Tailwind CSS | `^4.0.0` |
-| Build | Vite (vía Vite+) | 8.3.5 (`vite-plus` 1.4.0) |
-| Animación | GSAP · Three.js | `^3.15.1` · `^0.187.0` |
-| Pruebas front | Playwright | `^1.65.0` |
-| Base de datos | MySQL | 9.7 LTS objetivo; 9.6 en la máquina local |
-| Video | HyperFrames · FFmpeg | hero en `media/hyperframes/muela-hero/` |
+| Capa                      | Tecnología                            | Versión                                                                          |
+| ------------------------- | ------------------------------------- | -------------------------------------------------------------------------------- |
+| Lenguaje                  | PHP                                   | `^8.3` en composer.json; 8.5.12 verificado en `docs/engineering/stack-matrix.md` |
+| Framework                 | Laravel                               | `^13.17` en composer.json; 13.40.0 verificado                                    |
+| Puente SPA                | Inertia (`inertiajs/inertia-laravel`) | `^3.0`                                                                           |
+| Pruebas PHP               | Pest · PHPStan · Pint                 | `^5.3` · nivel 7 ·                                                               |
+| Interfaz                  | React · TypeScript                    | `^19.2.0` · `^7.0.2`                                                             |
+| Adaptador Inertia (React) | `@inertiajs/react`                    | `^3.0.0`                                                                         |
+| Estilos                   | Tailwind CSS                          | `^4.0.0`                                                                         |
+| Build                     | Vite (vía Vite+)                      | 8.3.5 (`vite-plus` 1.4.0)                                                        |
+| Animación                 | GSAP · Three.js                       | `^3.15.1` · `^0.187.0`                                                           |
+| Pruebas front             | Playwright                            | `^1.65.0`                                                                        |
+| Base de datos             | MySQL                                 | 9.7 LTS objetivo; 9.6 en la máquina local                                        |
+| Video                     | HyperFrames · FFmpeg                  | hero en `media/hyperframes/muela-hero/`                                          |
 
 <img src="docs/readme/tag-solucion.svg" height="28" alt="Solución">
 
@@ -5257,7 +5257,7 @@ Todo cambio de estado, mensaje y envío queda en el historial de la ficha. Lo us
 
 <img src="docs/readme/tag-evidencia.svg" height="28" alt="Participación y evidencia">
 
-- **Participación:** desarrollo integral; producto propio de Burrow Labs, único autor en el historial de git (84 commits).
+- **Participación:** desarrollo integral; producto de Burrow Labs, la empresa que fundó, y único autor en el historial de git (84 commits).
 - **Producción:** aplicación en [prospect.burrowlabs.com.bo](https://prospect.burrowlabs.com.bo/login) (acceso con usuario) y caso público en [burrowlabs.com.bo](https://burrowlabs.com.bo/proyectos/burrow-prospect).
 - **Código:** privado.
 
@@ -6097,7 +6097,7 @@ Un sitio en **Laravel 13** que presenta cinco rutas (**Torotoro, Chiquitania, Sa
 Dos tipos de usuario:
 
 - **Visitante**: explora destinos, arma su maleta y confirma el pedido o consulta por WhatsApp.
-- **Agencia**: administra todo el contenido desde el CMS en `/admin` (destinos, departamentos, salidas, reseñas, reservas, pedidos, suscriptores y plataformas).
+- **Agencia**: administra todo el sitio desde el CMS en `/admin`: la portada del inicio (slider de fotos o video), el orden y los textos de cada sección, el menú del header, los textos de todas las páginas con editor enriquecido, los datos de la agencia, las consultas que llegan desde Contacto, las reservas, los pedidos, los usuarios del panel, y el catálogo (destinos, departamentos, salidas, reseñas, plataformas, redes y Nosotros).
 
 **Sin pasarela de pago todavía, a propósito.** El pedido queda registrado y la agencia confirma el cobro por WhatsApp y lo marca en el CMS.
 
@@ -8515,7 +8515,7 @@ erDiagram
 
 ## <img src="docs/readme/ic-contacto.svg" width="26" height="26" alt=""> Contacto
 
-**Ing. Santiago Abasto** — Ingeniero de software full-stack.
+**Ing. Santiago Abasto** — Ingeniero de Sistemas, desarrollador full stack y fundador de Burrow Labs y de Apple Boss.
 Diseño, construyo y despliego el producto completo: backend, frontend, móvil, datos e IA.
 
 <a href="https://www.linkedin.com/in/santiagoabasto/"><img src="docs/readme/btn-linkedin.svg" height="46" alt="LinkedIn"></a>

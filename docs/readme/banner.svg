@@ -34,7 +34,7 @@
   <rect class="grid" x="-40" y="-40" width="1280" height="420" fill="url(#grid)"/>
   <circle class="floatA" cx="220" cy="85" r="260" fill="url(#glowA)"/>
   <circle class="floatB" cx="1000" cy="272" r="300" fill="url(#glowB)"/>
-  <text class="m" x="70" y="92" font-size="18" letter-spacing="3">INGENIERO DE SOFTWARE · FULL-STACK · BOLIVIA</text>
+  <text class="m" x="70" y="92" font-size="18" letter-spacing="3">INGENIERO DE SISTEMAS · FULL STACK · FUNDADOR DE BURROW LABS</text>
   <text class="t" x="70" y="154" font-size="64" font-weight="800">Santiago Abasto</text>
   <rect class="bar" x="70" y="172" width="120" height="6" rx="3" fill="url(#ac)"/>
   <text class="s" x="70" y="220" font-size="26">Portafolio de software — 61 proyectos end-to-end, de la idea a producción</text>

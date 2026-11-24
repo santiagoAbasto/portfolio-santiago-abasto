@@ -22,7 +22,7 @@ Los ocho casos que representan mi trabajo, con textos verificados (16-11-2026). 
 - **Documentación:** https://github.com/santiagoAbasto/portfolio-santiago-abasto#apple-boss
 - **Imagen recomendada:** A `assets/portfolio/projects/apple-boss/producto-1200x630.png` · B `assets/portfolio/projects/apple-boss/arquitectura-1200x630.png`
 - **Aptitudes:** Laravel · React.js · PostgreSQL · Gestión de inventarios · Comercio electrónico
-- **Asociación:** Apple Boss · Fundador (así figura en tu perfil de GitHub)
+- **Asociación:** Apple Boss · Fundador y desarrollador
 - **Miniatura:** reemplazar las dos vistas previas siguiendo la guía de reinserción.
 
 ## 2. Burrow Prospect
@@ -111,6 +111,6 @@ Los ocho casos que representan mi trabajo, con textos verificados (16-11-2026). 
 
 ## Pendientes que necesitan tu información
 
-- **Locoton:** URL pública en producción. La documentación del repositorio dice que corre en local; hasta confirmarla, publicá solo el elemento B.
-- **CalendarioW:** no tiene aplicación pública; publicá solo el elemento B.
+- **Locoton:** URL pública en producción. La documentación del repositorio dice que corre en local; hasta confirmarla, publica solo el elemento B.
+- **CalendarioW:** no tiene aplicación pública; publica solo el elemento B.
 - **Asociación laboral** de Odessa Oil, Moldpack, Ninth Group, AIQ y Locoton: confirmar si se hicieron como Burrow Labs o como trabajo independiente.

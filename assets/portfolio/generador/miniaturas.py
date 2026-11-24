@@ -31,7 +31,7 @@ SANS = "-apple-system,'SF Pro Display','Inter','Segoe UI',Helvetica,Arial,sans-s
 MONO = "'SF Mono','JetBrains Mono',ui-monospace,Menlo,Consolas,monospace"
 ESTADO = {"prod": ("EN PRODUCCIÓN", "#22C55E"), "pend": ("PRODUCCIÓN POR VERIFICAR", "#F59E0B"),
           "dev": ("EN DESARROLLO", "#38BDF8")}
-FIRMA = "SANTIAGO ABASTO · INGENIERO DE SOFTWARE"
+FIRMA = "SANTIAGO ABASTO · INGENIERO DE SISTEMAS"
 REPO = "github.com/santiagoAbasto/portfolio-santiago-abasto"
 
 # ---------- métricas de texto (Helvetica por 1000 em; margen para SF Pro) ----------

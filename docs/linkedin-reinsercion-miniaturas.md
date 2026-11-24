@@ -1,7 +1,7 @@
 # Reinserción de miniaturas en LinkedIn
 
 > [!IMPORTANT]
-> **LinkedIn no se actualizó desde acá.** Este documento y las imágenes están listos; los cambios en tu perfil los hacés vos, siguiendo estos pasos.
+> **LinkedIn no se actualizó desde aquí.** Este documento y las imágenes están listos; los cambios en tu perfil los haces tú, siguiendo estos pasos.
 
 ## 1. Antes de tocar nada: inventario de lo que hay hoy
 
@@ -43,9 +43,9 @@ No borres ningún elemento hasta completar esta tabla, así ninguna URL se pierd
 4. Lápiz sobre la vista previa → subir el PNG → completar título y descripción → **Aplicar** → **Guardar**.
 
 > [!WARNING]
-> Subir una imagen como «multimedia» **no** la convierte en un enlace clicable. Agregá siempre un **enlace** y después cambiá su miniatura.
+> Subir una imagen como «multimedia» **no** la convierte en un enlace clicable. Agrega siempre un **enlace** y después cambia su miniatura.
 
-Dejá **A primero y B segundo** (se pueden reordenar arrastrando). Usá los PNG de **1200 × 630**, la proporción de las vistas previas de enlaces; los de 1200 × 675 quedan para el README y otras publicaciones.
+Deja **A primero y B segundo** (se pueden reordenar arrastrando). Usa los PNG de **1200 × 630**, la proporción de las vistas previas de enlaces; los de 1200 × 675 quedan para el README y otras publicaciones.
 
 ## 1. Apple Boss
 

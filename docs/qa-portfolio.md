@@ -40,4 +40,4 @@
 - Títulos en vivo: «1. Locoton — POS y gestión gastronómica» y «36. Burrow Prospect».
 - Lectura en móvil (375 px): `#casos-destacados` abre en su sección; miniaturas de a dos y leyendas legibles.
 
-**No verificado desde acá:** LinkedIn. Las imágenes y la guía están listas, pero el perfil se actualiza a mano (ver `linkedin-reinsercion-miniaturas.md`).
+**No verificado desde aquí:** LinkedIn. Las imágenes y la guía están listas, pero el perfil se actualiza a mano (ver `linkedin-reinsercion-miniaturas.md`).
